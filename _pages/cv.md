@@ -11,49 +11,23 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Applied Math and Statistics, Johns Hopkins University, 2027 (expected)
+* M.Sc. in Math, Tufts University, 2022
+* B.A. in Biochemistry and Economics, Occidental College, 2019
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2022: Research Assistant
+  * MIT Lincoln Laboratories - Group 33
+  * Duties included: Implementing Signal Processing Algorithms for RF Signals, and checking MILP solvers use for different battle scenarios
+  * Supervisor: Patricia Amato
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Spring 2022: DISC Research Intern
+  * Tufts University’s Data Intensive Studies Center
+  * Duties included: Working on the implementation of Markov Random Fields for analyzing polar ice caps
+  * Supervisor: Abani Patra
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Summer 2021: Research Assistant
+  * Tufts University's Math Department
+  * Duties included: Research towards understanding differential equations on Fractals, namely the Sierpinski Gasket
+  * Supervisor: Kasso Okoudjou
