@@ -1,6 +1,6 @@
 Welcome to Ian McPherson's Personal Site
 ======
-I am currently a second-year Ph. D. student in the Applied Math and Statistics Department at Johns Hopkins University. I have the privilege of currently being mentored by [Mauro Maggioni](https://mauromaggioni.duckdns.org/). 
+I am currently a second-year Ph. D. student in the Applied Math and Statistics Department at Johns Hopkins University. I have the privilege of currently being mentored by [Mauro Maggioni](https://mauromaggioni.duckdns.org/). Previously, I obtained my M. Sc. in Mathematics with a concentration in Probability from Tufts University where I spent a majority of my time learning about Analysis and how one might extend these frameworks to discrete settings, namely learning about differential equations on Fractals with [Dr. Kasso Okoudjou](https://sites.tufts.edu/kasso/). Even before then, I received my B.A. in Biochemistry and B.A. in Economics at the Occidental College. Going back even further feels meaningless, so I'll stop my tracks here.
 
 As I am still developing my research interests, I find myself gravitating towards using tools from Analysis in order to tackle high-dimensional problems in a computationally feasible manner. To box my interests in I am currently most interested High Dimensional Statistics, Model Reduction, Manifold Learning, and Randomized Linear Algebra, albeit at it's core I am entranced with the idea of utilizing controlled randomness in order to accomplish tasks. 
 
