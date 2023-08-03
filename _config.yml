@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ian McPherson"
+title                    : "Ian McPherson's Academic Website"
 title_separator          : "-"
 name                     : &name "Ian McPherson"
 description              : &description "Second Year Ph.D. Student in Applied Math and Statistics at the Johns Hopkins University"
