@@ -1,3 +1,13 @@
+---
+permalink: /
+title: ""
+excerpt: "About me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
 Welcome to Ian McPherson's Personal Site
 ======
 I am currently a second-year Ph. D. student in the Applied Math and Statistics Department at Johns Hopkins University. I have the privilege of currently being mentored by [Mauro Maggioni](https://mauromaggioni.duckdns.org/). Previously, I obtained my M. Sc. in Mathematics with a concentration in Probability from Tufts University where much of early perspectives on mathematics have been shaped by [James Murphy](https://jmurphy.math.tufts.edu/) and [Kasso Okoudjou](https://sites.tufts.edu/kasso/). Even before then, I received my B.A. in Biochemistry and B.A. in Economics at the Occidental College. Going back even further feels meaningless, so I'll stop my tracks here.
