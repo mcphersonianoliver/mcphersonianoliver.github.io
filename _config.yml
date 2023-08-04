@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Ian McPherson"
-  avatar           : "profile.png"
+  avatar           : /images/profile.png
   bio              : "Second Year Ph.D. Student in AMS at Johns Hopkins University interested in all principled ways of exploring data!"
   location         : "Baltimore, MD"
   employer         :
