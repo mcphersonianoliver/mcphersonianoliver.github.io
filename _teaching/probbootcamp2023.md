@@ -2,7 +2,7 @@
 title: "Probability Bootcamp Summer 2023"
 collection: teaching
 type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
+permalink: /teaching/2023-prob-bootcamp
 venue: "Johns Hopkins University AMS"
 date: 2023-08-22
 location: "Baltimore, MD, USA"
