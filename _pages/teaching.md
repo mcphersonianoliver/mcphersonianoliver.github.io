@@ -8,6 +8,7 @@ author_profile: true
 ## Currently (Johns Hopkins University)
 * Summer 2024 - Master’s Program Probability Review  
 Reviewing expected probability fundamentals for incoming Master’s students
+
 **Notes:** [Updated to Lecture 2](https://mcphersonianoliver.github.io/assets/Probability_Bootcamp_Summer_2024.pdf)
 
 ## Instructor (Johns Hopkins University)
