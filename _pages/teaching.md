@@ -9,7 +9,7 @@ author_profile: true
 * Summer 2024 - Master’s Program Probability Review  
 Reviewing expected probability fundamentals for incoming Master’s students
 
-**Notes:** [Updated to Lecture 4](https://mcphersonianoliver.github.io/assets/Probability_Bootcamp_Summer_2024_(3).pdf)
+**Notes:** [Updated to Lecture 4](https://mcphersonianoliver.github.io/assets/Probability_Bootcamp_Summer_2024 (3).pdf)
 
 ## Instructor (Johns Hopkins University)
 * Summer 2023 - Master’s Program Probability Review  
