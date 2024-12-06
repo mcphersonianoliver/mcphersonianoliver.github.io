@@ -35,7 +35,7 @@ Undergraduate/graduate-level course on nonlinear dynamical systems
 
 * Summer 2022 - Math 70: Linear Algebra for Curtis Heberle  
 Undergraduate introduction to linear algebra
-* Spring 2022 - Math 166 Statistics for [Bruce Boghosian](https://sites.tufts.edu/bboghosian/)  
+* Spring 2022 - Math 166 Statistics for Bruce Boghosian
 Undergraduate mathematical statistics introduction
 * Fall 2021 - Math 126 Numerical Linear Algebra for [Abiy Tassisa](https://sites.tufts.edu/atasissa/)  
 Undergraduate introduction to numerical linear algebra
