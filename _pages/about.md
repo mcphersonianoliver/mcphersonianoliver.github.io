@@ -32,3 +32,4 @@ Outside of my current projects, I am also interested in:
 - Different Approximations for Riemannian Geoemtric Tools (Retractions and Vector Transports) and How to Obtain Quantitive Bounds on Approximation;
 - High Dimensional Probability and Geometry, and Statistical Learning Theory.
 
+I am greatful to have been recognized among my many talented peers in recent years. Notably, I have been given the **Rufus P. Isaacs Graduate Fellowship**, which distinguishes promising early graduate students for research within my department, as well being the Sole Recipient across the Whiting School of Engineering of the **2024 Whiting School of Engineering Teaching Assistant Award**, an award given in recognition of excellence and talent as a graduate TA. I am incredibly humbled by these  acolades, and I hope I can rise to these titles through more hardwork and unbridled curiosity.
