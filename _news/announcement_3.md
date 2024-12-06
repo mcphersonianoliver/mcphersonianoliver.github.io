@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Participated in the [SL Math's Particle interactive systems: Analysis and computational method Summer School](https://www.slmath.org/summer-schools/1035#overview_summer_graduate_school)
+Participated in the [SL Math's Particle Interactive Systems: Analysis and Computational Method's Summer School](https://www.slmath.org/summer-schools/1035#overview_summer_graduate_school)
 
