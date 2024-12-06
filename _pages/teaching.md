@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: Course TA'd for and Instructed. Any typos in posted notes are my own!
 nav: true
 nav_order: 6
 ---
@@ -17,7 +17,7 @@ Undergraduate/graduate-level course on statsitical learning
 First-Year topics course to get new students interested in the use of mathematics for data science
 * Summer 2024 - Master’s Program Probability Review  
 Reviewing expected probability fundamentals for incoming Master’s students
-**Notes:** [Finalized Notes](https://mcphersonianoliver.github.io/assets/pdf/Probability_Bootcamp_Summer_2024_final.pdf) (All typos are mine!)
+**Notes:** [Finalized Notes](https://mcphersonianoliver.github.io/assets/pdf/Probability_Bootcamp_Summer_2024_final.pdf) 
 * Summer 2023 - Master’s Program Probability Review  
 Reviewing expected probability fundamentals for incoming Master’s students
 
