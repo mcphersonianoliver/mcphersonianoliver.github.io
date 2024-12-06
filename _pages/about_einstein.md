@@ -1,5 +1,13 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Ph.D. student studying Applied Mathematics and Statistics at Johns Hopkins University, primarily advised by Professor [Mauro Maggioni](https://mauromaggioni.duckdns.org/). I am also currently collaborating with [Mateo Díaz](https://mateodd25.github.io/) and [Ben Grimmer](https://www.ams.jhu.edu/~grimmer/index.html). I obtained a Masters in Mathematics from Tufts University in 2022, and a B.A. in Biochemisty and Economics from Occidental College in 2019. For more details, see my CV.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research is in Optimal Transportation and Riemannian Optimization, with a focus on asking how we can lift algorithms from the Euclidean setting to more exotic metric spaces. In particular, my current projects center on:
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+- Computing Barycenters on Unknown Wasserstein Submanifolds;
+- Convergence Rate Analysis of Riemannian Bundle Methods.
+
+Outside of my current projects, I am also interested in:
+
+- Statistical Optimal Transportation, and Different Regularization Schemes (Entropic Optimal Transport and Quadratically Regularized Optimal Transport;
+- Analysis of Wasserstein Gradient Flows, and Different Algorithmic Approximations and Applications thereof;
+- Different Approximations for Riemannian Geoemtric Tools (Retractions and Vector Transports) and How to Obtain Quantitive Bounds on Approximation;
+- High Dimensional Probability and Geometry, and Statistical Learning Theory.
