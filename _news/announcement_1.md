@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Poster for _Computing Barycenters on Unknown Wasserstein Manifolds_ for Presentation at [Optimization Workshop: Theory, Algorithms, and Applications](https://optimization-workshop.github.io/)
+Partipcated in the [Optimization Workshop: Theory, Algorithms, and Applications](https://optimization-workshop.github.io/), Presenting a Poster!
