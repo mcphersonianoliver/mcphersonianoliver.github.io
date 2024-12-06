@@ -10,10 +10,12 @@ nav_order: 6
 ## Currently (Johns Hopkins University)
 **Teaching Assistant**
 * Fall 2024 - 553.634: Elements of Statstical Learning for [Subas Acharya](https://sites.google.com/view/subasacharya/home?authuser=0)
+
 Undergraduate/graduate-level course on statsitical learning
 
 ## Instructor (Johns Hopkins University)
 * Fall 2024 - 500.111 HEART: A Geometric Toolkit for Optimization and Statistics for High-Dimensional Data
+
 First-Year topics course to get new students interested in the use of mathematics for data science
 * Summer 2024 - Master’s Program Probability Review  
 Reviewing expected probability fundamentals for incoming Master’s students
