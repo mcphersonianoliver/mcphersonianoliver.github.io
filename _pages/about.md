@@ -2,24 +2,33 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Johns Hopkins University, 3rd Year Applied Math and Statistics Ph.D. Candidate
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Wymann Park Office 425 N</p>
+    <p>3100 Wymann Park Dr.</p>
+    <p>Baltimore, MD, 21211</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Ph.D. student studying Applied Mathematics and Statistics at Johns Hopkins University, primarily advised by Professor [Mauro Maggioni](https://mauromaggioni.duckdns.org/). I am also currently collaborating with [Mateo Díaz](https://mateodd25.github.io/) and [Ben Grimmer](https://www.ams.jhu.edu/~grimmer/index.html). I obtained a Masters in Mathematics from Tufts University in 2022, and a B.A. in Biochemisty and Economics from Occidental College in 2019. For more details, see my CV.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research is in Optimal Transportation and Riemannian Optimization, with a focus on asking how we can lift algorithms from the Euclidean setting to more exotic metric spaces. In particular, my current projects center on:
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+- Computing Barycenters on Unknown Wasserstein Submanifolds;
+- Convergence Rate Analysis of Riemannian Bundle Methods.
+
+Outside of my current projects, I am also interested in:
+
+- Statistical Optimal Transportation, and Different Regularization Schemes (Entropic Optimal Transport and Quadratically Regularized Optimal Transport;
+- Analysis of Wasserstein Gradient Flows, and Different Algorithmic Approximations and Applications thereof;
+- Different Approximations for Riemannian Geoemtric Tools (Retractions and Vector Transports) and How to Obtain Quantitive Bounds on Approximation;
+- High Dimensional Probability and Geometry, and Statistical Learning Theory.
+
