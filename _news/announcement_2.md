@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Participated in the [Princeton Machine Learning Theory Summer School](https://mlschool.princeton.edu/).
+Participated in the [Princeton Machine Learning Theory Summer School](https://mlschool.princeton.edu/) at Princeton University.
