@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching
+title: teaching
 description: Course TA'd for and Instructed. Any typos in posted notes are my own!
 nav: true
 nav_order: 6
