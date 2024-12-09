@@ -8,19 +8,19 @@ categories: Optimization Foundations
 toc:
   beginning: true
 ---
-In many applications and domains, one can boil down the crux of a problem to one of optimization. For simplicity, assume we are optimizing a function $f: \mathbb{R}^d \rightarrow \mathbb{R}$ over $(\mathbb{R},\lVert \cdot \rVert_2)$ that has nice properties - for instance, convex, lower-semi continuous, etc. Without loss of generality, suppose we wish to minimize said function:
+In many applications and domains, one can boil down the crux of a problem to one of optimization. For simplicity, assume we are optimizing a function $$f: \mathbb{R}^d \rightarrow \mathbb{R}$$ over $$(\mathbb{R},\lVert \cdot \rVert_2)$$ that has nice properties - for instance, convex, lower-semi continuous, etc. Without loss of generality, suppose we wish to minimize said function:
 
 $$
   \min_{x \in \mathbb{R}^d} f(x).
 $$
 
-For exposition's sake, assume further that $f \in C^1(\mathbb{R}^d)$, then one can do a _gradient descent_ style algorithm. That is, starting from some initialization $x_0$, one obtains the sequence of iterates $\{x_n\}_{n \geq 0}$ in an iterative fashion:
+For exposition's sake, assume further that $$f \in C^1(\mathbb{R}^d)$$, then one can do a _gradient descent_ style algorithm. That is, starting from some initialization $$x_0$$, one obtains the sequence of iterates $$\{x_n\}_{n \geq 0}$$ in an iterative fashion:
 
 $$
   x_{n+1} = x_{n} - \alpha_{n+1} \nabla f(x_n),
 $$
 
-where $\{\alpha_n\}_{n \geq 0}$ is a sequence of step-sizes. 
+where $$\{\alpha_n\}_{n \geq 0}$$ is a sequence of step-sizes. 
 
 Because of the easy of statement, and the prevalence within many machine learning centric disciplines, gradient descent - and it's closely related optimization relatives - enjoys a lot of publicity and study. Serving also as a way of teaching student's how to prove different types of convergence rates, and how a function classes' characteristics effect the outcome, gradient descent style algorithms rightfully take much of the spotlight!
 
