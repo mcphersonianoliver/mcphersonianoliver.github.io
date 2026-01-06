@@ -1,6 +1,6 @@
 ---
-title: "Quarto Academic, PhD"
-description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
+title: "Ian McPherson"
+description-meta: "Ian McPherson's Personal Website"
 image: "files/images/placeholder4.JPG"
 page-navigation: false
 toc: false
@@ -12,37 +12,30 @@ about:
   template: trestles
   image-width: 70%
   links:
-    - icon: sun
-      text: Lab
-      href: https://www.github.com
-      target: _blank
-    - icon: globe
-      text: Uprofile
-      href: https://baruch.cuny.edu
-      target: _blank
+    #- icon: globe
+     # text: Uprofile
+     # href: https://baruch.cuny.edu
+     # target: _blank
     - icon: envelope
       text: E-mail
-      href: mailto:email@gmail.com    
+      href: mailto:imcpher1@jh.edu    
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/ianolivermcpherson/
       target: _blank
-    - icon: youtube
-      text: YouTube
-      href: https://www.youtube.com     
-      target: _blank 
+    # - icon: youtube
+      # text: YouTube
+      # href: https://www.youtube.com     
+      # target: _blank 
     - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
-      href: https://orcid.org
+      href: https://orcid.org/0009-0004-7176-5622
       target: _blank
-    - text: "{{< ai clarivate >}} Web of Science"
-      href: https://www.webofscience.com  
-      target: _blank
-    - text: "{{< ai scopus >}} Scopus"
-      href: https://www.scopus.com
-      target: _blank
-    - text: "{{< ai google-scholar >}} Google Scholar"
-      href: https://scholar.google.com
-      target: _blank
+#    - text: "{{< ai clarivate >}} Web of Science"
+#      href: https://www.webofscience.com  
+#      target: _blank
+#    - text: "{{< ai google-scholar >}} Google Scholar"
+#      href: https://scholar.google.com
+#      target: _blank
 #    - text: "{{< ai researchgate >}} Research Gate"
 #      href: https://www.researchgate.net
 #      target: _blank
@@ -67,32 +60,20 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 
 :::{#hero-heading}
 
-I'm a [Quarto Academeic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io).
+## About 
 
-I'm a template that you can fork to build your own website with easy adaptation and deployment.
+Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of [Mauro Maggioni](https://mauromaggioni.duckdns.org/) and [Mateo Díaz](https://mateodd25.github.io/) at Johns Hopkins University.
 
-1. **Star** this repository to bookmark it for future reference.  
-1. **Fork** this repository and rename it to `YourGitHubUserName.github.io`.  
-1. **Update** the `_quarto.yml` file to configure your site’s basic settings.  
-1. **Add or edit content** in the following files and folders:
-   - `/posts/` – posts about publications, news, events  
-   - `teaching.qmd` – teaching information  
-   - `projects.yml` – research or other projects  
-   - `people.qmd` and `/people/` – team or collaborators  
-   - `/files/` - profiles, images, pdfs, and includes 
-1. [**Render and preview**](https://quarto.org/docs/websites/) your site locally.  
-1. [**Publish**](https://quarto.org/docs/publishing/github-pages.html) your site using GitHub Pages (make sure [configuring](https://quarto.org/docs/publishing/images/gh-pages-docs-dir.png) your GitHub repository to publish from the `docs` directory, not the `root` folder). 
-1. **Refine and polish** your content and design as needed.  
-1. ✅ Enjoy your new website!
+## Research Interests
+I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core I am inspired by the interplay of optimization, geometry, and statistics through the frameworks of Applied Harmonic Analysis, Riemannian Geometry, Optimal Transport, and Variational Analysis. I am most interested in translating these ideas into applications in data science, machine learning, and large-scale optimization.
 
-## Experience
-
-- Researcher, Univerisity
-
-## Education
-
-- PhD, Univerisity
-
+## Current and Recent Projects
+- (On-Going) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
+<span class="text-muted" style="font-size: 0.9em;">Motivating Question: Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? </span> 
+- (On-Going) Nonsmooth Riemannian Optimization with Inexact Information, with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
+<span class="text-muted" style="font-size: 0.9em;">Motivating Question: Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? </span> 
+- (Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
+<span class="text-muted" style="font-size: 0.9em;">Motivating Question: Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees? </span> 
 :::
 
 
