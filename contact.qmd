@@ -6,19 +6,15 @@ title-block-banner: false
 
 <center>
 
-**Quarto Academic**
+**Ian McPherson**
 
-School
+Johns Hopkins University
 
-College
+ Department of Applied Mathematics and Statistics
 
-University
+Wyman Park Building, Johns Hopkins University, Homewood Campus, Baltimore, MD 21218
 
-Address: 
-
-Phone: 
-
-E-mail: 
+imcpher1@jh.edu
 
 
 </center>

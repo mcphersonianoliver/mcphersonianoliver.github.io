@@ -4,7 +4,7 @@ description: "About Event item."
 author: "Event"
 date: "2024-09-03"
 categories: [event, presentation]
-image: "/files/images/placeholder2.JPG"
+# image: "/files/images/placeholder2.JPG"
 #css: /custom.css
 #draft: true
 ---

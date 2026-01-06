@@ -1,0 +1,11 @@
+---
+title: Research Areas
+description: "My work sits at the intersection of optimization, geometry, and statistics."
+toc: true
+---
+
+My research lies somewhere at the intersection of optimization, geometry, and statistics. I am particularly interested in both the development and analysis of algorithms for different optimization and statistical tasks defined on non-Euclidean spaces, such as Riemannian manifolds and Wasserstein space. My work is motivated by applications in data science, machine learning, and large-scale optimization.
+
+---
+## Research Areas
+### Riemannian Optimization 

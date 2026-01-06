@@ -1,0 +1,16 @@
+---
+title: "Blog"
+subtitle: "Research notes, tutorials, and academic reflections."
+listing:
+  contents: blog-posts
+  sort: "date desc"
+  type: default # Change to 'grid' or 'table' if you prefer
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  feed: true
+page-layout: full
+title-block-banner: false
+---
+
+Welcome to my blog! Here I hope to share insights on anything and everything related to my research (and not), including research notes, tutorials, academic reflections, and more. Feel free to explore the posts below. 

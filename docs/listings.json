@@ -22,5 +22,9 @@
   {
     "listing": "/people.html",
     "items": []
+  },
+  {
+    "listing": "/blog.html",
+    "items": []
   }
 ]

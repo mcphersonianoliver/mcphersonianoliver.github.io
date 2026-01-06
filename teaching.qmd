@@ -1,67 +1,40 @@
 ---
 title: "Teaching"
-subtitle: "I teach."
+subtitle: "Course instruction and assistantship at Johns Hopkins University and Tufts University."
 title-block-banner: false
 ---
 
-
-## Class 1
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder1.jpg)
-
+::: {.callout-note appearance="minimal"}
+Recipient of the **Whiting School of Engineering Teaching Assistant Award (2024)**, awarded to a single graduate student across the WSE for excellence in instruction.
 :::
 
-::: {.g-col-12 .g-col-md-10}
+## Instructor of Record
 
-[Fall 2024](https://www.google.com), &nbsp; [Fall 2023](https://www.google.com)
+- **Geometric Toolbox for Data Science** (EN.500.111) <br> <span class="text-muted" style="font-size: 0.9em;">Johns Hopkins University | Fall 2024. Designed and taught a survey course in Geometric Methods for High Dimensional Statistics.</span>
 
-Class 1 introduction.
+- **Master’s Program Probability Review** <br> <span class="text-muted" style="font-size: 0.9em;">Johns Hopkins University | Summer 2023, Summer 2024. Designed and led a review series on probability fundamentals for incoming Master’s students.</span>
 
-:::
+## Teaching Assistantships
 
-:::
+### Johns Hopkins University
 
+- **Mathematics of Data Science** (EN.553.747) <br> <span class="text-muted" style="font-size: 0.9em;">Fall 2025 | For Professor Mateo Díaz | Ph.D level course on high-dimensional statistics, optimization, and geometry.</span>
 
-## Class 2
+- **Elements of Statistical Learning** (EN.553.634) <br> <span class="text-muted" style="font-size: 0.9em;">Fall 2024 | For Subas Acharya | Undergraduate/graduate level course on the theory behind statistical learning.</span>
 
-::: {.grid}
+- **High-Dimensional Approximation, Probability, and Statistical Learning** (553.738) <br> <span class="text-muted" style="font-size: 0.9em;">Spring 2024 | For Professor Mauro Maggioni | Graduate-level course.</span>
 
-::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder2.JPG)
+- **Bayesian Statistics** (553.632) <br> <span class="text-muted" style="font-size: 0.9em;">Fall 2023 | For Professor Sergey Kushnarev | Undergraduate/graduate level course.</span>
 
-:::
+- **Numerical Analysis** (553.681) <br> <span class="text-muted" style="font-size: 0.9em;">Spring 2023 | For Professor Mario Micheli | Undergraduate/graduate level course.</span>
 
-::: {.g-col-12 .g-col-md-10}
+- **Dynamical Systems** (553.691) <br> <span class="text-muted" style="font-size: 0.9em;">Fall 2022 | For Professor Yannis Kevrekedis | Undergraduate/graduate level course on nonlinear dynamical systems.</span>
 
-[Spring 2025](https://www.google.com), &nbsp; [Fall 2023](https://www.google.com)
+### Tufts University
 
-Class 2 introduction.
+- **Linear Algebra** (Math 70) <br> <span class="text-muted" style="font-size: 0.9em;">Summer 2022 | TA and Guest Lecturer for Curtis Heberle | Delivered five guest lectures.</span>
 
-:::
+- **Statistics** (Math 166) <br> <span class="text-muted" style="font-size: 0.9em;">Spring 2022 | For Professor Bruce Boghosian | Undergraduate introduction to mathematical statistics.</span>
 
-:::
-
-
-## Class 3
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder3.JPG)
-
-:::
-
-::: {.g-col-12 .g-col-md-10}
-
-[Spring 2025](https://www.google.com), &nbsp; [Spring 2024](https://www.google.com)
-
-Class 3 introduction. 
-
-:::
-
-:::
-
-
+- **Numerical Linear Algebra** (Math 126) <br> <span class="text-muted" style="font-size: 0.9em;">Fall 2021 | For Professor Abiy Tassisa | Undergraduate introduction.</span>
+- **Introductory Statistics** (Math 21) <br> <span class="text-muted" style="font-size: 0.9em;">Summer 2021 | TA and Guest Lecturer for Linda Garant | Delivered four guest lectures.</span>

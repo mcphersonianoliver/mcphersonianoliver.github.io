@@ -164,8 +164,10 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Ian McPherson">
 <meta property="og:description" content="Personal Website: Ian McPherson">
-<meta property="og:image" content="https://mcphersonianoliver.github.io/files/images/placeholder4.JPG">
+<meta property="og:image" content="https://mcphersonianoliver.github.io/files/images/prof-pic.png">
 <meta property="og:site_name" content="Ian McPherson">
+<meta property="og:image:height" content="5712">
+<meta property="og:image:width" content="4284">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -204,25 +206,34 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="./research-areas.html">
+ <span class="dropdown-text">Research Areas</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publications.html">
+ <span class="dropdown-text">List of Publications</span></a>
+  </li>  
+        <li class="dropdown-header">Selected Papers</li>
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outreach" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Outreach</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=presentation">
- <span class="dropdown-text">Presentations</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
-    </ul>
-  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/nsf-biosketch.pdf"> 
+    <a class="nav-link" href="./files/IanCVJan6.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -250,7 +261,7 @@ window.Quarto = {
 
 <div class="quarto-about-trestles column-page">
   <div class="about-entity">
-    <img src="files/images/placeholder4.JPG" class="about-image
+    <img src="files/images/prof-pic.png" class="about-image
   rounded " style="width: 70%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -280,10 +291,11 @@ window.Quarto = {
 </section>
 <section id="research-interests" class="level2">
 <h2 data-anchor-id="research-interests">Research Interests</h2>
-<p>I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core I am inspired by the interplay of optimization, geometry, and statistics through the frameworks of Applied Harmonic Analysis, Riemannian Geometry, Optimal Transport, and Variational Analysis. I am most interested in translating these ideas into applications in data science, machine learning, and large-scale optimization.</p>
+<p>I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core, I am inspired by the interplay of <strong>optimization, geometry, and statistics</strong> through the frameworks of <em>Manifold Learning, Riemannian Optimization, Optimal Transport,</em> and <em>Variational Analysis.</em></p>
+<p>My current research focuses on developing theoretical and algorithmic foundations for <strong>manifold learning</strong> in Wasserstein space, <strong>nonsmooth Riemannian optimization</strong>, and <strong>scalable algorithms for low-rank semidefinite programming.</strong> I have also been fortunate to explore ideas in <em>mean-field langevin dynamics</em> to provide end-to-end guarantees for <strong>neural approaches to portfolio optimization.</strong></p>
 </section>
-<section id="current-and-recent-projects" class="level2">
-<h2 data-anchor-id="current-and-recent-projects">Current and Recent Projects</h2>
+<section id="recent-and-in-preparation-projects" class="level2">
+<h2 data-anchor-id="recent-and-in-preparation-projects">Recent and In-Preparation Projects</h2>
 <ul>
 <li>(In-Preparation) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> <br> <span class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? </span></li>
 <li>(In-Preparation) Nonsmooth Riemannian Optimization with Inexact Information, with <a href="https://mateodd25.github.io/">Mateo Díaz</a> and <a href="https://www.ams.jhu.edu/~grimmer/">Benjamin Grimmer</a> <br> <span class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? </span></li>
@@ -294,35 +306,37 @@ window.Quarto = {
 </div>
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-<section id="recent-posts" class="level2">
-<h2 data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
+<section id="recent-news" class="level2">
+<h2 data-anchor-id="recent-news">Recent News</h2>
+<ul>
+<li>It’s lit</li>
+</ul>
+</section>
+<section id="recent-blog-posts" class="level2">
+<h2 data-anchor-id="recent-blog-posts">Recent Blog Posts</h2>
+<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=blog">Blog Posts</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
 <div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1728964800000">
-<a href="https://drganghe.github.io/quarto-academic-site-examples.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="VGFsa3M=" data-listing-date-sort="1752984000000">
+<a href="https://iccopt2025.usc.edu/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/placeholder1.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
+
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Quarto Academic Website Examples and Tips
+New Talk at ICCOPT 2025
 </h5>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
-Oct 15, 2024
+Jul 20, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZXZlbnQlMkNwcmVzZW50YXRpb24=" data-listing-date-sort="1725336000000" data-listing-file-modified-sort="1767730675380" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<div class="g-col-1" data-index="1" data-categories="ZXZlbnQlMkNwcmVzZW50YXRpb24=" data-listing-date-sort="1725336000000" data-listing-file-modified-sort="1767734517074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
 <a href="./posts/event-title/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/placeholder2.JPG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
+<p class="card-img-top"><img src="files/images/placeholder2.JPG" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Event item
@@ -357,7 +371,7 @@ Jun 24, 2024
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <p align="right">
-<a href="./posts.html">All Posts »</a>
+<a href="./posts.html">»</a>
 </p>
 
 

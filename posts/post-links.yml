@@ -1,9 +1,16 @@
 
-    - path: https://drganghe.github.io/quarto-academic-site-examples.html
-      image: "/files/images/placeholder1.jpg"
-      title: "Quarto Academic Website Examples and Tips"
-      author: "Dr. Gang He"
-      description: "Examples and tips for Quarto Academic Website"
-      date: "2024-10-15"
-      categories: [news] 
+- title: "Awarded the Whiting School of Engineering TA Award"
+  date: "2024-04-15"
+  description: "Recognized as the sole recipient across the WSE for 2024."
+  categories: [Awards]
 
+- title: "New Talk at ICCOPT 2025"
+  date: "2025-07-20"
+  path: https://iccopt2025.usc.edu/  # This makes the title click through to the conference site
+  description: "I will be speaking on Riemannian Proximal Bundle Methods in Los Angeles."
+  categories: [Talks]
+
+- title: "Attending SLMath Summer School"
+  date: "2024-06-01"
+  description: "Headed to Berkeley for the Interacting Particle Systems program."
+  categories: [Events]

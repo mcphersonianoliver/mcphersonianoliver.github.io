@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ian McPherson</title>
+<link>https://mcphersonianoliver.github.io/blog.html</link>
+<atom:link href="https://mcphersonianoliver.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Personal Website: Ian McPherson</description>
+<image>
+<url>https://quarto.org/quarto.png</url>
+<title>Ian McPherson</title>
+<link>https://mcphersonianoliver.github.io/blog.html</link>
+</image>
+<generator>quarto-1.7.31</generator>
+<lastBuildDate>Tue, 06 Jan 2026 21:21:58 GMT</lastBuildDate>
+</channel>
+</rss>

@@ -12,7 +12,7 @@ website:
   description: "Personal Website: Ian McPherson"
  
   navbar:
-    background: light  # You can change the background color here
+    background: light # You can change the background color here
 
     left:   # You can comment out all navigation items here if you just like to keep the index page only
 #      - text: Home
@@ -21,32 +21,35 @@ website:
         menu:
           - text: News
             href: posts.qmd#category=news
-          - text: Events
-            href: posts.qmd#category=event      
+          # - text: Events
+          #   href: posts.qmd#category=event      
           - text: Contact
             href: contact.qmd             
-      # - text: Research
-        # menu:
-          # - text: Research Areas
-            # href: research-areas.qmd
-          # - text: List of Publications
-          #  href: publications.qmd
+      - text: Research
+        menu:
+          - text: Research Areas
+            href: research-areas.qmd
+          - text: List of Publications
+            href: publications.qmd
           # - text: Selected Papers
           #  href: posts.qmd#category=paper
           # - text: Grants
           #  href: projects.qmd                                
       - text: Teaching # Comment the Teaching part out to remove the Teaching page
         href: teaching.qmd
-      - text: Outreach
-        menu:        
-        - text: Presentations
-          href: posts.qmd#category=presentation                   
+
+      - text: Blog
+        href: blog.qmd
+      # - text: Outreach
+      #   menu:        
+      #   - text: Presentations
+      #     href: posts.qmd#category=presentation                   
       # - text: Group   # Comment the Group part out to remove the Group page
         #  href: people.qmd
 
     right: 
       - text: CV
-        href: files/nsf-biosketch.pdf
+        href: files/IanCVJan6.pdf
       # - icon: github
         # href: https://github.com/drganghe/quarto-academic-website-template
         # target: _blank

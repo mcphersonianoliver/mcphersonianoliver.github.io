@@ -15,15 +15,14 @@
 <link>https://mcphersonianoliver.github.io/posts.html</link>
 </image>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Tue, 15 Oct 2024 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 20 Jul 2025 04:00:00 GMT</lastBuildDate>
 <item>
-  <title>Quarto Academic Website Examples and Tips</title>
+  <title>New Talk at ICCOPT 2025</title>
   <link>https://mcphersonianoliver.github.io/</link>
-  <description>Examples and tips for Quarto Academic Website</description>
-  <category>news</category>
+  <description>I will be speaking on Riemannian Proximal Bundle Methods in Los Angeles.</description>
+  <category>Talks</category>
   <guid>https://mcphersonianoliver.github.io/</guid>
-  <pubDate>Tue, 15 Oct 2024 04:00:00 GMT</pubDate>
-  <media:content url="https://mcphersonianoliver.github.io/files/images/placeholder1.jpg" medium="image" type="image/jpeg"/>
+  <pubDate>Sun, 20 Jul 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Event item</title>
@@ -53,7 +52,6 @@ https://quarto.org/docs/authoring/includes.html
   <category>presentation</category>
   <guid>https://mcphersonianoliver.github.io/posts/event-title/</guid>
   <pubDate>Tue, 03 Sep 2024 04:00:00 GMT</pubDate>
-  <media:content url="https://mcphersonianoliver.github.io/files/images/placeholder2.JPG" medium="image"/>
 </item>
 <item>
   <title>News item</title>

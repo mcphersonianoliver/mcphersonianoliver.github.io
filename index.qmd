@@ -1,7 +1,7 @@
 ---
 title: "Ian McPherson"
 description-meta: "Ian McPherson's Personal Website"
-image: "files/images/placeholder4.JPG"
+image: "files/images/prof-pic.png"
 page-navigation: false
 toc: false
 #sidebar: false
@@ -65,9 +65,11 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of [Mauro Maggioni](https://mauromaggioni.duckdns.org/) and [Mateo Díaz](https://mateodd25.github.io/) at Johns Hopkins University.
 
 ## Research Interests
-I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core I am inspired by the interplay of optimization, geometry, and statistics through the frameworks of Applied Harmonic Analysis, Riemannian Geometry, Optimal Transport, and Variational Analysis. I am most interested in translating these ideas into applications in data science, machine learning, and large-scale optimization.
+I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core, I am inspired by the interplay of **optimization, geometry, and statistics** through the frameworks of *Manifold Learning, Riemannian Optimization, Optimal Transport,* and *Variational Analysis.* 
 
-## Current and Recent Projects
+My current research focuses on developing theoretical and algorithmic foundations for **manifold learning** in Wasserstein space, **nonsmooth Riemannian optimization**, and **scalable algorithms for low-rank semidefinite programming.** I have also been fortunate to explore ideas in *mean-field langevin dynamics* to provide end-to-end guarantees for **neural approaches to portfolio optimization.**
+
+## Recent and In-Preparation Projects
 - (In-Preparation) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
 <span class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? </span> 
 - (In-Preparation) Nonsmooth Riemannian Optimization with Inexact Information, with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
@@ -78,10 +80,14 @@ I am interested in utilizing classical mathematical structures to give provable 
 
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-## Recent Posts
-Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
+## Recent News
+
+- It's lit
+
+## Recent Blog Posts
+Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Blog Posts](posts.qmd#category=blog)&nbsp;, and &nbsp;[More »](/posts.qmd)
 
 :::{#recent-posts}
 :::
 
-<p align="right">[All Posts »](/posts.qmd)</p>
+<p align="right">[ »](/posts.qmd)</p>
