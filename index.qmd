@@ -69,11 +69,11 @@ I am interested in utilizing classical mathematical structures to give provable 
 
 ## Current and Recent Projects
 - (On-Going) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
-<span class="text-muted" style="font-size: 0.9em;">Motivating Question: Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? </span> 
+<span class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? </span> 
 - (On-Going) Nonsmooth Riemannian Optimization with Inexact Information, with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
-<span class="text-muted" style="font-size: 0.9em;">Motivating Question: Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? </span> 
+<span class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? </span> 
 - (Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
-<span class="text-muted" style="font-size: 0.9em;">Motivating Question: Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees? </span> 
+<span class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees? </span> 
 :::
 
 

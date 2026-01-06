@@ -93,9 +93,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Quarto Academic, PhD",
+    "title": "Ian McPherson",
     "section": "",
-    "text": "Lab\n  \n  \n    \n     Uprofile\n  \n  \n    \n     E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     YouTube\n  \n  \n      ORCID\n  \n  \n      Web of Science\n  \n  \n      Scopus\n  \n  \n      Google Scholar\n  \n\n  \n  \nI’m a Quarto Academeic Website Template adapted by Dr. Gang He.\nI’m a template that you can fork to build your own website with easy adaptation and deployment.\n\nStar this repository to bookmark it for future reference.\n\nFork this repository and rename it to YourGitHubUserName.github.io.\n\nUpdate the _quarto.yml file to configure your site’s basic settings.\n\nAdd or edit content in the following files and folders:\n\n/posts/ – posts about publications, news, events\n\nteaching.qmd – teaching information\n\nprojects.yml – research or other projects\n\npeople.qmd and /people/ – team or collaborators\n\n/files/ - profiles, images, pdfs, and includes\n\nRender and preview your site locally.\n\nPublish your site using GitHub Pages (make sure configuring your GitHub repository to publish from the docs directory, not the root folder).\nRefine and polish your content and design as needed.\n\n✅ Enjoy your new website!\n\n\n\n\nResearcher, Univerisity\n\n\n\n\n\nPhD, Univerisity"
+    "text": "E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      ORCID\n  \n\n  \n  \n\n\nWelcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University.\n\n\n\nI am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core I am inspired by the interplay of optimization, geometry, and statistics through the frameworks of Applied Harmonic Analysis, Riemannian Geometry, Optimal Transport, and Variational Analysis. I am most interested in translating these ideas into applications in data science, machine learning, and large-scale optimization.\n\n\n\n\n(On-Going) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with Mauro Maggioni  Motivating Question: Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? \n(On-Going) Nonsmooth Riemannian Optimization with Inexact Information, with Mateo Díaz and Benjamin Grimmer  Motivating Question: Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? \n(Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang  Motivating Question: Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees?"
   },
   {
     "objectID": "index.html#experience",
@@ -114,7 +114,7 @@
   {
     "objectID": "index.html#recent-posts",
     "href": "index.html#recent-posts",
-    "title": "Quarto Academic, PhD",
+    "title": "Ian McPherson",
     "section": "Recent Posts",
     "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nQuarto Academic Website Examples and Tips\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
   },
@@ -138,5 +138,26 @@
     "title": "People",
     "section": "Alumni",
     "text": "Alumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n      \n      \n        Name\n      \n      \n        Role\n      \n      \n        Started\n      \n      \n        Ended\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nName\n\n\n\nRole\n\n\n\nStarted\n\n\n\nEnded\n\n\n\n\n\n\n\n\n\n\n\nAlumni A\n\n\nPhD Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\n\n\nAlumni B\n\n\nMasters Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\n\n\nAlumni C\n\n\nUndergraduate Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Ian McPherson",
+    "section": "",
+    "text": "Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Ian McPherson",
+    "section": "",
+    "text": "I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core I am inspired by the interplay of optimization, geometry, and statistics through the frameworks of Applied Harmonic Analysis, Riemannian Geometry, Optimal Transport, and Variational Analysis. I am most interested in translating these ideas into applications in data science, machine learning, and large-scale optimization."
+  },
+  {
+    "objectID": "index.html#current-and-recent-projects",
+    "href": "index.html#current-and-recent-projects",
+    "title": "Ian McPherson",
+    "section": "",
+    "text": "(On-Going) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with Mauro Maggioni  Motivating Question: Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? \n(On-Going) Nonsmooth Riemannian Optimization with Inexact Information, with Mateo Díaz and Benjamin Grimmer  Motivating Question: Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? \n(Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang  Motivating Question: Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees?"
   }
 ]
