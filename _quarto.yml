@@ -25,10 +25,10 @@ website:
             href: posts.qmd#category=event      
           - text: Contact
             href: contact.qmd             
-      - text: Research
-        menu:
-          - text: Research Areas
-            href: research-areas.qmd
+      # - text: Research
+        # menu:
+          # - text: Research Areas
+            # href: research-areas.qmd
           # - text: List of Publications
           #  href: publications.qmd
           # - text: Selected Papers

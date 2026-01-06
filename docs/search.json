@@ -95,21 +95,28 @@
     "href": "index.html",
     "title": "Ian McPherson",
     "section": "",
-    "text": "E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      ORCID\n  \n\n  \n  \n\n\nWelcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University.\n\n\n\nI am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core I am inspired by the interplay of optimization, geometry, and statistics through the frameworks of Applied Harmonic Analysis, Riemannian Geometry, Optimal Transport, and Variational Analysis. I am most interested in translating these ideas into applications in data science, machine learning, and large-scale optimization.\n\n\n\n\n(On-Going) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with Mauro Maggioni  Motivating Question: Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? \n(On-Going) Nonsmooth Riemannian Optimization with Inexact Information, with Mateo Díaz and Benjamin Grimmer  Motivating Question: Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? \n(Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang  Motivating Question: Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees?"
+    "text": "E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      ORCID\n  \n\n  \n  \n\n\nWelcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University.\n\n\n\nI am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core I am inspired by the interplay of optimization, geometry, and statistics through the frameworks of Applied Harmonic Analysis, Riemannian Geometry, Optimal Transport, and Variational Analysis. I am most interested in translating these ideas into applications in data science, machine learning, and large-scale optimization.\n\n\n\n\n(In-Preparation) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with Mauro Maggioni   Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? \n(In-Preparation) Nonsmooth Riemannian Optimization with Inexact Information, with Mateo Díaz and Benjamin Grimmer   Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? \n(Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang   Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees?"
   },
   {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Quarto Academic, PhD",
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Ian McPherson",
     "section": "",
-    "text": "Researcher, Univerisity"
+    "text": "Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University."
   },
   {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Quarto Academic, PhD",
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Ian McPherson",
     "section": "",
-    "text": "PhD, Univerisity"
+    "text": "I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core I am inspired by the interplay of optimization, geometry, and statistics through the frameworks of Applied Harmonic Analysis, Riemannian Geometry, Optimal Transport, and Variational Analysis. I am most interested in translating these ideas into applications in data science, machine learning, and large-scale optimization."
+  },
+  {
+    "objectID": "index.html#current-and-recent-projects",
+    "href": "index.html#current-and-recent-projects",
+    "title": "Ian McPherson",
+    "section": "",
+    "text": "(In-Preparation) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with Mauro Maggioni   Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? \n(In-Preparation) Nonsmooth Riemannian Optimization with Inexact Information, with Mateo Díaz and Benjamin Grimmer   Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? \n(Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang   Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees?"
   },
   {
     "objectID": "index.html#recent-posts",
@@ -138,26 +145,5 @@
     "title": "People",
     "section": "Alumni",
     "text": "Alumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n      \n      \n        Name\n      \n      \n        Role\n      \n      \n        Started\n      \n      \n        Ended\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nName\n\n\n\nRole\n\n\n\nStarted\n\n\n\nEnded\n\n\n\n\n\n\n\n\n\n\n\nAlumni A\n\n\nPhD Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\n\n\nAlumni B\n\n\nMasters Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\n\n\nAlumni C\n\n\nUndergraduate Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "Ian McPherson",
-    "section": "",
-    "text": "Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University."
-  },
-  {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Ian McPherson",
-    "section": "",
-    "text": "I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core I am inspired by the interplay of optimization, geometry, and statistics through the frameworks of Applied Harmonic Analysis, Riemannian Geometry, Optimal Transport, and Variational Analysis. I am most interested in translating these ideas into applications in data science, machine learning, and large-scale optimization."
-  },
-  {
-    "objectID": "index.html#current-and-recent-projects",
-    "href": "index.html#current-and-recent-projects",
-    "title": "Ian McPherson",
-    "section": "",
-    "text": "(On-Going) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with Mauro Maggioni  Motivating Question: Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? \n(On-Going) Nonsmooth Riemannian Optimization with Inexact Information, with Mateo Díaz and Benjamin Grimmer  Motivating Question: Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? \n(Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang  Motivating Question: Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees?"
   }
 ]
