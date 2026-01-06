@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 # Meta
-description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
-author-meta: "Dr. Gang He"
+description-meta: "Personal Website: Ian McPherson"
+author-meta: "Ian McPherson"
 
 website:
-  title: "Quarto Academic"
+  title: "Ian McPherson"
   image: "https://quarto.org/quarto.png"
-  description: "Quarto Academic Website Template adapted by Dr. Gang He"
+  description: "Personal Website: Ian McPherson"
  
   navbar:
     background: light  # You can change the background color here
@@ -27,49 +27,49 @@ website:
             href: contact.qmd             
       - text: Research
         menu:
-          - text: List of Publications
-            href: publications.qmd
-          - text: Selected Papers
-            href: posts.qmd#category=paper
-          - text: Grants
-            href: projects.qmd                                
+          - text: Research Areas
+            href: research-areas.qmd
+          # - text: List of Publications
+          #  href: publications.qmd
+          # - text: Selected Papers
+          #  href: posts.qmd#category=paper
+          # - text: Grants
+          #  href: projects.qmd                                
       - text: Teaching # Comment the Teaching part out to remove the Teaching page
         href: teaching.qmd
       - text: Outreach
         menu:        
         - text: Presentations
           href: posts.qmd#category=presentation                   
-      - text: Group   # Comment the Group part out to remove the Group page
-        href: people.qmd
+      # - text: Group   # Comment the Group part out to remove the Group page
+        #  href: people.qmd
 
     right: 
       - text: CV
         href: files/nsf-biosketch.pdf
-      - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
-        target: _blank
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app
-        target: _blank      
-      - icon: rss
-        href: posts.xml
-        target: _blank
+      # - icon: github
+        # href: https://github.com/drganghe/quarto-academic-website-template
+        # target: _blank
+      # - text: "{{< fa brands bluesky >}}"
+       # href: https://bsky.app
+       # target: _blank      
+      #- icon: rss
+       # href: posts.xml
+       # target: _blank
   
   page-navigation: true
   
   page-footer: 
-    left: "[Your Name](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>" 
-    center: "Build on [Quart Academic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io)"
+    left: "[Ian McPherson](http://www.github.com/mcphersonianoliver) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    # center: "Build on [Quart Academic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io)"
     right:  
       - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
+        href: https://github.com/mcphersonianoliver/mcphersonianoliver.github.io
         target: _blank
-      - text: "{{< fa brands bluesky >}}" 
-        href: https://bsky.app
-        target: _blank
-      - icon: rss
-        href: posts.xml
-        target: _blank  
+        # for potential RSS for blog feed
+      # - icon: rss
+      #   href: posts.xml
+      #   target: _blank  
   
   search:
     location: navbar
@@ -79,15 +79,15 @@ website:
 
   draft-mode: unlinked
   
-  repo-url: https://github.com/drganghe/quarto-academic-website-template
+  repo-url: https://github.com/mcphersonianoliver/mcphersonianoliver.github.io
 #  repo-actions: [edit, issue, source]
   
   open-graph: true
   
-  twitter-card: true 
+  twitter-card: false 
 #  card-style: summary      
   
-  site-url: "https://drganghe.github.io/quarto-academic-website-template"
+  site-url: "https://mcphersonianoliver.github.io"
   
   google-analytics:
     tracking-id: ""  # Please delete or replace with your own tracking ID
