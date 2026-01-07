@@ -7,5 +7,20 @@ toc: true
 My research lies somewhere at the intersection of optimization, geometry, and statistics. I am particularly interested in both the development and analysis of algorithms for different optimization and statistical tasks defined on non-Euclidean spaces, such as Riemannian manifolds and Wasserstein space. My work is motivated by applications in data science, machine learning, and large-scale optimization.
 
 ---
-## Research Areas
-### Riemannian Optimization 
+
+## Riemannian Optimization 
+When taught optimization, we are taught many tools and techniques for the following task: 
+
+$$
+    \min_{x \in \mathbb{R}^d} f(x),
+$$
+
+where $f : \mathbb{R}^d \to \mathbb{R}$ is some objective function. This lends itself to many different interpretations, depending on your motivations. For example
+
+
+## Data Manifolds in Non-Euclidean Spaces
+
+
+## Discrete Approximations of Continuous Mathematical Objects
+
+

@@ -164,10 +164,8 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Ian McPherson">
 <meta property="og:description" content="Personal Website: Ian McPherson">
-<meta property="og:image" content="https://mcphersonianoliver.github.io/files/images/prof-pic.png">
+<meta property="og:image" content="https://mcphersonianoliver.github.io/files/images/prof-pic.webp">
 <meta property="og:site_name" content="Ian McPherson">
-<meta property="og:image:height" content="5712">
-<meta property="og:image:width" content="4284">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -256,7 +254,7 @@ window.Quarto = {
 
 <div class="quarto-about-trestles column-page">
   <div class="about-entity">
-    <img src="files/images/prof-pic.png" class="about-image
+    <img src="files/images/prof-pic.webp" class="about-image
   rounded " style="width: 70%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -280,21 +278,41 @@ window.Quarto = {
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
-<section id="about" class="level2">
-<h2 data-anchor-id="about">About</h2>
-<p>Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> and <a href="https://mateodd25.github.io/">Mateo Díaz</a> at Johns Hopkins University.</p>
-</section>
+<p>Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of <a href="https://mauromaggioni.duckdns.org/"><strong>Mauro Maggioni</strong></a> and <a href="https://mateodd25.github.io/"><strong>Mateo Díaz</strong></a> at Johns Hopkins University. I completed a MSc in Pure Mathematics at Tufts University, and two BAs in Economics and Biochemistry at Occidental College.</p>
 <section id="research-interests" class="level2">
 <h2 data-anchor-id="research-interests">Research Interests</h2>
-<p>I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core, I am inspired by the interplay of <strong>optimization, geometry, and statistics</strong> through the frameworks of <em>Manifold Learning, Riemannian Optimization, Optimal Transport,</em> and <em>Variational Analysis.</em></p>
-<p>My current research focuses on developing theoretical and algorithmic foundations for <strong>manifold learning</strong> in Wasserstein space, <strong>nonsmooth Riemannian optimization</strong>, and <strong>scalable algorithms for low-rank semidefinite programming.</strong> I have also been fortunate to explore ideas in <em>mean-field langevin dynamics</em> to provide end-to-end guarantees for <strong>neural approaches to portfolio optimization.</strong></p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>I exploit mathematical structures to design and analyze scalable and versatile optimization algorithms, and to learn from high-dimensional data with provable guarantees.</strong></p>
+</div>
+</div>
+</div>
+<p>I am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use <strong><em>fast/scalable algorithms</em></strong> while <strong><em>side-stepping the curse of dimensionality</em></strong> which negatively effects convergence and statistical rates.</p>
+<p>To this end, I explore the interplay of <strong>optimization, geometry, and statistics</strong> through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability.</p>
+<p align="right">
+<a href="./research-areas.html">Research Areas »</a>
+</p>
 </section>
-<section id="recent-and-in-preparation-projects" class="level2">
-<h2 data-anchor-id="recent-and-in-preparation-projects">Recent and In-Preparation Projects</h2>
+<section id="manuscripts" class="level2">
+<h2 data-anchor-id="manuscripts">Manuscripts</h2>
+<p>Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see <a href="./publications.html">Publications and Presentations</a>.</p>
 <ul>
-<li>(In-Preparation) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> <br> <span class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? </span></li>
-<li>(In-Preparation) Nonsmooth Riemannian Optimization with Inexact Information, with <a href="https://mateodd25.github.io/">Mateo Díaz</a> and <a href="https://www.ams.jhu.edu/~grimmer/">Benjamin Grimmer</a> <br> <span class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? </span></li>
-<li>(Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, <a href="https://rgao32.github.io/index.html">Rui Gao</a>, <a href="https://shuangli01.github.io/index.html">Shuang Li</a>, <a href="https://luhao-zhang.github.io/">Luhao Zhang</a> <br> <span class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees? </span></li>
+<li><strong>Portfolio Control</strong> | Yizhe Huang, <a href="https://rgao32.github.io/index.html">Rui Gao</a>, <a href="https://shuangli01.github.io/index.html">Shuang Li</a>, <a href="https://luhao-zhang.github.io/">Luhao Zhang</a> (Submitted/Under Review) <br> <span class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? </span><br>
+<p align="right">
+<a href="./posts.html">»</a>
+</p></li>
+<li><strong>Nonsmooth Riemannian Optimization with Inexact Information</strong> | <a href="https://mateodd25.github.io/">Mateo Díaz</a> and <a href="https://www.ams.jhu.edu/~grimmer/">Benjamin Grimmer</a> (In-Preparation) <br> <span class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? </span>
+<p align="right">
+<a href="./posts.html">»</a>
+</p></li>
+<li><strong>Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space</strong> | <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> (In-Preparation) <br> <span class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? </span>
+<p align="right">
+<a href="./posts.html">»</a>
+</p></li>
 </ul>
 </section>
 </div></div>
@@ -303,9 +321,9 @@ window.Quarto = {
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
 <section id="recent-news" class="level2">
 <h2 data-anchor-id="recent-news">Recent News</h2>
-<ul>
-<li>It’s lit</li>
-</ul>
+<p align="right">
+<a href="./posts.html">More News »</a>
+</p>
 </section>
 <section id="recent-blog-posts" class="level2">
 <h2 data-anchor-id="recent-blog-posts">Recent Blog Posts</h2>
@@ -366,7 +384,7 @@ Jun 24, 2024
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <p align="right">
-<a href="./posts.html">»</a>
+<a href="./blog-posts.html">More Posts »</a>
 </p>
 
 

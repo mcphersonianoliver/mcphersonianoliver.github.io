@@ -59,30 +59,43 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 ---
 
 :::{#hero-heading}
-
-## About 
-
-Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of [Mauro Maggioni](https://mauromaggioni.duckdns.org/) and [Mateo Díaz](https://mateodd25.github.io/) at Johns Hopkins University.
+Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of [**Mauro Maggioni**](https://mauromaggioni.duckdns.org/) and [**Mateo Díaz**](https://mateodd25.github.io/) at Johns Hopkins University. I completed a MSc in Pure Mathematics at Tufts University, and two BAs in Economics and Biochemistry at Occidental College.
 
 ## Research Interests
-I am interested in utilizing classical mathematical structures to give provable guarantees in non-classical spaces. At the core, I am inspired by the interplay of **optimization, geometry, and statistics** through the frameworks of *Manifold Learning, Riemannian Optimization, Optimal Transport,* and *Variational Analysis.* 
+::: {.callout-note appearance="minimal"}
+**I exploit mathematical structures to design and analyze scalable and versatile optimization algorithms, and to learn from high-dimensional data with provable guarantees.**
+:::
 
-My current research focuses on developing theoretical and algorithmic foundations for **manifold learning** in Wasserstein space, **nonsmooth Riemannian optimization**, and **scalable algorithms for low-rank semidefinite programming.** I have also been fortunate to explore ideas in *mean-field langevin dynamics* to provide end-to-end guarantees for **neural approaches to portfolio optimization.**
+I am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use ***fast/scalable algorithms*** while ***side-stepping the curse of dimensionality*** which negatively effects convergence and statistical rates. 
 
-## Recent and In-Preparation Projects
-- (In-Preparation) Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space, with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
-<span class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the Fréchet mean on the submanifold for a fixed number of points up to arbitrary accuracy? </span> 
-- (In-Preparation) Nonsmooth Riemannian Optimization with Inexact Information, with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
+To this end, I explore the interplay of **optimization, geometry, and statistics** through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability.
+
+<p align="right">[Research Areas »](/research-areas.qmd)</p>
+
+## Manuscripts
+Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see [Publications and Presentations](/publications.qmd). 
+
+- **Portfolio Control** | Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) (Submitted/Under Review)  <br>
+<span class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? </span>  
+<p align="right">[»](/posts.qmd)</p>
+
+- **Nonsmooth Riemannian Optimization with Inexact Information** | [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) (In-Preparation) <br>
 <span class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? </span> 
-- (Submitted 12/31) Neural Dynamic Portfolio Control with Provable Learning Guarantees, with Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
-<span class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with end-to-end (algorithmic, generalization, and regularization) global guarantees? </span> 
+<p align="right">[»](/posts.qmd)</p>
+
+- **Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space** | [Mauro Maggioni](https://mauromaggioni.duckdns.org/) (In-Preparation) <br>
+<span class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? </span> 
+<p align="right">[»](/posts.qmd)</p>
 :::
 
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
 ## Recent News
 
-- It's lit
+
+
+<p align="right">[More News »](/posts.qmd)</p>
+
 
 ## Recent Blog Posts
 Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Blog Posts](posts.qmd#category=blog)&nbsp;, and &nbsp;[More »](/posts.qmd)
@@ -90,4 +103,4 @@ Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News
 :::{#recent-posts}
 :::
 
-<p align="right">[ »](/posts.qmd)</p>
+<p align="right">[More Posts »](/blog-posts.qmd)</p>

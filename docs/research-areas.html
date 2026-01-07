@@ -98,6 +98,35 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Research Areas – Ian McPherson">
@@ -188,9 +217,17 @@ https://badge.dimensions.ai/
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#research-areas" id="toc-research-areas" class="nav-link active" data-scroll-target="#research-areas">Research Areas</a>
+  <li><a href="#riemannian-optimization" id="toc-riemannian-optimization" class="nav-link active" data-scroll-target="#riemannian-optimization">Riemannian Optimization</a>
   <ul class="collapse">
-  <li><a href="#riemannian-optimization" id="toc-riemannian-optimization" class="nav-link" data-scroll-target="#riemannian-optimization">Riemannian Optimization</a></li>
+  <li><a href="#publications-and-selected-blog-posts" id="toc-publications-and-selected-blog-posts" class="nav-link" data-scroll-target="#publications-and-selected-blog-posts">Publications and Selected Blog Posts</a></li>
+  </ul></li>
+  <li><a href="#data-manifolds-in-non-euclidean-spaces" id="toc-data-manifolds-in-non-euclidean-spaces" class="nav-link" data-scroll-target="#data-manifolds-in-non-euclidean-spaces">Data Manifolds in Non-Euclidean Spaces</a>
+  <ul class="collapse">
+  <li><a href="#publications-and-selected-blog-posts-1" id="toc-publications-and-selected-blog-posts-1" class="nav-link" data-scroll-target="#publications-and-selected-blog-posts-1">Publications and Selected Blog Posts</a></li>
+  </ul></li>
+  <li><a href="#discrete-approximations-of-continuous-mathematical-objects" id="toc-discrete-approximations-of-continuous-mathematical-objects" class="nav-link" data-scroll-target="#discrete-approximations-of-continuous-mathematical-objects">Discrete Approximations of Continuous Mathematical Objects</a>
+  <ul class="collapse">
+  <li><a href="#publications-and-selected-blog-posts-2" id="toc-publications-and-selected-blog-posts-2" class="nav-link" data-scroll-target="#publications-and-selected-blog-posts-2">Publications and Selected Blog Posts</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -224,12 +261,47 @@ https://badge.dimensions.ai/
 
 <p>My research lies somewhere at the intersection of optimization, geometry, and statistics. I am particularly interested in both the development and analysis of algorithms for different optimization and statistical tasks defined on non-Euclidean spaces, such as Riemannian manifolds and Wasserstein space. My work is motivated by applications in data science, machine learning, and large-scale optimization.</p>
 <hr>
-<section id="research-areas" class="level2">
-<h2 class="anchored" data-anchor-id="research-areas">Research Areas</h2>
-<section id="riemannian-optimization" class="level3">
-<h3 class="anchored" data-anchor-id="riemannian-optimization">Riemannian Optimization</h3>
+<section id="riemannian-optimization" class="level2">
+<h2 class="anchored" data-anchor-id="riemannian-optimization">Riemannian Optimization</h2>
+<p>When taught optimization, we are taught many tools and techniques for the following task:</p>
+<p><span class="math display">\[
+    \min_{x \in \mathbb{R}^d} f(x),
+\]</span></p>
+<p>where <span class="math inline">\(f : \mathbb{R}^d \to \mathbb{R}\)</span> is some objective function. This lends itself to many different interpretations, depending on your motivations. For example</p>
+<section id="publications-and-selected-blog-posts" class="level3">
+<h3 class="anchored" data-anchor-id="publications-and-selected-blog-posts">Publications and Selected Blog Posts</h3>
+<section id="publications" class="level4">
+<h4 class="anchored" data-anchor-id="publications">Publications</h4>
+</section>
+<section id="selected-blog-posts" class="level4">
+<h4 class="anchored" data-anchor-id="selected-blog-posts">Selected Blog Posts</h4>
+</section>
+</section>
+</section>
+<section id="data-manifolds-in-non-euclidean-spaces" class="level2">
+<h2 class="anchored" data-anchor-id="data-manifolds-in-non-euclidean-spaces">Data Manifolds in Non-Euclidean Spaces</h2>
+<section id="publications-and-selected-blog-posts-1" class="level3">
+<h3 class="anchored" data-anchor-id="publications-and-selected-blog-posts-1">Publications and Selected Blog Posts</h3>
+<section id="publications-1" class="level4">
+<h4 class="anchored" data-anchor-id="publications-1">Publications</h4>
+</section>
+<section id="selected-blog-posts-1" class="level4">
+<h4 class="anchored" data-anchor-id="selected-blog-posts-1">Selected Blog Posts</h4>
+</section>
+</section>
+</section>
+<section id="discrete-approximations-of-continuous-mathematical-objects" class="level2">
+<h2 class="anchored" data-anchor-id="discrete-approximations-of-continuous-mathematical-objects">Discrete Approximations of Continuous Mathematical Objects</h2>
+<section id="publications-and-selected-blog-posts-2" class="level3">
+<h3 class="anchored" data-anchor-id="publications-and-selected-blog-posts-2">Publications and Selected Blog Posts</h3>
+<section id="publications-2" class="level4">
+<h4 class="anchored" data-anchor-id="publications-2">Publications</h4>
+</section>
+<section id="selected-blog-posts-2" class="level4">
+<h4 class="anchored" data-anchor-id="selected-blog-posts-2">Selected Blog Posts</h4>
 
 
+</section>
 </section>
 </section>
 
