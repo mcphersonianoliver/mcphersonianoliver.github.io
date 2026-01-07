@@ -16,7 +16,8 @@
     "items": [
       "/posts/event-title/index.html",
       "/posts/news-title/index.html",
-      "/posts/paper-title/index.html"
+      "/posts/paper-title/index.html",
+      "/blog-posts/math/noisyGD.html"
     ]
   },
   {
@@ -25,6 +26,8 @@
   },
   {
     "listing": "/blog.html",
-    "items": []
+    "items": [
+      "/blog-posts/math/noisyGD.html"
+    ]
   }
 ]

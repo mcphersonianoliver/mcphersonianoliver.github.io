@@ -1,0 +1,16 @@
+---
+title: "Noisy Gradient Descent and Mean Field Langevin Dynamics"
+# description: "A description of why noisy gradient descent is a spatial and temporal approximation of Mean Field Langevin Dynamics."
+author: "Ian McPherson"
+date: "2026-01-07"
+categories: [math, optimization]
+# image: "/files/images/placeholder3.JPG"
+css: /custom.css
+# draft: true
+---
+::: {.abstract-container}
+[ABSTRACT]{.abstract-header}
+When minimizing $\mathcal{F} \colon \mathcal{P}_{2}(\mathbb{R}^{d}) \to \mathbb{R}$ over the space of probability measures with finite second moment, a natural ideas is to follows the Wasserstein Gradient Flow. However, this is often computationally infeasible to implement. In this post, we discuss how noisy gradient descent (NGD) can be viewed as a spatial and temporal approximation of Mean Field Langevin Dynamics (MFLD) when applying a entropic regularization to $\mathcal{F}$.
+:::
+
+We begin.

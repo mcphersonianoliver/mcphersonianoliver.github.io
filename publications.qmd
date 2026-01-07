@@ -1,34 +1,81 @@
 ---
-title: "Publications"
+title: "Publications and Presentations"
 description-meta: "Information, pdfs, and social metrics of papers"
 #page-layout: full
-#back-to-top-navigation: true
-title-block-banner: false
+back-to-top-navigation: true
+title-block-banner: true
 css: custom.css
 ---
+<!-- ## Selected Publications -->
 
+## Working Papers and Manuscripts
+*Since these works are currently in preparation or under review, please contact me for the latest drafts.*
+
+- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** | Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) (Submitted/Under Review)  <br>
+<div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? 
+<a href="/posts.qmd" class="float-end">See more... »</a>  
+</div>  
+
+
+- **Nonsmooth Riemannian Optimization with Inexact Information** | [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) (In-Preparation) <br>
+<div class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? 
+<a href="/posts.qmd" class="float-end">See more... »</a>
+</div> 
+
+
+- **Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space** | [Mauro Maggioni](https://mauromaggioni.duckdns.org/) (In-Preparation) <br>
+<div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? 
+<a href="/posts.qmd" class="float-end">See more... »</a>
+</div> 
+
+<!-- ## Publications
+
+### Peer-Reviewed Journal Articles
+
+### Conference Proceedings -->
+
+## Talks
+
+**Convergence Rates for Riemannian Proximal Bundle Methods**
+
+*   **International Conference on Continuous Optimization (ICCOPT)**, USC | July 2025
+*   **Jr. Mathematical Institute of Data Science (MINDS) Seminar**, Johns Hopkins | April 2025
+*   **SIAM Student Seminar**, University of Wisconsin-Madison | April 2025
+*   **Applied Mathematics and Statistics Student Seminar**, Johns Hopkins | March 2025
+
+**Empirical Wasserstein Barycenters: Riemannian Optimization Guarantees**
+
+*   **Applied Mathematics and Statistics Student Seminar**, Johns Hopkins | October 2024
+*   **Applied Mathematics and Statistics Student Seminar**, Johns Hopkins | January 2024
+
+## Posters
+
+**Computing Empirical Barycenters on Unknown Wasserstein Submanifolds** [Poster](/posts.qmd)  
+*Presented at the following venues:* 
+
+*   **Mathematical Aspects of Data Science Summer School**, EFPL | Sept 2025
+*   **Princeton Machine Learning Theory Summer School** | Aug 2025
+*   **SIAM Conference on Applied Mathematics**, Johns Hopkins | April 2025
+*   **Statistics and Optimal Transport Workshop**, Columbia University | March 2025
+*   **Optimization Workshop**, Universidad de los Andes | Dec 2024
 
 <!--Include academic icons or buttons-->
 {{< include /files/includes/_academic.qmd >}}
 
-Notes: \* corresponding author; <sup>GS</sup> graduate student advisee; <sup>VS</sup> visiting scholar; ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ESI [Highly Cited Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html) (top 1%); ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} ESI [Hot Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html) (top 0.1%) 
-
-Total citations as of January 2025:
-
-- [Web of Science](https://www.webofscience.com): 100,000 (h-index = 100)   
-- [Google Scholar](https://scholar.google.com/citations?user=qc6CJjYAAAAJ&hl=en): 179,000 (h-index = 127, i10-index = 377) 
-
-## Selected Work
-
-Einstein, A., Podolsky, B., & Rosen, N. (1935). [Can quantum-mechanical description of physical reality be considered complete?](posts/paper-title/index.qmd). *Physical review*, 47(10), 777. \[[pdf](https://scholar.google.com/)\] \[[code and data](https://doi.org)\] ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1103/PhysRev.47.777" data-hide-no-mentions="true" class="altmetric-embed"></div>     
+<!-- Notes: \* corresponding author; <sup>GS</sup> graduate student advisee; <sup>VS</sup> visiting scholar; ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ESI [Highly Cited Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html) (top 1%); ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} ESI [Hot Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html) (top 0.1%)  -->
 
 
-<center><hr style="width:50%"></center>
+<!-- ## Selected Work -->
 
-Einstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. *American Journal of Physics*, 33(5), 367. [[pdf](https://icg.isy.liu.se/en/phd-courses/quantum_foundations/references/Einstein1905b.pdf)] <span class="__dimensions_badge_embed__" data-doi="10.1038/s41560-023-01304-w" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1038/s41560-023-01304-w" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<!-- Einstein, A., Podolsky, B., & Rosen, N. (1935). [Can quantum-mechanical description of physical reality be considered complete?](posts/paper-title/index.qmd). *Physical review*, 47(10), 777. \[[pdf](https://scholar.google.com/)\] \[[code and data](https://doi.org)\] ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1103/PhysRev.47.777" data-hide-no-mentions="true" class="altmetric-embed"></div>      -->
+
+<!-- This object here makes nice spacing for selected works -->
+<!-- <center><hr style="width:50%"></center> -->
+
+<!-- Einstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. *American Journal of Physics*, 33(5), 367. [[pdf](https://icg.isy.liu.se/en/phd-courses/quantum_foundations/references/Einstein1905b.pdf)] <span class="__dimensions_badge_embed__" data-doi="10.1038/s41560-023-01304-w" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1038/s41560-023-01304-w" data-hide-no-mentions="true" class="altmetric-embed"></div> -->
 
 
 
-<!--Include social share buttons-->
+<!-- Include social share buttons
 
-{{< include /files/includes/_socialshare.qmd >}}
+{{< include /files/includes/_socialshare.qmd >}} -->

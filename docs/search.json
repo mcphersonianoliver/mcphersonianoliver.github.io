@@ -9,9 +9,9 @@
   {
     "objectID": "publications.html",
     "href": "publications.html",
-    "title": "Publications",
+    "title": "Publications and Presentations",
     "section": "",
-    "text": "Notes: * corresponding author; GS graduate student advisee; VS visiting scholar;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)\nTotal citations as of January 2025:"
+    "text": "Since these works are currently in preparation or under review, please contact me for the latest drafts.\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Submitted/Under Review) \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (In-Preparation) \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »\n\nWasserstein Barycenters on Unknown Submanifolds of Wasserstein Space | Mauro Maggioni (In-Preparation) \n\nGiven only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? See more… »"
   },
   {
     "objectID": "publications.html#selected-work",
@@ -60,7 +60,7 @@
     "href": "research-areas.html",
     "title": "Research Areas",
     "section": "",
-    "text": "My research lies somewhere at the intersection of optimization, geometry, and statistics. I am particularly interested in both the development and analysis of algorithms for different optimization and statistical tasks defined on non-Euclidean spaces, such as Riemannian manifolds and Wasserstein space. My work is motivated by applications in data science, machine learning, and large-scale optimization."
+    "text": "I exploit mathematical structures to design and analyze scalable and versatile optimization algorithms, and to learn from high-dimensional data with provable guarantees.\nThere are a variety of problems at the foundation of Data Science, for which the best problems require ideas and techniques from multiple mathematical disciplines. Currently, I am particularly interested in using ideas from mathematical optimization, geometry, and statistics. Below are some research areas I am actively exploring."
   },
   {
     "objectID": "research-areas.html#research-areas",
@@ -109,7 +109,7 @@
     "href": "index.html",
     "title": "Ian McPherson",
     "section": "",
-    "text": "E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      ORCID\n  \n\n  \n  \nWelcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University. I completed a MSc in Pure Mathematics at Tufts University, and two BAs in Economics and Biochemistry at Occidental College.\n\n\n\n\n\n\n\n\nI exploit mathematical structures to design and analyze scalable and versatile optimization algorithms, and to learn from high-dimensional data with provable guarantees.\n\n\n\nI am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use fast/scalable algorithms while side-stepping the curse of dimensionality which negatively effects convergence and statistical rates.\nTo this end, I explore the interplay of optimization, geometry, and statistics through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability.\n\nResearch Areas »\n\n\n\n\nBelow are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see Publications and Presentations.\n\nPortfolio Control | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Submitted/Under Review)   Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? \n\n»\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (In-Preparation)   Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? \n\n»\n\nWasserstein Barycenters on Unknown Submanifolds of Wasserstein Space | Mauro Maggioni (In-Preparation)   Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? \n\n»"
+    "text": "E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      ORCID\n  \n\n  \n  \nWelcome to my website! My name is Ian, and I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University. I completed a MSc in Pure Mathematics at Tufts University, and two BAs in Economics and Biochemistry at Occidental College.\n\n\n\n\n\n\n\n\nI exploit mathematical structures to design and analyze scalable and versatile optimization algorithms, and to learn from high-dimensional data with provable guarantees.\n\n\n\nI am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use fast/scalable algorithms while side-stepping the curse of dimensionality which negatively effects convergence and statistical rates.\nTo this end, I explore the interplay of optimization, geometry, and statistics through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability.\n\nResearch Areas »\n\n\n\n\nBelow are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see Publications and Presentations.\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Submitted/Under Review) \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (In-Preparation) \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »\n\nWasserstein Barycenters on Unknown Submanifolds of Wasserstein Space | Mauro Maggioni (In-Preparation) \n\nGiven only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? See more… »"
   },
   {
     "objectID": "index.html#about",
@@ -179,7 +179,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Welcome to my blog! Here I hope to share insights on anything and everything related to my research (and not), including research notes, tutorials, academic reflections, and more. Feel free to explore the posts below.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\nNo matching items"
+    "text": "Welcome to my blog! Here I hope to share insights on anything and everything related to my research (and not), including research notes, tutorials, academic reflections, and more. Feel free to explore the posts below.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nNoisy Gradient Descent and Mean Field Langevin Dynamics\n\n\n\nmath\n\noptimization\n\n\n\n\n\n\n\n\n\nJan 7, 2026\n\n\nIan McPherson\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#recent-and-in-preparation-projects",
@@ -193,21 +193,21 @@
     "href": "index.html#recent-blog-posts",
     "title": "Ian McPherson",
     "section": "Recent Blog Posts",
-    "text": "Recent Blog Posts\nCheck out the latest  Papers ,  News ,  Blog Posts , and  More »\n\n\n\n\n\n\n\n\nNew Talk at ICCOPT 2025\n\n\n\nJul 20, 2025\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\nNo matching items\n\n\nMore Posts »"
+    "text": "Recent Blog Posts\n\n\n\n\n\n\n\nNoisy Gradient Descent and Mean Field Langevin Dynamics\n\n\n\nJan 7, 2026\n\n\n\n\n\n\nNo matching items\n\n\nMore Posts »"
   },
   {
     "objectID": "index.html#recent-news",
     "href": "index.html#recent-news",
     "title": "Ian McPherson",
     "section": "Recent News",
-    "text": "Recent News\n\nMore News »"
+    "text": "Recent News\nCheck out news about the latest  Papers ,  Talks ,  Awards , and  More »\n\n\n\n\n\n\n\nNew Talk at ICCOPT 2025\n\n\n\nJul 20, 2025\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\nNo matching items\n\n\nMore News »"
   },
   {
     "objectID": "research-areas.html#riemannian-optimization",
     "href": "research-areas.html#riemannian-optimization",
     "title": "Research Areas",
     "section": "Riemannian Optimization",
-    "text": "Riemannian Optimization\nWhen taught optimization, we are taught many tools and techniques for the following task:\n\\[\n    \\min_{x \\in \\mathbb{R}^d} f(x),\n\\]\nwhere \\(f : \\mathbb{R}^d \\to \\mathbb{R}\\) is some objective function. This lends itself to many different interpretations, depending on your motivations. For example\n\nPublications and Selected Blog Posts\n\nPublications\n\n\nSelected Blog Posts"
+    "text": "Riemannian Optimization"
   },
   {
     "objectID": "research-areas.html#geometry-of-wasserstein-space",
@@ -221,14 +221,14 @@
     "href": "research-areas.html#data-manifolds-in-non-euclidean-spaces",
     "title": "Research Areas",
     "section": "Data Manifolds in Non-Euclidean Spaces",
-    "text": "Data Manifolds in Non-Euclidean Spaces\n\nPublications and Selected Blog Posts\n\nPublications\n\n\nSelected Blog Posts"
+    "text": "Data Manifolds in Non-Euclidean Spaces"
   },
   {
     "objectID": "research-areas.html#discrete-approximations-of-continuous-mathematical-objects",
     "href": "research-areas.html#discrete-approximations-of-continuous-mathematical-objects",
     "title": "Research Areas",
     "section": "Discrete Approximations of Continuous Mathematical Objects",
-    "text": "Discrete Approximations of Continuous Mathematical Objects\n\nPublications and Selected Blog Posts\n\nPublications\n\n\nSelected Blog Posts"
+    "text": "Discrete Approximations of Continuous Mathematical Objects"
   },
   {
     "objectID": "index.html#research-projects",
@@ -242,6 +242,83 @@
     "href": "index.html#manuscripts",
     "title": "Ian McPherson",
     "section": "",
-    "text": "Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see Publications and Presentations.\n\nPortfolio Control | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Submitted/Under Review)   Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? \n\n»\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (In-Preparation)   Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? \n\n»\n\nWasserstein Barycenters on Unknown Submanifolds of Wasserstein Space | Mauro Maggioni (In-Preparation)   Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? \n\n»"
+    "text": "Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see Publications and Presentations.\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Submitted/Under Review) \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (In-Preparation) \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »\n\nWasserstein Barycenters on Unknown Submanifolds of Wasserstein Space | Mauro Maggioni (In-Preparation) \n\nGiven only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? See more… »"
+  },
+  {
+    "objectID": "research-areas.html#manifolds-in-non-euclidean-spaces",
+    "href": "research-areas.html#manifolds-in-non-euclidean-spaces",
+    "title": "Research Areas",
+    "section": "Manifolds in Non-Euclidean Spaces",
+    "text": "Manifolds in Non-Euclidean Spaces"
+  },
+  {
+    "objectID": "research-areas.html#optimization-in-space-of-probability-measures",
+    "href": "research-areas.html#optimization-in-space-of-probability-measures",
+    "title": "Research Areas",
+    "section": "Optimization in Space of Probability Measures",
+    "text": "Optimization in Space of Probability Measures"
+  },
+  {
+    "objectID": "publications.html#publications",
+    "href": "publications.html#publications",
+    "title": "Publications and Presentations",
+    "section": "Publications",
+    "text": "Publications\n\nPeer-Reviewed Journal Articles\n\n\nConference Proceedings"
+  },
+  {
+    "objectID": "publications.html#talks",
+    "href": "publications.html#talks",
+    "title": "Publications and Presentations",
+    "section": "Talks",
+    "text": "Talks\nConvergence Rates for Riemannian Proximal Bundle Methods\n\nInternational Conference on Continuous Optimization (ICCOPT), USC | July 2025\nJr. Mathematical Institute of Data Science (MINDS) Seminar, Johns Hopkins | April 2025\nSIAM Student Seminar, University of Wisconsin-Madison | April 2025\nApplied Mathematics and Statistics Student Seminar, Johns Hopkins | March 2025\n\nEmpirical Wasserstein Barycenters: Riemannian Optimization Guarantees\n\nApplied Mathematics and Statistics Student Seminar, Johns Hopkins | October 2024\nApplied Mathematics and Statistics Student Seminar, Johns Hopkins | January 2024"
+  },
+  {
+    "objectID": "publications.html#posters",
+    "href": "publications.html#posters",
+    "title": "Publications and Presentations",
+    "section": "Posters",
+    "text": "Posters\nComputing Empirical Barycenters on Unknown Wasserstein Submanifolds Poster\nPresented at the following venues:\n\nMathematical Aspects of Data Science Summer School, EFPL | Sept 2025\nPrinceton Machine Learning Theory Summer School | Aug 2025\nSIAM Conference on Applied Mathematics, Johns Hopkins | April 2025\nStatistics and Optimal Transport Workshop, Columbia University | March 2025\nOptimization Workshop, Universidad de los Andes | Dec 2024"
+  },
+  {
+    "objectID": "publications.html#working-papers",
+    "href": "publications.html#working-papers",
+    "title": "Publications and Presentations",
+    "section": "Working Papers",
+    "text": "Working Papers"
+  },
+  {
+    "objectID": "publications.html#working-papers-and-manuscripts",
+    "href": "publications.html#working-papers-and-manuscripts",
+    "title": "Publications and Presentations",
+    "section": "",
+    "text": "Since these works are currently in preparation or under review, please contact me for the latest drafts.\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Submitted/Under Review) \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (In-Preparation) \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »\n\nWasserstein Barycenters on Unknown Submanifolds of Wasserstein Space | Mauro Maggioni (In-Preparation) \n\nGiven only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? See more… »"
+  },
+  {
+    "objectID": "index.html#research-pipeline",
+    "href": "index.html#research-pipeline",
+    "title": "Ian McPherson",
+    "section": "",
+    "text": "Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see Publications and Presentations.\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Submitted/Under Review) \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (In-Preparation) \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »\n\nWasserstein Barycenters on Unknown Submanifolds of Wasserstein Space | Mauro Maggioni (In-Preparation) \n\nGiven only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? See more… »"
+  },
+  {
+    "objectID": "research-areas.html#submanifolds-of-wasserstein-space",
+    "href": "research-areas.html#submanifolds-of-wasserstein-space",
+    "title": "Research Areas",
+    "section": "Submanifolds of Wasserstein Space",
+    "text": "Submanifolds of Wasserstein Space"
+  },
+  {
+    "objectID": "research-areas.html#optimization-in-wasserstein-space",
+    "href": "research-areas.html#optimization-in-wasserstein-space",
+    "title": "Research Areas",
+    "section": "Optimization in Wasserstein Space",
+    "text": "Optimization in Wasserstein Space"
+  },
+  {
+    "objectID": "blog-posts/math/noisyGD.html",
+    "href": "blog-posts/math/noisyGD.html",
+    "title": "Noisy Gradient Descent and Mean Field Langevin Dynamics",
+    "section": "",
+    "text": "ABSTRACT When minimizing \\(\\mathcal{F} \\colon \\mathcal{P}_{2}(\\mathbb{R}^{d}) \\to \\mathbb{R}\\) over the space of probability measures with finite second moment, a natural ideas is to follows the Wasserstein Gradient Flow. However, this is often computationally infeasible to implement. In this post, we discuss how noisy gradient descent (NGD) can be viewed as a spatial and temporal approximation of Mean Field Langevin Dynamics (MFLD) when applying a entropic regularization to \\(\\mathcal{F}\\).\n\nWe begin."
   }
 ]

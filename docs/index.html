@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       page: 3,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
@@ -89,6 +89,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-recent-blogs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-recent-blogs'] = new List('listing-recent-blogs', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -191,7 +219,7 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./posts.html#category=news">
+    <a class="dropdown-item" href="./posts.html">
  <span class="dropdown-text">News</span></a>
   </li>  
         <li>
@@ -211,7 +239,7 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="./publications.html">
- <span class="dropdown-text">List of Publications</span></a>
+ <span class="dropdown-text">Publications and Presentations</span></a>
   </li>  
     </ul>
   </li>
@@ -297,22 +325,22 @@ window.Quarto = {
 <a href="./research-areas.html">Research Areas »</a>
 </p>
 </section>
-<section id="manuscripts" class="level2">
-<h2 data-anchor-id="manuscripts">Manuscripts</h2>
+<section id="research-pipeline" class="level2">
+<h2 data-anchor-id="research-pipeline">Research Pipeline</h2>
 <p>Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see <a href="./publications.html">Publications and Presentations</a>.</p>
 <ul>
-<li><strong>Portfolio Control</strong> | Yizhe Huang, <a href="https://rgao32.github.io/index.html">Rui Gao</a>, <a href="https://shuangli01.github.io/index.html">Shuang Li</a>, <a href="https://luhao-zhang.github.io/">Luhao Zhang</a> (Submitted/Under Review) <br> <span class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? </span><br>
-<p align="right">
-<a href="./posts.html">»</a>
-</p></li>
-<li><strong>Nonsmooth Riemannian Optimization with Inexact Information</strong> | <a href="https://mateodd25.github.io/">Mateo Díaz</a> and <a href="https://www.ams.jhu.edu/~grimmer/">Benjamin Grimmer</a> (In-Preparation) <br> <span class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? </span>
-<p align="right">
-<a href="./posts.html">»</a>
-</p></li>
-<li><strong>Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space</strong> | <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> (In-Preparation) <br> <span class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? </span>
-<p align="right">
-<a href="./posts.html">»</a>
-</p></li>
+<li><strong>Neural Dynamic Portfolio Control with Provable Learning Guarantees</strong> | Yizhe Huang, <a href="https://rgao32.github.io/index.html">Rui Gao</a>, <a href="https://shuangli01.github.io/index.html">Shuang Li</a>, <a href="https://luhao-zhang.github.io/">Luhao Zhang</a> (Submitted/Under Review) <br>
+<div class="text-muted" style="font-size: 0.9em;">
+<p>Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? <a href="./posts.html" class="float-end">See more… »</a></p>
+</div></li>
+<li><strong>Nonsmooth Riemannian Optimization with Inexact Information</strong> | <a href="https://mateodd25.github.io/">Mateo Díaz</a> and <a href="https://www.ams.jhu.edu/~grimmer/">Benjamin Grimmer</a> (In-Preparation) <br>
+<div class="text-muted" style="font-size: 0.9em;">
+<p>Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? <a href="./posts.html" class="float-end">See more… »</a></p>
+</div></li>
+<li><strong>Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space</strong> | <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> (In-Preparation) <br>
+<div class="text-muted" style="font-size: 0.9em;">
+<p>Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? <a href="./posts.html" class="float-end">See more… »</a></p>
+</div></li>
 </ul>
 </section>
 </div></div>
@@ -321,19 +349,12 @@ window.Quarto = {
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
 <section id="recent-news" class="level2">
 <h2 data-anchor-id="recent-news">Recent News</h2>
-<p align="right">
-<a href="./posts.html">More News »</a>
-</p>
-</section>
-<section id="recent-blog-posts" class="level2">
-<h2 data-anchor-id="recent-blog-posts">Recent Blog Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=blog">Blog Posts</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
+<p>Check out news about the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=conferences">Talks</a>&nbsp;, &nbsp;<a href="./posts.html#category=awards">Awards</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
 <div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-categories="VGFsa3M=" data-listing-date-sort="1752984000000">
 <a href="https://iccopt2025.usc.edu/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 New Talk at ICCOPT 2025
@@ -349,7 +370,6 @@ Jul 20, 2025
 <div class="g-col-1" data-index="1" data-categories="ZXZlbnQlMkNwcmVzZW50YXRpb24=" data-listing-date-sort="1725336000000" data-listing-file-modified-sort="1767734517074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
 <a href="./posts/event-title/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="files/images/placeholder2.JPG" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Event item
@@ -365,9 +385,6 @@ Sep 3, 2024
 <div class="g-col-1" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1719201600000" data-listing-file-modified-sort="1767730675380" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
 <a href="./posts/news-title/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/placeholder3.JPG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 News item
@@ -384,7 +401,33 @@ Jun 24, 2024
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <p align="right">
-<a href="./blog-posts.html">More Posts »</a>
+<a href="./posts.html">More News »</a>
+</p>
+</section>
+<section id="recent-blog-posts" class="level2">
+<h2 data-anchor-id="recent-blog-posts">Recent Blog Posts</h2>
+<div id="listing-recent-blogs" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="bWF0aCUyQ29wdGltaXphdGlvbg==" data-listing-date-sort="1767762000000" data-listing-file-modified-sort="1767800923962" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<a href="./blog-posts/math/noisyGD.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Noisy Gradient Descent and Mean Field Langevin Dynamics
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jan 7, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<p align="right">
+<a href="./blog.html">More Posts »</a>
 </p>
 
 

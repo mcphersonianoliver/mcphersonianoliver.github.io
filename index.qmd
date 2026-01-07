@@ -49,13 +49,29 @@ listing:   # Comment the listing section and delete corresponding lines in the i
       title: ""
     type: grid
     max-items: 3
-#    image-height: 150px
+    # image-height: 150px
     page-size: 3 #set same as max-times to remove the page number setting
-    fields: [image, date, title, subtitle]
+    fields: [date, title, subtitle]
     max-description-length: 75
     sort: 
       - "date desc"
       - "title asc"
+
+  - id: recent-blogs
+    contents:
+      - blog-posts
+    exclude:
+      title: ""
+    type: grid
+    max-items: 3
+    page-size: 3
+    # include images if you want to show images in the recent blog posts section
+    fields: [date, title, subtitle]
+    max-description-length: 75
+    sort:
+      - "date desc"
+      - "title asc"
+
 ---
 
 :::{#hero-heading}
@@ -72,35 +88,42 @@ To this end, I explore the interplay of **optimization, geometry, and statistics
 
 <p align="right">[Research Areas »](/research-areas.qmd)</p>
 
-## Manuscripts
+## Research Pipeline
 Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see [Publications and Presentations](/publications.qmd). 
 
-- **Portfolio Control** | Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) (Submitted/Under Review)  <br>
-<span class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? </span>  
-<p align="right">[»](/posts.qmd)</p>
+- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** | Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) (Submitted/Under Review)  <br>
+<div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? 
+<a href="/posts.qmd" class="float-end">See more... »</a>  
+</div>  
+
 
 - **Nonsmooth Riemannian Optimization with Inexact Information** | [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) (In-Preparation) <br>
-<span class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? </span> 
-<p align="right">[»](/posts.qmd)</p>
+<div class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? 
+<a href="/posts.qmd" class="float-end">See more... »</a>
+</div> 
+
 
 - **Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space** | [Mauro Maggioni](https://mauromaggioni.duckdns.org/) (In-Preparation) <br>
-<span class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? </span> 
-<p align="right">[»](/posts.qmd)</p>
+<div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? 
+<a href="/posts.qmd" class="float-end">See more... »</a>
+</div> 
 :::
 
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
 ## Recent News
 
+Check out news about the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[Talks](posts.qmd#category=conferences)&nbsp;, &nbsp;[Awards](posts.qmd#category=awards)&nbsp;, and &nbsp;[More »](/posts.qmd)
 
+:::{#recent-posts}
+:::
 
 <p align="right">[More News »](/posts.qmd)</p>
 
 
 ## Recent Blog Posts
-Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Blog Posts](posts.qmd#category=blog)&nbsp;, and &nbsp;[More »](/posts.qmd)
 
-:::{#recent-posts}
+:::{#recent-blogs}
 :::
 
-<p align="right">[More Posts »](/blog-posts.qmd)</p>
+<p align="right">[More Posts »](/blog.qmd)</p>

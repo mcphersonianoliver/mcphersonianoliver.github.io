@@ -1,1 +1,27 @@
 /* css styles */
+
+/* Container for the abstract */
+.abstract-container {
+  margin: 2em 0;
+  padding: 0 0 0 1.5em;
+  border-left: 4px solid #273e5d; /* Dark blue bar */
+}
+
+/* The small "ABSTRACT" label */
+.abstract-header {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 0.25em;
+  letter-spacing: 0.05em;
+}
+
+/* The text inside */
+.abstract-container p {
+  margin-bottom: 0.5em;
+  font-style: normal;
+  line-height: 1.6;
+  font-size: 0.75em
+}

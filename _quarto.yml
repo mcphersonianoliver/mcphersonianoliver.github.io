@@ -8,7 +8,7 @@ author-meta: "Ian McPherson"
 
 website:
   title: "Ian McPherson"
-  image: "https://quarto.org/quarto.png"
+  image: "files/images/prof-pic.webp"
   description: "Personal Website: Ian McPherson"
  
   navbar:
@@ -20,16 +20,14 @@ website:
       - text: About
         menu:
           - text: News
-            href: posts.qmd#category=news
-          # - text: Events
-          #   href: posts.qmd#category=event      
+            href: posts.qmd   
           - text: Contact
             href: contact.qmd             
       - text: Research
         menu:
           - text: Research Areas
             href: research-areas.qmd
-          - text: List of Publications
+          - text: Publications and Presentations
             href: publications.qmd
           # - text: Selected Papers
           #  href: posts.qmd#category=paper

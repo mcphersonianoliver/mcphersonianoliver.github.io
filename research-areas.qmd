@@ -1,26 +1,27 @@
 ---
 title: Research Areas
-description: "My work sits at the intersection of optimization, geometry, and statistics."
+subtitle: "At the crossroads of optimization, geometry, and statistics."
 toc: true
+title-block-banner: true
 ---
-
-My research lies somewhere at the intersection of optimization, geometry, and statistics. I am particularly interested in both the development and analysis of algorithms for different optimization and statistical tasks defined on non-Euclidean spaces, such as Riemannian manifolds and Wasserstein space. My work is motivated by applications in data science, machine learning, and large-scale optimization.
-
----
+::: {.callout-note appearance="minimal"}
+**I exploit mathematical structures to design and analyze scalable and versatile optimization algorithms, and to learn from high-dimensional data with provable guarantees.**
+:::
+There are a variety of problems at the foundation of Data Science, for which the best problems require ideas and techniques from multiple mathematical disciplines. Currently, I am particularly interested in using ideas from mathematical optimization, geometry, and statistics. Below are some research areas I am actively exploring.
 
 ## Riemannian Optimization 
-When taught optimization, we are taught many tools and techniques for the following task: 
+<!-- When taught optimization, we are taught many tools and techniques for the following task: 
 
 $$
     \min_{x \in \mathbb{R}^d} f(x),
 $$
 
-where $f : \mathbb{R}^d \to \mathbb{R}$ is some objective function. This lends itself to many different interpretations, depending on your motivations. For example
+where $f : \mathbb{R}^d \to \mathbb{R}$ is some objective function. This lends itself to many different interpretations, depending on your motivations. For example -->
 
 
-## Data Manifolds in Non-Euclidean Spaces
+## Submanifolds of Wasserstein Space
 
 
-## Discrete Approximations of Continuous Mathematical Objects
+## Optimization in Wasserstein Space
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-subtitle: "Research notes, tutorials, and academic reflections."
+subtitle: "Rambles about math, research, and life."
 listing:
   contents: blog-posts
   sort: "date desc"
@@ -10,7 +10,7 @@ listing:
   filter-ui: true
   feed: true
 page-layout: full
-title-block-banner: false
+title-block-banner: true
 ---
 
 Welcome to my blog! Here I hope to share insights on anything and everything related to my research (and not), including research notes, tutorials, academic reflections, and more. Feel free to explore the posts below. 
