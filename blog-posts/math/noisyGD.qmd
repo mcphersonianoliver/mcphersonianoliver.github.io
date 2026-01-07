@@ -4,7 +4,7 @@ title: "Noisy Gradient Descent and Mean Field Langevin Dynamics"
 author: "Ian McPherson"
 date: "2026-01-07"
 categories: [math, optimization]
-# image: "/files/images/placeholder3.JPG"
+image: "/files/images/placeholder3.JPG"
 css: /custom.css
 # draft: true
 ---
