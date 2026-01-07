@@ -5,23 +5,37 @@ toc: true
 title-block-banner: true
 ---
 ::: {.callout-note appearance="minimal"}
-**I exploit mathematical structures to design and analyze scalable and versatile optimization algorithms, and to learn from high-dimensional data with provable guarantees.**
+**I exploit mathematical structures to design and analyze optimization algorithms, and construct statistical estimators from high-dimensional data.**
 :::
 There are a variety of problems at the foundation of Data Science, for which the best problems require ideas and techniques from multiple mathematical disciplines. Currently, I am particularly interested in using ideas from mathematical optimization, geometry, and statistics. Below are some research areas I am actively exploring.
 
+<center><hr style="width:100%; height:1.5px; background-color:black; border:none;"></center>
+
 ## Riemannian Optimization 
-<!-- When taught optimization, we are taught many tools and techniques for the following task: 
+<!-- <img src="files/images/prof-pic.webp" style="float: right; margin: 0 0 15px 15px; width: 300px;"> -->
+
+The central problem of interest of Riemannian optimization is to do the following task:
 
 $$
-    \min_{x \in \mathbb{R}^d} f(x),
+\min_{x \in \mathcal{M}} f(x)
 $$
 
-where $f : \mathbb{R}^d \to \mathbb{R}$ is some objective function. This lends itself to many different interpretations, depending on your motivations. For example -->
+where $\mathcal{M}$ is a Riemannian manifold, and $f: \mathcal{M} \to \mathbb{R}$ is some cost function. The goal of the optimizer is to provide black-box iterative algorithms to solve this problem, with provable guarantees. 
+
+The central difficulty of Riemannian optimization is that the manifold $\mathcal{M}$ are generally nonlinear spaces. Given first-order information of $f$, i.e. an oracle such that $x \mapsto (f(x), \nabla_{\mathcal{M}}f(x))$, one does not have access to exact *exponential maps* --- the operation which turns directions into new iterates. Additionally, some schemes gradients from nearby points construct more accurate surrogates of $f$. In the Riemannian setting, we do not even have access to exact *parallel transports* --- the operation which moves first-order information to a shared space! Even worse, due to the *intrinsic curvature* of $\mathcal{M}$, exact parallel transports also incur errors!
+
+
+
+
+::: {.callout-note appearance="minimal"}
+**My Belief:** Mathematical Optimization uses ***local surrogates*** of $f$ to search, Riemannian geometry patches togther ***local maps to*** $\mathcal{M}$ to enable analysis on $\mathcal{M}, thus classical optimization theory should generalize
+:::
 
 
 ## Submanifolds of Wasserstein Space
 
+**In Construction**
 
 ## Optimization in Wasserstein Space
 
-
+**In Construction**

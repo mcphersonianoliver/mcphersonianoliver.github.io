@@ -1,11 +1,11 @@
 ---
 title: "Teaching"
 subtitle: "Course instruction and assistantship at Johns Hopkins University and Tufts University."
-title-block-banner: false
+title-block-banner: true
 ---
 
 ::: {.callout-note appearance="minimal"}
-Recipient of the **Whiting School of Engineering Teaching Assistant Award (2024)**, awarded to a single graduate student across the WSE for excellence in instruction.
+Recipient of the **Whiting School of Engineering Teaching Assistant Award (2024)**, awarded to a single graduate student across the Whiting School of Engineering for excellence in instruction.
 :::
 
 ## Instructor of Record

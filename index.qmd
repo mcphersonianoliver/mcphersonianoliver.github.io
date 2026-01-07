@@ -79,7 +79,7 @@ Welcome to my website! My name is Ian, and I am currently pursuing a PhD in Appl
 
 ## Research Interests
 ::: {.callout-note appearance="minimal"}
-**I exploit mathematical structures to design and analyze scalable and versatile optimization algorithms, and to learn from high-dimensional data with provable guarantees.**
+**I exploit mathematical structures to design and analyze optimization algorithms, and construct statistical estimators from high-dimensional data.**
 :::
 
 I am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use ***fast/scalable algorithms*** while ***side-stepping the curse of dimensionality*** which negatively effects convergence and statistical rates. 
@@ -87,27 +87,30 @@ I am interested in the theoretical and algorithmic foundations of Data Science, 
 To this end, I explore the interplay of **optimization, geometry, and statistics** through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability.
 
 <p align="right">[Research Areas »](/research-areas.qmd)</p>
+:::
 
 ## Research Pipeline
 Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see [Publications and Presentations](/publications.qmd). 
 
-- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** | Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) (Submitted/Under Review)  <br>
+- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (Submitted) 
+<br>with Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? 
 <a href="/posts.qmd" class="float-end">See more... »</a>  
 </div>  
 
 
-- **Nonsmooth Riemannian Optimization with Inexact Information** | [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) (In-Preparation) <br>
+- **Nonsmooth Riemannian Optimization with Inexact Information** (In-Preparation) <br>
+with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? 
 <a href="/posts.qmd" class="float-end">See more... »</a>
 </div> 
 
 
-- **Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space** | [Mauro Maggioni](https://mauromaggioni.duckdns.org/) (In-Preparation) <br>
+- **Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space** (In-Preparation) <br> with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? 
 <a href="/posts.qmd" class="float-end">See more... »</a>
 </div> 
-:::
+
 
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
