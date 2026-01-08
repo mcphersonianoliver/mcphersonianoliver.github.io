@@ -1,0 +1,7 @@
+---
+title: "Talk at JHU Applied Mathematics and Statistics Student Seminar"
+date: "2024-01-01"
+categories: [talks]
+description: "Presented at the Applied Mathematics and Statistics Student Seminar, JHU."
+---
+Gave an introduction to the tools of Riemannian optimization and their application to computing Wasserstein barycenters at the JHU Applied Mathematics and Statistics Student Seminar.

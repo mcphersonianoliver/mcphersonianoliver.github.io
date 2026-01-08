@@ -1,7 +1,7 @@
 ---
 title: "Talk at JHU Applied Mathematics and Statistics Student Seminar"
-date: "2024-10-01"
+date: "2025-03-01"
 categories: [talks]
 description: "Presented at the Applied Mathematics and Statistics Student Seminar, JHU."
 ---
-Discussed Riemannian optimization guarantees for empirical Wasserstein barycenters at the JHU AMS Student Seminar.
+Discussed convergence rates for Riemannian proximal bundle methods at the JHU AMS Student Seminar.

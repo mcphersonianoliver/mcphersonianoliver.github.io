@@ -1,7 +1,7 @@
 ---
 title: "SLMath Summer Graduate School"
 date: "2024-06-01"
-categories: [News, Workshops]
+categories: [workshops]
 description: "Participated in the Interacting Particle Systems program at UC Berkeley."
 ---
-Participated in the SLMath (formerly MSRI) Summer Graduate School at UC Berkeley, focused on "Interacting Particle Systems: Analysis and Computation."
+Funded to participate in the SLMath (formerly MSRI) Summer Graduate School at UC Berkeley, focused on "Interacting Particle Systems: Analysis and Computation."

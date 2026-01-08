@@ -1,0 +1,7 @@
+---
+title: "Talk at UW-Madison Mathematical Institute of Data Science (MINDS)"
+date: "2025-04-15"
+categories: [talks]
+description: "Presented convergence rates for Riemannian Proximal Bundle Methods at UW-Madison."
+---
+Presented at the UW-Madison MINDS Seminar regarding convergence rates for Riemannian Proximal Bundle Methods.

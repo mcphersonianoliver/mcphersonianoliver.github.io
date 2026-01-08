@@ -15,6 +15,313 @@
 <link>https://mcphersonianoliver.github.io/posts.html</link>
 </image>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Thu, 08 Jan 2026 01:00:10 GMT</lastBuildDate>
+<lastBuildDate>Mon, 01 Sep 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Mathematical Aspects of Data Science Summer School (EFPL)</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2025-09-01-efpl-summer-school.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Attended the Mathematical Aspects of Data Science Summer School at EFPL in Lausanne, Switzerland. I also presented a poster titled: <em>Computing Empirical Barycenters on Unknown Wasserstein Submanifolds</em>.</p>
+
+
+
+ ]]></description>
+  <category>News</category>
+  <category>Workshops</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2025-09-01-efpl-summer-school.html</guid>
+  <pubDate>Mon, 01 Sep 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Princeton Machine Learning Theory Summer School</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2025-08-01-princeton-ml-theory.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I was funded to attend the Princeton Machine Learning Theory Summer School. During the program, I presented my poster: <em>Computing Empirical Barycenters on Unknown Wasserstein Submanifolds</em>.</p>
+
+
+
+ ]]></description>
+  <category>Workshops</category>
+  <category>Machine Learning</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2025-08-01-princeton-ml-theory.html</guid>
+  <pubDate>Fri, 01 Aug 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Convergence Rates for Riemannian Proximal Bundle Methods</title>
+  <link>https://mcphersonianoliver.github.io/posts/talks/2025-07-15-iccopt-talk.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Presented my research on Riemannian Proximal Bundle Methods at the International Conference on Continuous Optimization (ICCOPT) held at the University of Southern California.</p>
+
+
+
+ ]]></description>
+  <category>Talks</category>
+  <category>Optimization</category>
+  <guid>https://mcphersonianoliver.github.io/posts/talks/2025-07-15-iccopt-talk.html</guid>
+  <pubDate>Tue, 15 Jul 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Session Chair at ICCOPT 2025</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2025-07-01-iccopt-session-chair.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I had the pleasure of serving as a Session Chair for “Optimization on Manifolds and Geometric Approaches” at the International Conference on Continuous Optimization (ICCOPT) in Summer 2025.</p>
+
+
+
+ ]]></description>
+  <category>News</category>
+  <category>Service</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2025-07-01-iccopt-session-chair.html</guid>
+  <pubDate>Tue, 01 Jul 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Talk at Jr. Mathematical Institute of Data Science (MINDS)</title>
+  <link>https://mcphersonianoliver.github.io/posts/talks/2025-04-15-minds-talk.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Presented at the Jr.&nbsp;MINDS Seminar at Johns Hopkins University regarding convergence rates for Riemannian Proximal Bundle Methods.</p>
+
+
+
+ ]]></description>
+  <category>Talks</category>
+  <category>Data Science</category>
+  <guid>https://mcphersonianoliver.github.io/posts/talks/2025-04-15-minds-talk.html</guid>
+  <pubDate>Tue, 15 Apr 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>SIAM Conference on Applied Mathematics</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2025-04-01-siam-applied-math.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Presented a poster titled <em>Computing Empirical Barycenters on Unknown Wasserstein Submanifolds</em> at the SIAM Conference on Applied Mathematics.</p>
+
+
+
+ ]]></description>
+  <category>Conferences</category>
+  <category>Applied Math</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2025-04-01-siam-applied-math.html</guid>
+  <pubDate>Tue, 01 Apr 2025 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Statistics and Optimal Transport Workshop at Columbia</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2025-03-01-columbia-ot-workshop.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I attended the Statistics and Optimal Transport Workshop at Columbia University. I also presented a poster on computing empirical barycenters on unknown Wasserstein submanifolds.</p>
+
+
+
+ ]]></description>
+  <category>Workshops</category>
+  <category>Optimal Transport</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2025-03-01-columbia-ot-workshop.html</guid>
+  <pubDate>Sat, 01 Mar 2025 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Optimization Workshop at Universidad de los Andes</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2024-12-01-los-andes-optimization.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I was funded to participate in the Optimization Workshop at Universidad de los Andes in Bogotá, Colombia, where I presented my work on Wasserstein submanifolds.</p>
+
+
+
+ ]]></description>
+  <category>Workshops</category>
+  <category>Optimization</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2024-12-01-los-andes-optimization.html</guid>
+  <pubDate>Sun, 01 Dec 2024 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Empirical Wasserstein Barycenters: Riemannian Optimization Guarantees</title>
+  <link>https://mcphersonianoliver.github.io/posts/talks/2024-10-01-jhu-ams-seminar.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Discussed Riemannian optimization guarantees for empirical Wasserstein barycenters at the JHU AMS Student Seminar.</p>
+
+
+
+ ]]></description>
+  <category>Talks</category>
+  <category>Optimal Transport</category>
+  <guid>https://mcphersonianoliver.github.io/posts/talks/2024-10-01-jhu-ams-seminar.html</guid>
+  <pubDate>Tue, 01 Oct 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Duncand Research Fund Grant</title>
+  <link>https://mcphersonianoliver.github.io/posts/awards/2024-09-01-duncand-grant.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I am grateful to have received the Duncand Research Fund Grant, which supported my attendance at the Summer School on Mathematical Aspects of Data Science at EFPL in Switzerland.</p>
+
+
+
+ ]]></description>
+  <category>Awards</category>
+  <category>Funding</category>
+  <guid>https://mcphersonianoliver.github.io/posts/awards/2024-09-01-duncand-grant.html</guid>
+  <pubDate>Sun, 01 Sep 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Princeton Machine Learning Theory Summer Graduate School</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2024-08-01-princeton-graduate-school.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Received funding to attend the Princeton Machine Learning Theory Summer Graduate School.</p>
+
+
+
+ ]]></description>
+  <category>Workshops</category>
+  <category>Machine Learning</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2024-08-01-princeton-graduate-school.html</guid>
+  <pubDate>Thu, 01 Aug 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>SLMath Summer Graduate School</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2024-06-01-slmath-summer-school.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Participated in the SLMath (formerly MSRI) Summer Graduate School at UC Berkeley, focused on “Interacting Particle Systems: Analysis and Computation.”</p>
+
+
+
+ ]]></description>
+  <category>News</category>
+  <category>Workshops</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2024-06-01-slmath-summer-school.html</guid>
+  <pubDate>Sat, 01 Jun 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>ICERM Workshop: Interacting Particle Systems</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2024-05-15-icerm-interacting-particles.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Participated in the ICERM workshop at Brown University focused on <em>Interacting Particle Systems: Analysis, Control, Learning and Computation</em>.</p>
+
+
+
+ ]]></description>
+  <category>Workshops</category>
+  <category>ICERM</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2024-05-15-icerm-interacting-particles.html</guid>
+  <pubDate>Wed, 15 May 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Whiting School of Engineering Teaching Assistant Award</title>
+  <link>https://mcphersonianoliver.github.io/posts/awards/2024-04-01-wse-ta-award.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I am honored to be the sole recipient of the 2024 Whiting School of Engineering (WSE) Teaching Assistant Award. This award recognizes excellence and talent as a graduate Teaching Assistant across the entire school.</p>
+
+
+
+ ]]></description>
+  <category>Awards</category>
+  <category>Teaching</category>
+  <guid>https://mcphersonianoliver.github.io/posts/awards/2024-04-01-wse-ta-award.html</guid>
+  <pubDate>Mon, 01 Apr 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Rufus P. Isaacs Graduate Fellowship</title>
+  <link>https://mcphersonianoliver.github.io/posts/awards/2023-09-01-isaacs-fellowship.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Awarded the Rufus P. Isaacs Graduate Fellowship for the Fall 2023 and Spring 2024 semesters at Johns Hopkins University.</p>
+
+
+
+ ]]></description>
+  <category>Awards</category>
+  <category>Fellowship</category>
+  <guid>https://mcphersonianoliver.github.io/posts/awards/2023-09-01-isaacs-fellowship.html</guid>
+  <pubDate>Fri, 01 Sep 2023 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>ICERM Workshop: Modern Applied and Computational Analysis</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2023-06-01-icerm-computational-analysis.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Attended the <em>Modern Applied and Computational Analysis</em> workshop at ICERM (Brown University).</p>
+
+
+
+ ]]></description>
+  <category>Workshops</category>
+  <category>ICERM</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2023-06-01-icerm-computational-analysis.html</guid>
+  <pubDate>Thu, 01 Jun 2023 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>ICERM Workshop: Optimal Transport</title>
+  <link>https://mcphersonianoliver.github.io/posts/news/2023-05-01-icerm-optimal-transport.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I was a funded participant in the Optimal Transport workshop at ICERM, Brown University.</p>
+
+
+
+ ]]></description>
+  <category>Workshops</category>
+  <category>Optimal Transport</category>
+  <category>ICERM</category>
+  <guid>https://mcphersonianoliver.github.io/posts/news/2023-05-01-icerm-optimal-transport.html</guid>
+  <pubDate>Mon, 01 May 2023 04:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>

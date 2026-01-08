@@ -1,7 +1,7 @@
 ---
 title: "ICERM Workshop: Modern Applied and Computational Analysis"
 date: "2023-06-01"
-categories: [Workshops, ICERM]
-description: "Workshop participant at Brown University."
+categories: [workshops]
+description: "Participated in the Modern Applied and Computational Analysis workshop at Brown University."
 ---
-Attended the *Modern Applied and Computational Analysis* workshop at ICERM (Brown University).
+Funded to attend the *Modern Applied and Computational Analysis* workshop at ICERM (Brown University).

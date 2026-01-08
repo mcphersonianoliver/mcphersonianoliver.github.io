@@ -1,7 +1,7 @@
 ---
 title: "Duncand Research Fund Grant"
 date: "2024-09-01"
-categories: [Awards, Funding]
+categories: [awards]
 description: "Received funding to attend the Mathematical Aspects of Data Science Summer School at EFPL."
 ---
 I am grateful to have received the Duncand Research Fund Grant, which supported my attendance at the Summer School on Mathematical Aspects of Data Science at EFPL in Switzerland.

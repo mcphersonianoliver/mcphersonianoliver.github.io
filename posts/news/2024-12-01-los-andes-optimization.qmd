@@ -1,7 +1,7 @@
 ---
-title: "Optimization Workshop at Universidad de los Andes"
+title: "Presented Poster at Optimization Workshop at Universidad de los Andes"
 date: "2024-12-01"
-categories: [Workshops, Optimization]
+categories: [workshops, posters]
 description: "Travel to Bogotá, Colombia for the Optimization Workshop."
 ---
 I was funded to participate in the Optimization Workshop at Universidad de los Andes in Bogotá, Colombia, where I presented my work on Wasserstein submanifolds.
