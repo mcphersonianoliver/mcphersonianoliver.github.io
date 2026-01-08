@@ -1,0 +1,11 @@
+---
+title: "Neural Portfolio Control"
+# description: "A description of why noisy gradient descent is a spatial and temporal approximation of Mean Field Langevin Dynamics."
+author: "Ian McPherson"
+date: "2026-01-07"
+categories: [math, optimization]
+image: "/files/images/placeholder3.JPG"
+css: /custom.css
+# draft: true
+---
+In construction.

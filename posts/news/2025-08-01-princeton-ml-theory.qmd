@@ -1,0 +1,7 @@
+---
+title: "Princeton Machine Learning Theory Summer School"
+date: "2025-08-01"
+categories: [Workshops, Machine Learning]
+description: "Attended the summer school at Princeton and presented a poster."
+---
+I was funded to attend the Princeton Machine Learning Theory Summer School. During the program, I presented my poster: *Computing Empirical Barycenters on Unknown Wasserstein Submanifolds*.

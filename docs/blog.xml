@@ -15,29 +15,6 @@
 <link>https://mcphersonianoliver.github.io/blog.html</link>
 </image>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Wed, 07 Jan 2026 05:00:00 GMT</lastBuildDate>
-<item>
-  <title>Noisy Gradient Descent and Mean Field Langevin Dynamics</title>
-  <dc:creator>Ian McPherson</dc:creator>
-  <link>https://mcphersonianoliver.github.io/blog-posts/math/noisyGD.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="abstract-container">
-<p><span class="abstract-header">ABSTRACT</span> When minimizing <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D%20%5Ccolon%20%5Cmathcal%7BP%7D_%7B2%7D(%5Cmathbb%7BR%7D%5E%7Bd%7D)%20%5Cto%20%5Cmathbb%7BR%7D"> over the space of probability measures with finite second moment, a natural ideas is to follows the Wasserstein Gradient Flow. However, this is often computationally infeasible to implement. In this post, we discuss how noisy gradient descent (NGD) can be viewed as a spatial and temporal approximation of Mean Field Langevin Dynamics (MFLD) when applying a entropic regularization to <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D">.</p>
-</div>
-<p>We begin.</p>
-
-
-
- ]]></description>
-  <category>math</category>
-  <category>optimization</category>
-  <guid>https://mcphersonianoliver.github.io/blog-posts/math/noisyGD.html</guid>
-  <pubDate>Wed, 07 Jan 2026 05:00:00 GMT</pubDate>
-  <media:content url="https://mcphersonianoliver.github.io/files/images/placeholder3.JPG" medium="image"/>
-</item>
+<lastBuildDate>Thu, 08 Jan 2026 01:13:00 GMT</lastBuildDate>
 </channel>
 </rss>

@@ -95,20 +95,20 @@ Below are some of my ongoing and recent research projects. For a full list of pu
 - **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (Submitted) 
 <br>with Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? 
-<a href="/posts.qmd" class="float-end">See more... »</a>  
+<a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a>  
 </div>  
 
 
 - **Nonsmooth Riemannian Optimization with Inexact Information** (In-Preparation) <br>
 with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? 
-<a href="/posts.qmd" class="float-end">See more... »</a>
+<a href="/papers/2026/riemannian-bundle-method.qmd" class="float-end">See more... »</a>
 </div> 
 
 
 - **Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space** (In-Preparation) <br> with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? 
-<a href="/posts.qmd" class="float-end">See more... »</a>
+<a href="/papers/2026/wasserstein-barycenter.qmd" class="float-end">See more... »</a>
 </div> 
 
 

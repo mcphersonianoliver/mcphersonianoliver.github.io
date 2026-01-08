@@ -1,0 +1,7 @@
+---
+title: "Statistics and Optimal Transport Workshop at Columbia"
+date: "2025-03-01"
+categories: [Workshops, Optimal Transport]
+description: "Funded participant and poster presenter at Columbia University."
+---
+I attended the Statistics and Optimal Transport Workshop at Columbia University. I also presented a poster on computing empirical barycenters on unknown Wasserstein submanifolds.

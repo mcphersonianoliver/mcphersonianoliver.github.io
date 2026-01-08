@@ -1,0 +1,7 @@
+---
+title: "ICERM Workshop: Interacting Particle Systems"
+date: "2024-05-15"
+categories: [Workshops, ICERM]
+description: "Analysis, Control, Learning and Computation at Brown University."
+---
+Participated in the ICERM workshop at Brown University focused on *Interacting Particle Systems: Analysis, Control, Learning and Computation*.

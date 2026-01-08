@@ -1,0 +1,7 @@
+---
+title: "Empirical Wasserstein Barycenters: Riemannian Optimization Guarantees"
+date: "2024-10-01"
+categories: [Talks, Optimal Transport]
+description: "Presented at the Applied Mathematics and Statistics Student Seminar, JHU."
+---
+Discussed Riemannian optimization guarantees for empirical Wasserstein barycenters at the JHU AMS Student Seminar.

@@ -1,0 +1,7 @@
+---
+title: "ICERM Workshop: Optimal Transport"
+date: "2023-05-01"
+categories: [Workshops, Optimal Transport, ICERM]
+description: "Participated in the Optimal Transport workshop at Brown University."
+---
+I was a funded participant in the Optimal Transport workshop at ICERM, Brown University.

@@ -1,0 +1,7 @@
+---
+title: "Convergence Rates for Riemannian Proximal Bundle Methods"
+date: "2025-07-15"
+categories: [Talks, Optimization]
+description: "Presented at the International Conference on Continuous Optimization (ICCOPT) at USC."
+---
+Presented my research on Riemannian Proximal Bundle Methods at the International Conference on Continuous Optimization (ICCOPT) held at the University of Southern California.

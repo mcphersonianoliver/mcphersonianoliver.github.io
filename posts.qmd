@@ -11,7 +11,10 @@ listing:
   filter-ui: true
   feed: true
   contents: 
-      - posts
+      - posts/awards
+      - posts/papers
+      - posts/talks
+      - posts/news
       - posts/post-links.yml  # Use this file to add external links
 #      categories: [] 
 

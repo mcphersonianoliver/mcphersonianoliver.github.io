@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -162,7 +162,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 <link rel="alternate" type="application/rss+xml" title="Ian McPherson" href="blog.xml" data-external="1"><meta property="og:title" content="Blog – Ian McPherson">
 <meta property="og:description" content="Rambles about math, research, and life.">
-<meta property="og:image" content="https://mcphersonianoliver.github.io/files/images/placeholder3.JPG">
+<meta property="og:image" content="https://mcphersonianoliver.github.io/files/images/prof-pic.webp">
 <meta property="og:site_name" content="Ian McPherson">
 </head>
 
@@ -262,7 +262,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWF0aA==">math <span class="quarto-category-count">(1)</span></div><div class="category" data-category="b3B0aW1pemF0aW9u">optimization <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -277,63 +277,13 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bWF0aCUyQ29wdGltaXphdGlvbg==" data-listing-date-sort="1767762000000" data-listing-file-modified-sort="1767801366471" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
-<div class="thumbnail"><a href="./blog-posts/math/noisyGD.html" class="no-external">
 
-<img loading="lazy" src="./files/images/placeholder3.JPG" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog-posts/math/noisyGD.html" class="no-external">Noisy Gradient Descent and Mean Field Langevin Dynamics</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0aA=='); return false;">math</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('b3B0aW1pemF0aW9u'); return false;">optimization</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog-posts/math/noisyGD.html" class="no-external">
-<span class="abstract-header">ABSTRACT</span> When minimizing <span class="math inline">\(\mathcal{F} \colon \mathcal{P}_{2}(\mathbb{R}^{d}) \to \mathbb{R}\)</span> over the space of probability measures with finite second moment, a natural…<span class="math inline"></span>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog-posts/math/noisyGD.html" class="no-external">
-<div class="listing-date">
-Jan 7, 2026
-</div>
-<div class="listing-author">
-Ian McPherson
-</div>
-</a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->

@@ -1,0 +1,7 @@
+---
+title: "Talk at Jr. Mathematical Institute of Data Science (MINDS)"
+date: "2025-04-15"
+categories: [Talks, Data Science]
+description: "Presented convergence rates for Riemannian Proximal Bundle Methods at JHU."
+---
+Presented at the Jr. MINDS Seminar at Johns Hopkins University regarding convergence rates for Riemannian Proximal Bundle Methods.

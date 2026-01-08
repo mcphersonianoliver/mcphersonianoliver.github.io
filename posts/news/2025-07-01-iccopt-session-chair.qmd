@@ -1,0 +1,7 @@
+---
+title: "Session Chair at ICCOPT 2025"
+date: "2025-07-01"
+categories: [News, Service]
+description: "Chaired the session: Optimization on Manifolds and Geometric Approaches."
+---
+I had the pleasure of serving as a Session Chair for "Optimization on Manifolds and Geometric Approaches" at the International Conference on Continuous Optimization (ICCOPT) in Summer 2025.

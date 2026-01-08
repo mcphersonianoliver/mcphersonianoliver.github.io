@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mcphersonianoliver.github.io/posts.html</loc>
-    <lastmod>2026-01-07T15:07:43.698Z</lastmod>
+    <lastmod>2026-01-08T01:12:18.036Z</lastmod>
   </url>
   <url>
     <loc>https://mcphersonianoliver.github.io/publications.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://mcphersonianoliver.github.io/research-areas.html</loc>
-    <lastmod>2026-01-07T20:04:48.483Z</lastmod>
+    <lastmod>2026-01-07T20:51:29.212Z</lastmod>
   </url>
   <url>
     <loc>https://mcphersonianoliver.github.io/teaching.html</loc>
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://mcphersonianoliver.github.io/index.html</loc>
-    <lastmod>2026-01-07T19:16:41.696Z</lastmod>
+    <lastmod>2026-01-08T01:12:19.438Z</lastmod>
   </url>
   <url>
     <loc>https://mcphersonianoliver.github.io/people.html</loc>
@@ -53,7 +53,23 @@
     <lastmod>2026-01-06T21:15:45.850Z</lastmod>
   </url>
   <url>
-    <loc>https://mcphersonianoliver.github.io/blog-posts/math/noisyGD.html</loc>
-    <lastmod>2026-01-07T15:56:06.471Z</lastmod>
+    <loc>https://mcphersonianoliver.github.io/papers/2026/riemannian-bundle-method.html</loc>
+    <lastmod>2026-01-08T00:51:33.392Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mcphersonianoliver.github.io/papers/2026/wasserstein-barycenter.html</loc>
+    <lastmod>2026-01-08T00:52:05.256Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mcphersonianoliver.github.io/papers/2025/neural-portfolio-control.html</loc>
+    <lastmod>2026-01-08T00:53:29.675Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mcphersonianoliver.github.io/posts/awards/2024-09-01-duncand-grant.html</loc>
+    <lastmod>2026-01-08T01:03:20.225Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mcphersonianoliver.github.io/posts/news/2025-09-01-efpl-summer-school.html</loc>
+    <lastmod>2026-01-08T01:11:00.935Z</lastmod>
   </url>
 </urlset>
