@@ -1,0 +1,45 @@
+---
+title: "Complementary Slackness in Semi-definite Programming: Equivalent Inner Product or Matrix Condition"
+
+author: "Ian McPherson"
+date: "2026-01-07"
+categories: [fundamentals, matrix-analysis, optimization]
+css: /custom.css
+draft: true
+---
+::: {.abstract-container}
+[ABSTRACT]{.abstract-header}
+Within this post we provide the elementary proof for the equivalence of the inner product and matrix forms of the complementary slackness condition in semidefinite programming.
+:::
+
+The standard primal form of a semidefinite program (SDP) is given by
+
+$$
+\begin{aligned}
+\min_{X \in \mathcal{S}^{n}} & \quad \langle C, X \rangle \\
+\text{s.t.} & \quad \mathcal{A}(X) = b, \quad X \succeq 0,
+\end{aligned}
+$$
+
+where the $\mathbb{S}^{n}$ denotes the space of $n$-by-$n$ symmetric matrices, $\mathcal{A} \colon \mathbb{S}^{n} \to \mathbb{R}^{m}$ is a linear operator, $C \in \mathbb{S}^{n}$ is a cost matrix, and $b \in \mathbb{R}^{m}$ is the constraint vector. We endow $\mathbb{S}^{n}$ with the trace inner product $\langle A, B \rangle = \operatorname{trace}(A B)$ for $A, B \in \mathbb{S}^{n}$.
+
+The corresponding Fenchel dual problem is given by
+
+$$
+\begin{aligned}
+\max_{y \in \mathbb{R}^{m}} & \quad \langle b, y \rangle \\
+\text{s.t.} & \quad C - \mathcal{A}^{*}(y) \succeq 0,
+\end{aligned}
+$$
+
+For simplicity, we denote the dual slack by $Z_{y} := C - \mathcal{A}^{*}(y)$ for $y \in \mathbb{R}^{m}$.
+
+We consider the **complementary slackness** condition in semidefinite programming (SDP), which is well-known to be equivalent to strong duality. Namely, if $X^{\star}$ and $y^{\star}$ are optimal solutions to the primal and dual SDP problems respectively, then the complementary slackness can be expressed in two equivalent forms: 
+
+1. **Inner Product Form**: $\langle Z_{y^{\star}}, X^{\star} \rangle_{F} = 0$.
+
+2. **Matrix Form**: $Z_{y^{\star}} X^{\star} = 0$.
+
+For the rest of this post, we provide a simple proof of the equivalence of these two forms.
+
+### Proof of Equivalence

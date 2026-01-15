@@ -1,0 +1,37 @@
+---
+title: "(Pseudo) Riemannian Structure of Wasserstein Space"
+author: "Ian McPherson"
+date: "2026-01-07"
+categories: [math, wasserstein, riemannian geometry]
+css: /custom.css
+draft: true
+---
+::: {.abstract-container}
+[ABSTRACT]{.abstract-header}
+The set $(\mathcal{P}_{2,\operatorname{ac}}(\mathbb{R}^{d}), W_{2})$ of Borel probability measures on $\mathbb{R}^{d}$ with finite second moment and absolutely continuous with respect to the Lebesgue measure, equipped with the 2-Wasserstein distance $W_{2}$, is a geodesic space. In this post, we discuss how $(\mathcal{P}_{2,\operatorname{ac}}(\mathbb{R}^{d}), W_{2})$ can be given a (pseudo) Riemannian structure. We begin by reviewing basic Riemannian geometry concepts before discussing their analogues in Wasserstein space.
+:::
+
+Early in the 2000s, Otto made the observation that the space of probabiliy measures, when equipped with the 2-Wasserstein metric, can be given a *formal* Riemannian structure. It was at the beginning of my third year of my PhD (the early 2020s) when I began to immerse myself in Riemannian Geometry/Optimization and Optimal Transport. I hope to convey why this connection is natural, enabling us to re-ask many modern questions in a new interesting setting. 
+
+For standard introductions to **Riemannian Geometry**, consider checking out the following:
+
+    1.
+    
+    2.
+
+For standard "introductions" to **Optimal Transport** and it's Riemannian structure, consider checking out the following:
+
+
+# Riemannian Geometry Primer
+## Riemannian Metrics
+## Tangent Bundles
+## Geodesics, Exponential and Logarithmic Maps
+## Parallel Transport
+## Connections
+
+# Wasserstein Space Analogues
+## *Formal* Riemannian Metric
+## Tangent Bundle
+## Geodesics, Exponential and Logarithmic Maps
+## Parallel Transport
+## Connections
