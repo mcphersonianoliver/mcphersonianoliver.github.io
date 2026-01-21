@@ -43,3 +43,8 @@ We consider the **complementary slackness** condition in semidefinite programmin
 For the rest of this post, we provide a simple proof of the equivalence of these two forms.
 
 ### Proof of Equivalence
+To show the equivalence, we will prove both directions:
+
+**(1) Inner Product Form $\implies$ Matrix Form**
+
+Assume that $\langle Z_{y^{\star}}, X^{\star} \rangle_{F} = 0$. Since both $Z_{y^{\star}}$ and $X^{\star}$ are positive semidefinite matrices, we can use the property that for any two positive semidefinite matrices $A$ and $B$, $\langle A, B \rangle = 0$ implies that $AB = 0$. This follows from the fact that the eigenvalues of $A$ and $B$ are non-negative, and thus their product must be zero if their inner product is zero. Therefore, we have $

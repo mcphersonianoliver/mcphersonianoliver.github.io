@@ -50,7 +50,8 @@
       "/posts/talks/2024-01-01-jhu-ams-seminar.html",
       "/posts/awards/2023-09-01-isaacs-fellowship.html",
       "/posts/news/2023-06-01-icerm-computational-analysis.html",
-      "/posts/news/2023-05-01-icerm-optimal-transport.html"
+      "/posts/news/2023-05-01-icerm-optimal-transport.html",
+      "/blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html"
     ]
   },
   {
@@ -59,6 +60,8 @@
   },
   {
     "listing": "/blog.html",
-    "items": []
+    "items": [
+      "/blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html"
+    ]
   }
 ]

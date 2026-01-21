@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ian McPherson">
+<meta name="dcterms.date" content="2026-01-07">
 <meta name="description" content="Personal Website: Ian McPherson">
 
-<title>Blog – Ian McPherson</title>
+<title>Defining the L^2 Space of k-Forms on Riemannian Manifolds – Ian McPherson</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,25 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -159,21 +129,22 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Ian McPherson" href="blog.xml" data-external="1"><meta property="og:title" content="Blog – Ian McPherson">
-<meta property="og:description" content="Rambles about math, research, and life.">
-<meta property="og:image" content="https://mcphersonianoliver.github.io/files/images/prof-pic.webp">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../custom.css">
+<meta property="og:title" content="Defining the \(L^2\) Space of \(k\)-Forms on Riemannian Manifolds – Ian McPherson">
+<meta property="og:description" content="Personal Website: Ian McPherson">
+<meta property="og:image" content="https://mcphersonianoliver.github.io/files/images/riem-volume-form.webp">
 <meta property="og:site_name" content="Ian McPherson">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Ian McPherson</span>
     </a>
   </div>
@@ -189,11 +160,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./posts.html">
+    <a class="dropdown-item" href="../../posts.html">
  <span class="dropdown-text">News</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./contact.html">
+    <a class="dropdown-item" href="../../contact.html">
  <span class="dropdown-text">Contact</span></a>
   </li>  
     </ul>
@@ -204,27 +175,27 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="./research-areas.html">
+    <a class="dropdown-item" href="../../research-areas.html">
  <span class="dropdown-text">Research Areas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./publications.html">
+    <a class="dropdown-item" href="../../publications.html">
  <span class="dropdown-text">Publications and Presentations</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/IanCVJan6.pdf"> 
+    <a class="nav-link" href="../../files/IanCVJan6.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -240,105 +211,155 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-            <p class="subtitle lead">Rambles about math, research, and life.</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZnVuZGFtZW50YWxz">fundamentals <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bGFwbGFjaWFu">laplacian <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmllbWFubmlhbi1nZW9tZXRyeQ==">riemannian-geometry <span class="quarto-category-count">(1)</span></div></div></div>
-<!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
-
-<p>Welcome to my blog! Here I hope to share insights on anything and everything related to my research (and not), including research notes, tutorials, academic reflections, and more. Feel free to explore the posts below.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#volume-forms" id="toc-volume-forms" class="nav-link active" data-scroll-target="#volume-forms">Volume Forms</a>
+  <ul class="collapse">
+  <li><a href="#heuristic-derivation" id="toc-heuristic-derivation" class="nav-link" data-scroll-target="#heuristic-derivation">(Heuristic) Derivation</a></li>
+  </ul></li>
+  <li><a href="#l2-spaces-on-riemannian-manifolds" id="toc-l2-spaces-on-riemannian-manifolds" class="nav-link" data-scroll-target="#l2-spaces-on-riemannian-manifolds"><span class="math inline">\(L^{2}\)</span> Spaces on Riemannian Manifolds</a>
+  <ul class="collapse">
+  <li><a href="#review-of-k-forms" id="toc-review-of-k-forms" class="nav-link" data-scroll-target="#review-of-k-forms">Review of <span class="math inline">\(k\)</span>-Forms</a></li>
+  <li><a href="#metric-tensor-on-1-forms" id="toc-metric-tensor-on-1-forms" class="nav-link" data-scroll-target="#metric-tensor-on-1-forms">Metric Tensor on <span class="math inline">\(1\)</span>-Forms</a></li>
+  <li><a href="#metric-tensor-on-2-forms" id="toc-metric-tensor-on-2-forms" class="nav-link" data-scroll-target="#metric-tensor-on-2-forms">Metric Tensor on <span class="math inline">\(2\)</span>-Forms</a></li>
+  <li><a href="#general-k-form-intuition" id="toc-general-k-form-intuition" class="nav-link" data-scroll-target="#general-k-form-intuition">General <span class="math inline">\(k\)</span>-Form Intuition</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="ZnVuZGFtZW50YWxzJTJDcmllbWFubmlhbi1nZW9tZXRyeSUyQ2xhcGxhY2lhbg==" data-listing-date-sort="1767762000000" data-listing-file-modified-sort="1769010313164" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1003">
-<div class="thumbnail"><a href="./blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html" class="no-external">
+<!-- main -->
+<main class="content" id="quarto-document-content">
 
-<p class="card-img-top"><img src="files/images/riem-volume-form.webp"  class="thumbnail-image card-img"/></p>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Defining the <span class="math inline">\(L^2\)</span> Space of <span class="math inline">\(k\)</span>-Forms on Riemannian Manifolds</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">fundamentals</div>
+    <div class="quarto-category">riemannian-geometry</div>
+    <div class="quarto-category">laplacian</div>
+  </div>
+  </div>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html" class="no-external">Defining the <span class="math inline">\(L^2\)</span> Space of <span class="math inline">\(k\)</span>-Forms on Riemannian Manifolds</a>
-</h3>
-<div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZnVuZGFtZW50YWxz'); return false;">fundamentals</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('cmllbWFubmlhbi1nZW9tZXRyeQ=='); return false;">riemannian-geometry</div>
+<div class="quarto-title-meta">
 
-<div class="listing-category" onclick="window.quartoListingCategory('bGFwbGFjaWFu'); return false;">laplacian</div>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ian McPherson </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 7, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
+
+</header>
+
+
+<div class="abstract-container">
+<p><span class="abstract-header">ABSTRACT</span> In order to define the Laplacian on Riemannian manifold <span class="math inline">\((M,g)\)</span>, one needs to define the space it acts on. This post defines the Riemannian volume form, and the <span class="math inline">\(L^2\)</span> space of functions (and more general <span class="math inline">\(k\)</span>-forms) on Riemannian manifolds. This will allow for the development of the Laplacian operator in this more general setting in later posts.</p>
 </div>
-<div class="delink listing-description"><a href="./blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html" class="no-external">
-<span class="abstract-header">ABSTRACT</span> In order to define the Laplacian on Riemannian manifold <span class="math inline">\((M,g)\)</span>, one needs to define the space it acts on. This post defines the Riemannian volume form, and the <span class="math inline">\(…</span><span class="math inline"></span>
-</a></div>
+<p><strong>Setting.</strong> Let <span class="math inline">\((M, g)\)</span> be a Riemannian manifold of dimension <span class="math inline">\(n\)</span> with metric tensor <span class="math inline">\(g\)</span>. The metric induces an inner product on the tangent space <span class="math inline">\(T_{x}M\)</span> at each point <span class="math inline">\(x \in M\)</span>, denoted by <span class="math inline">\(g(v,w)\)</span> for vectors <span class="math inline">\(v,w \in T_{x}M\)</span>.</p>
+<p>In the Euclidean case, the Laplacian operator <span class="math inline">\(\Delta\)</span> is defined on function <span class="math inline">\(f \in L^{2}(\mathbb{R}^{n})\)</span> by the operation</p>
+<p><span class="math display">\[\Delta  = -\operatorname{div} \circ \nabla.\]</span></p>
+<p>To generalize this to Riemannian manifolds, we first need to define the corresponding <span class="math inline">\(L^{2}\)</span> space for functions and more generally for <span class="math inline">\(k\)</span>-forms.</p>
+<div class="definition-box">
+<p><strong>Definition 1.</strong> Let <span class="math inline">\((M, g)\)</span> be a Riemannian manifold of dimension <span class="math inline">\(n\)</span>. The <span class="math inline">\(L^{2}\)</span> space of functions on <span class="math inline">\(M\)</span> is defined as the completion of <span class="math inline">\(C_{c}^{\infty}(M)\)</span> (the space of smooth functions with compact support) with respect to the inner product</p>
+<p><span class="math display">\[\langle f, g \rangle = \int_{M} f(x) g(x) \, dV_{g}(x),\]</span></p>
+<p>where <span class="math inline">\(dV_{g}\)</span> is the Riemannian volume form induced by the metric <span class="math inline">\(g\)</span>.</p>
 </div>
-<div class="metadata">
-<a href="./blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html" class="no-external">
-<div class="listing-date">
-Jan 7, 2026
+<p>Functions are <span class="math inline">\(0\)</span>-forms. Through the musical isomorphism, we can extend this definition to <span class="math inline">\(k\)</span>-forms.</p>
+<div class="definition-box">
+<p><strong>Definition 2.</strong> Let <span class="math inline">\((M, g)\)</span> be a Riemannian manifold of dimension <span class="math inline">\(n\)</span>. The <span class="math inline">\(L^{2}\)</span> space of <span class="math inline">\(k\)</span>-forms on <span class="math inline">\(M\)</span> is defined as the completion of <span class="math inline">\(C_{c}^{\infty}(M, \Lambda^{k}T^{*}M)\)</span> (the space of smooth <span class="math inline">\(k\)</span>-forms with compact support) with respect to the inner product</p>
+<p><span class="math display">\[\langle \omega, \eta \rangle = \int_{M} g(\omega(x), \eta(x)) \, dV_{g}(x),\]</span></p>
+<p>where <span class="math inline">\(g(\omega, \eta)\)</span> is the inner product on the space of <span class="math inline">\(k\)</span>-forms (with abuse of notation) induced by the metric <span class="math inline">\(g\)</span>.</p>
 </div>
-<div class="listing-author">
-Ian McPherson
+<div class="intuition-box">
+<p><strong><em>Intuition.</em></strong> The inner product on <span class="math inline">\(0\)</span>-forms globalize the pointwise overlap (their product) of functions by integrating against the Riemannian volume form. This aggregates the pointwise overlap over the entire manifold. This is the same idea as the <span class="math inline">\(L^{2}\)</span> space of functions on Euclidean space where implicitly we use the standard Euclidean volume form.</p>
+<p>More generally, for <span class="math inline">\(k\)</span>-forms, the pointwise inner product <span class="math inline">\(g(\omega, \eta)\)</span> measures how much the two <span class="math inline">\(k\)</span>-forms overlap at each point, and integrating this against the Riemannian volume form aggregates this overlap over the entire manifold. The generalizes the same underlying idea: the angle between globally defined objects (functions or <span class="math inline">\(k\)</span>-forms) is measured by aggregating their pointwise overlap across the manifold.</p>
 </div>
-</a>
+<section id="volume-forms" class="level2">
+<h2 class="anchored" data-anchor-id="volume-forms">Volume Forms</h2>
+<p>The Riemannian volume measure is defined by the following.</p>
+<div class="definition-box">
+<p><strong>Definition 3.</strong> Let <span class="math inline">\((M, g)\)</span> be a Riemannian manifold of dimension <span class="math inline">\(n\)</span>. The Riemannian volume form <span class="math inline">\(dV_{g}\)</span> is defined as</p>
+<p><span class="math display">\[dV_{g} = \sqrt{| \det(g) |} \, dx^{1} \wedge dx^{2} \wedge \cdots \wedge dx^{n},\]</span></p>
+<p>where <span class="math inline">\(g\)</span> is the matrix where <span class="math inline">\(g_{ij}\)</span> are the components of the metric tensor in local coordinates <span class="math inline">\((\partial_{x^{1}}, \partial_{x^{2}}, \ldots, \partial_{x^{n}})\)</span> where positively oriented basis of <span class="math inline">\(T_{x}M\)</span>.</p>
+<p>Under this formula, the volume of <span class="math inline">\((M,g)\)</span> is given by</p>
+<p><span class="math display">\[\operatorname{Vol}(M) = \int_{M} dV_{g}(x).\]</span></p>
 </div>
+<p>To see where this formula comes from, we consider recovering the volume of a set <span class="math inline">\(U \subset M\)</span> by summing up volumes of infinitessimal boxes within the tangent spaces <span class="math inline">\(T_{x}M\)</span> for <span class="math inline">\(x \in U\)</span>. This recovers the familiar idea for the Euclidean setting, where the volume of a set <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> is given by summing up volumes of infinitessimal boxes aligned with the standard basis vectors.</p>
+<p>We have the following picture in mind:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../files/images/riem-volume-form.webp" class="img-fluid figure-img"></p>
+<figcaption>Volume Form from Infinitessimal Boxes Illustration</figcaption>
+</figure>
 </div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<section id="heuristic-derivation" class="level3">
+<h3 class="anchored" data-anchor-id="heuristic-derivation">(Heuristic) Derivation</h3>
+<p>Consider a positively oriented coordinate neighborhood <span class="math inline">\(U \subset M\)</span> around <span class="math inline">\(x\)</span> with coordinates <span class="math inline">\((x^{1}, x^{2}, \ldots, x^{n})\)</span>. Then pick a large number of points <span class="math inline">\(\{p_{j}\}_{j=1}^{N}\)</span> in <span class="math inline">\(U\)</span>. For each point <span class="math inline">\(p_{j}\)</span>, define the infinitessimal box <span class="math inline">\(B_{j} \subset T_{p_{j}}M\)</span> with sides <span class="math inline">\((\Delta x^{1})\partial_{x^{1}}, (\Delta x^{2}) \partial_{x^{2}}, \ldots, (\Delta x^{n}) \partial_{x^{n}}\)</span> where <span class="math inline">\(\Delta x^{i}\)</span> are small increments on the <span class="math inline">\(i\)</span>-th local coordinate direction <span class="math inline">\(\partial_{x^{i}} = \frac{\partial}{\partial x^{i}}\)</span>. For each tangent space <span class="math inline">\(T_{p_{j}}M\)</span>, let <span class="math inline">\(v_1, v_2, \ldots, v_n\)</span> be the positively oriented orthonormal basis. Then, under Einstein summation notation, we can write</p>
+<p><span class="math display">\[\partial_{x^{i}} = \alpha_{i}^{k} v_{k},\]</span></p>
+<p>for some matrix <span class="math inline">\(\alpha^{k}_{i}\)</span>. Note that by convention, this means <span class="math inline">\(\alpha_{i}^{k} v_{k} \equiv \sum_{k=1}^{n} \alpha_{i}^{k} v_{k}\)</span>.</p>
+<p>We expect the volume to be</p>
+<p><span class="math display">\[\begin{aligned}
+\operatorname{Vol}(U) &amp; = \lim_{\Delta x^{i} \to 0} \lim_{N \to \infty} \sum_{j=1}^{N} \operatorname{Vol}(B_{j}) \\
+&amp; = \lim_{\Delta x^{i} \to 0} \lim_{N \to \infty} \sum_{j=1}^{N} \text{Volume of Parallelepiped with $i$th Side } (\Delta {x^{i}}) \sum_{k=1}^{n} \alpha_{i}^{k}v_{k}\\
+&amp; = \lim_{\Delta x^{i} \to 0} \lim_{N \to \infty} \sum_{j=1}^{N} \left( \prod_{i=1}^{n} \Delta x^{i} \right) \left| \det(\alpha_{i}^{k}) \right| \\
+&amp; = \int_{U} \left| \det(\alpha_{i}^{k}) \right| dx^{1} \wedge dx^{2} \wedge \cdots \wedge dx^{n}
+\end{aligned}\]</span></p>
+<p>where <span class="math inline">\(\det(\alpha)\)</span> is the absolute value of the determinant of the matrix with entries <span class="math inline">\(\alpha_{i}^{k}\)</span>. Note that in the second line we do not use the summation convention for <span class="math inline">\(i\)</span>.</p>
+<p>By definition of the metric tensor <span class="math inline">\(g\)</span>, we have that</p>
+<p><span class="math display">\[
+g_{ij} = g(\partial_{x^{i}}, \partial_{x^{j}}) = g(\alpha_{i}^{k} v_{k}, \alpha_{j}^{\ell} v_{\ell}) = \alpha_{i}^{k} \alpha_{j}^{\ell} g(v_{k}, v_{\ell}) = \alpha_{i}^{k} \alpha_{j}^{\ell} \delta_{k \ell} = \alpha_{i}^{k} \alpha_{j}^{k} = (AA^{T})_{ij},
+\]</span></p>
+<p>where <span class="math inline">\(A = (\alpha_{i}^{j})\)</span>. Thus, it follows that</p>
+<p><span class="math display">\[\det(g) = \det(AA^{T}) = \det(A)^{2},\]</span></p>
+<p>and so we have that the volume form of <span class="math inline">\(U\)</span> should be given by</p>
+<p><span class="math display">\[
+\operatorname{Vol}(U) = \int_{U} \sqrt{|\det(g)|} \, dx^{1} \wedge dx^{2} \wedge \cdots \wedge dx^{n}.
+\]</span></p>
+<p>This derivation is heuristic, but it provides the intuition for why the Riemannian volume form takes the form it does.</p>
+<p><strong><em>Exercise.</em></strong> Verify that the volume form is a well-defined <span class="math inline">\(n\)</span>-form on <span class="math inline">\(M\)</span>; that is, it does not depend on the choice of the positively oriented coordinate chart.</p>
+</section>
+</section>
+<section id="l2-spaces-on-riemannian-manifolds" class="level2">
+<h2 class="anchored" data-anchor-id="l2-spaces-on-riemannian-manifolds"><span class="math inline">\(L^{2}\)</span> Spaces on Riemannian Manifolds</h2>
+<p>With the Riemannian volume form defined, we can now define the desired <span class="math inline">\(L^{2}\)</span> spaces. The first definition for functions is natural, as it generalizes the Euclidean <span class="math inline">\(L^{2}\)</span> space by replacing the standard volume form with the Riemannian volume form. The second definition for <span class="math inline">\(k\)</span>-forms uses the inner product on <span class="math inline">\(k\)</span>-forms induced by the metric tensor <span class="math inline">\(g\)</span>.</p>
+<p>The rest of this section is devoted to recalling the definition of <span class="math inline">\(k\)</span>-forms, and understanding the induced inner product from the metric tensor. By abuse of notation, we will denote the inner product on <span class="math inline">\(k\)</span>-forms induced by <span class="math inline">\(g\)</span> also by <span class="math inline">\(g(\cdot, \cdot)\)</span>.</p>
+<section id="review-of-k-forms" class="level3">
+<h3 class="anchored" data-anchor-id="review-of-k-forms">Review of <span class="math inline">\(k\)</span>-Forms</h3>
+</section>
+<section id="metric-tensor-on-1-forms" class="level3">
+<h3 class="anchored" data-anchor-id="metric-tensor-on-1-forms">Metric Tensor on <span class="math inline">\(1\)</span>-Forms</h3>
+</section>
+<section id="metric-tensor-on-2-forms" class="level3">
+<h3 class="anchored" data-anchor-id="metric-tensor-on-2-forms">Metric Tensor on <span class="math inline">\(2\)</span>-Forms</h3>
+</section>
+<section id="general-k-form-intuition" class="level3">
+<h3 class="anchored" data-anchor-id="general-k-form-intuition">General <span class="math inline">\(k\)</span>-Form Intuition</h3>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

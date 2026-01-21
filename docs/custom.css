@@ -2,3 +2,44 @@
 span.__dimensions_badge_embed__, div.altmetric-embed {
   display: inline-block;
 }
+
+/* Container for Definitions */
+.definition-box {
+    background-color: #e6edf4; /* Light blue background */
+    border-left: 5px solid #0366d6; /* Strong blue accent bar */
+    padding: 15px 10px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-family: serif; /* Academic feel */
+    line-height: 1.6;
+}
+
+/* Specific styling for the "Definition X" label */
+.definition-box strong:first-child {
+    color: #2962a3;
+    font-size: 1.1em;
+}
+
+/* Container for Intuition */
+.intuition-box {
+    background-color: #fff9e6; /* Light cream/yellow background */
+    border-left: 5px solid #f59e0b; /* Amber accent bar */
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-style: italic; /* Common for intuition/remarks */
+    line-height: 1.6;
+}
+
+/* Specific styling for the "Intuition" label */
+.intuition-box strong:first-child {
+    font-style: normal; /* Keep the label itself upright */
+    color: #b45309;
+    font-size: 1.1em;
+}
+
+/* Adjusting display math spacing inside boxes */
+.definition-box .katex-display, 
+.intuition-box .katex-display {
+    margin: 1em 0 !important;
+}

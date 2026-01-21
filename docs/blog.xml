@@ -15,6 +15,100 @@
 <link>https://mcphersonianoliver.github.io/blog.html</link>
 </image>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Tue, 13 Jan 2026 22:57:22 GMT</lastBuildDate>
+<lastBuildDate>Wed, 07 Jan 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Defining the \(L^2\) Space of \(k\)-Forms on Riemannian Manifolds</title>
+  <dc:creator>Ian McPherson</dc:creator>
+  <link>https://mcphersonianoliver.github.io/blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="abstract-container">
+<p><span class="abstract-header">ABSTRACT</span> In order to define the Laplacian on Riemannian manifold <img src="https://latex.codecogs.com/png.latex?(M,g)">, one needs to define the space it acts on. This post defines the Riemannian volume form, and the <img src="https://latex.codecogs.com/png.latex?L%5E2"> space of functions (and more general <img src="https://latex.codecogs.com/png.latex?k">-forms) on Riemannian manifolds. This will allow for the development of the Laplacian operator in this more general setting in later posts.</p>
+</div>
+<p><strong>Setting.</strong> Let <img src="https://latex.codecogs.com/png.latex?(M,%20g)"> be a Riemannian manifold of dimension <img src="https://latex.codecogs.com/png.latex?n"> with metric tensor <img src="https://latex.codecogs.com/png.latex?g">. The metric induces an inner product on the tangent space <img src="https://latex.codecogs.com/png.latex?T_%7Bx%7DM"> at each point <img src="https://latex.codecogs.com/png.latex?x%20%5Cin%20M">, denoted by <img src="https://latex.codecogs.com/png.latex?g(v,w)"> for vectors <img src="https://latex.codecogs.com/png.latex?v,w%20%5Cin%20T_%7Bx%7DM">.</p>
+<p>In the Euclidean case, the Laplacian operator <img src="https://latex.codecogs.com/png.latex?%5CDelta"> is defined on function <img src="https://latex.codecogs.com/png.latex?f%20%5Cin%20L%5E%7B2%7D(%5Cmathbb%7BR%7D%5E%7Bn%7D)"> by the operation</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5CDelta%20%20=%20-%5Coperatorname%7Bdiv%7D%20%5Ccirc%20%5Cnabla."></p>
+<p>To generalize this to Riemannian manifolds, we first need to define the corresponding <img src="https://latex.codecogs.com/png.latex?L%5E%7B2%7D"> space for functions and more generally for <img src="https://latex.codecogs.com/png.latex?k">-forms.</p>
+<div class="definition-box">
+<p><strong>Definition 1.</strong> Let <img src="https://latex.codecogs.com/png.latex?(M,%20g)"> be a Riemannian manifold of dimension <img src="https://latex.codecogs.com/png.latex?n">. The <img src="https://latex.codecogs.com/png.latex?L%5E%7B2%7D"> space of functions on <img src="https://latex.codecogs.com/png.latex?M"> is defined as the completion of <img src="https://latex.codecogs.com/png.latex?C_%7Bc%7D%5E%7B%5Cinfty%7D(M)"> (the space of smooth functions with compact support) with respect to the inner product</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Clangle%20f,%20g%20%5Crangle%20=%20%5Cint_%7BM%7D%20f(x)%20g(x)%20%5C,%20dV_%7Bg%7D(x),"></p>
+<p>where <img src="https://latex.codecogs.com/png.latex?dV_%7Bg%7D"> is the Riemannian volume form induced by the metric <img src="https://latex.codecogs.com/png.latex?g">.</p>
+</div>
+<p>Functions are <img src="https://latex.codecogs.com/png.latex?0">-forms. Through the musical isomorphism, we can extend this definition to <img src="https://latex.codecogs.com/png.latex?k">-forms.</p>
+<div class="definition-box">
+<p><strong>Definition 2.</strong> Let <img src="https://latex.codecogs.com/png.latex?(M,%20g)"> be a Riemannian manifold of dimension <img src="https://latex.codecogs.com/png.latex?n">. The <img src="https://latex.codecogs.com/png.latex?L%5E%7B2%7D"> space of <img src="https://latex.codecogs.com/png.latex?k">-forms on <img src="https://latex.codecogs.com/png.latex?M"> is defined as the completion of <img src="https://latex.codecogs.com/png.latex?C_%7Bc%7D%5E%7B%5Cinfty%7D(M,%20%5CLambda%5E%7Bk%7DT%5E%7B*%7DM)"> (the space of smooth <img src="https://latex.codecogs.com/png.latex?k">-forms with compact support) with respect to the inner product</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Clangle%20%5Comega,%20%5Ceta%20%5Crangle%20=%20%5Cint_%7BM%7D%20g(%5Comega(x),%20%5Ceta(x))%20%5C,%20dV_%7Bg%7D(x),"></p>
+<p>where <img src="https://latex.codecogs.com/png.latex?g(%5Comega,%20%5Ceta)"> is the inner product on the space of <img src="https://latex.codecogs.com/png.latex?k">-forms (with abuse of notation) induced by the metric <img src="https://latex.codecogs.com/png.latex?g">.</p>
+</div>
+<div class="intuition-box">
+<p><strong><em>Intuition.</em></strong> The inner product on <img src="https://latex.codecogs.com/png.latex?0">-forms globalize the pointwise overlap (their product) of functions by integrating against the Riemannian volume form. This aggregates the pointwise overlap over the entire manifold. This is the same idea as the <img src="https://latex.codecogs.com/png.latex?L%5E%7B2%7D"> space of functions on Euclidean space where implicitly we use the standard Euclidean volume form.</p>
+<p>More generally, for <img src="https://latex.codecogs.com/png.latex?k">-forms, the pointwise inner product <img src="https://latex.codecogs.com/png.latex?g(%5Comega,%20%5Ceta)"> measures how much the two <img src="https://latex.codecogs.com/png.latex?k">-forms overlap at each point, and integrating this against the Riemannian volume form aggregates this overlap over the entire manifold. The generalizes the same underlying idea: the angle between globally defined objects (functions or <img src="https://latex.codecogs.com/png.latex?k">-forms) is measured by aggregating their pointwise overlap across the manifold.</p>
+</div>
+<section id="volume-forms" class="level2">
+<h2 class="anchored" data-anchor-id="volume-forms">Volume Forms</h2>
+<p>The Riemannian volume measure is defined by the following.</p>
+<div class="definition-box">
+<p><strong>Definition 3.</strong> Let <img src="https://latex.codecogs.com/png.latex?(M,%20g)"> be a Riemannian manifold of dimension <img src="https://latex.codecogs.com/png.latex?n">. The Riemannian volume form <img src="https://latex.codecogs.com/png.latex?dV_%7Bg%7D"> is defined as</p>
+<p><img src="https://latex.codecogs.com/png.latex?dV_%7Bg%7D%20=%20%5Csqrt%7B%7C%20%5Cdet(g)%20%7C%7D%20%5C,%20dx%5E%7B1%7D%20%5Cwedge%20dx%5E%7B2%7D%20%5Cwedge%20%5Ccdots%20%5Cwedge%20dx%5E%7Bn%7D,"></p>
+<p>where <img src="https://latex.codecogs.com/png.latex?g"> is the matrix where <img src="https://latex.codecogs.com/png.latex?g_%7Bij%7D"> are the components of the metric tensor in local coordinates <img src="https://latex.codecogs.com/png.latex?(%5Cpartial_%7Bx%5E%7B1%7D%7D,%20%5Cpartial_%7Bx%5E%7B2%7D%7D,%20%5Cldots,%20%5Cpartial_%7Bx%5E%7Bn%7D%7D)"> where positively oriented basis of <img src="https://latex.codecogs.com/png.latex?T_%7Bx%7DM">.</p>
+<p>Under this formula, the volume of <img src="https://latex.codecogs.com/png.latex?(M,g)"> is given by</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Coperatorname%7BVol%7D(M)%20=%20%5Cint_%7BM%7D%20dV_%7Bg%7D(x)."></p>
+</div>
+<p>To see where this formula comes from, we consider recovering the volume of a set <img src="https://latex.codecogs.com/png.latex?U%20%5Csubset%20M"> by summing up volumes of infinitessimal boxes within the tangent spaces <img src="https://latex.codecogs.com/png.latex?T_%7Bx%7DM"> for <img src="https://latex.codecogs.com/png.latex?x%20%5Cin%20U">. This recovers the familiar idea for the Euclidean setting, where the volume of a set <img src="https://latex.codecogs.com/png.latex?U%20%5Csubset%20%5Cmathbb%7BR%7D%5E%7Bn%7D"> is given by summing up volumes of infinitessimal boxes aligned with the standard basis vectors.</p>
+<p>We have the following picture in mind:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mcphersonianoliver.github.io/files/images/riem-volume-form.webp" class="img-fluid figure-img"></p>
+<figcaption>Volume Form from Infinitessimal Boxes Illustration</figcaption>
+</figure>
+</div>
+<section id="heuristic-derivation" class="level3">
+<h3 class="anchored" data-anchor-id="heuristic-derivation">(Heuristic) Derivation</h3>
+<p>Consider a positively oriented coordinate neighborhood <img src="https://latex.codecogs.com/png.latex?U%20%5Csubset%20M"> around <img src="https://latex.codecogs.com/png.latex?x"> with coordinates <img src="https://latex.codecogs.com/png.latex?(x%5E%7B1%7D,%20x%5E%7B2%7D,%20%5Cldots,%20x%5E%7Bn%7D)">. Then pick a large number of points <img src="https://latex.codecogs.com/png.latex?%5C%7Bp_%7Bj%7D%5C%7D_%7Bj=1%7D%5E%7BN%7D"> in <img src="https://latex.codecogs.com/png.latex?U">. For each point <img src="https://latex.codecogs.com/png.latex?p_%7Bj%7D">, define the infinitessimal box <img src="https://latex.codecogs.com/png.latex?B_%7Bj%7D%20%5Csubset%20T_%7Bp_%7Bj%7D%7DM"> with sides <img src="https://latex.codecogs.com/png.latex?(%5CDelta%20x%5E%7B1%7D)%5Cpartial_%7Bx%5E%7B1%7D%7D,%20(%5CDelta%20x%5E%7B2%7D)%20%5Cpartial_%7Bx%5E%7B2%7D%7D,%20%5Cldots,%20(%5CDelta%20x%5E%7Bn%7D)%20%5Cpartial_%7Bx%5E%7Bn%7D%7D"> where <img src="https://latex.codecogs.com/png.latex?%5CDelta%20x%5E%7Bi%7D"> are small increments on the <img src="https://latex.codecogs.com/png.latex?i">-th local coordinate direction <img src="https://latex.codecogs.com/png.latex?%5Cpartial_%7Bx%5E%7Bi%7D%7D%20=%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20x%5E%7Bi%7D%7D">. For each tangent space <img src="https://latex.codecogs.com/png.latex?T_%7Bp_%7Bj%7D%7DM">, let <img src="https://latex.codecogs.com/png.latex?v_1,%20v_2,%20%5Cldots,%20v_n"> be the positively oriented orthonormal basis. Then, under Einstein summation notation, we can write</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cpartial_%7Bx%5E%7Bi%7D%7D%20=%20%5Calpha_%7Bi%7D%5E%7Bk%7D%20v_%7Bk%7D,"></p>
+<p>for some matrix <img src="https://latex.codecogs.com/png.latex?%5Calpha%5E%7Bk%7D_%7Bi%7D">. Note that by convention, this means <img src="https://latex.codecogs.com/png.latex?%5Calpha_%7Bi%7D%5E%7Bk%7D%20v_%7Bk%7D%20%5Cequiv%20%5Csum_%7Bk=1%7D%5E%7Bn%7D%20%5Calpha_%7Bi%7D%5E%7Bk%7D%20v_%7Bk%7D">.</p>
+<p>We expect the volume to be</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Baligned%7D%0A%5Coperatorname%7BVol%7D(U)%20&amp;%20=%20%5Clim_%7B%5CDelta%20x%5E%7Bi%7D%20%5Cto%200%7D%20%5Clim_%7BN%20%5Cto%20%5Cinfty%7D%20%5Csum_%7Bj=1%7D%5E%7BN%7D%20%5Coperatorname%7BVol%7D(B_%7Bj%7D)%20%5C%5C%0A&amp;%20=%20%5Clim_%7B%5CDelta%20x%5E%7Bi%7D%20%5Cto%200%7D%20%5Clim_%7BN%20%5Cto%20%5Cinfty%7D%20%5Csum_%7Bj=1%7D%5E%7BN%7D%20%5Ctext%7BVolume%20of%20Parallelepiped%20with%20$i$th%20Side%20%7D%20(%5CDelta%20%7Bx%5E%7Bi%7D%7D)%20%5Csum_%7Bk=1%7D%5E%7Bn%7D%20%5Calpha_%7Bi%7D%5E%7Bk%7Dv_%7Bk%7D%5C%5C%0A&amp;%20=%20%5Clim_%7B%5CDelta%20x%5E%7Bi%7D%20%5Cto%200%7D%20%5Clim_%7BN%20%5Cto%20%5Cinfty%7D%20%5Csum_%7Bj=1%7D%5E%7BN%7D%20%5Cleft(%20%5Cprod_%7Bi=1%7D%5E%7Bn%7D%20%5CDelta%20x%5E%7Bi%7D%20%5Cright)%20%5Cleft%7C%20%5Cdet(%5Calpha_%7Bi%7D%5E%7Bk%7D)%20%5Cright%7C%20%5C%5C%0A&amp;%20=%20%5Cint_%7BU%7D%20%5Cleft%7C%20%5Cdet(%5Calpha_%7Bi%7D%5E%7Bk%7D)%20%5Cright%7C%20dx%5E%7B1%7D%20%5Cwedge%20dx%5E%7B2%7D%20%5Cwedge%20%5Ccdots%20%5Cwedge%20dx%5E%7Bn%7D%0A%5Cend%7Baligned%7D"></p>
+<p>where <img src="https://latex.codecogs.com/png.latex?%5Cdet(%5Calpha)"> is the absolute value of the determinant of the matrix with entries <img src="https://latex.codecogs.com/png.latex?%5Calpha_%7Bi%7D%5E%7Bk%7D">. Note that in the second line we do not use the summation convention for <img src="https://latex.codecogs.com/png.latex?i">.</p>
+<p>By definition of the metric tensor <img src="https://latex.codecogs.com/png.latex?g">, we have that</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ag_%7Bij%7D%20=%20g(%5Cpartial_%7Bx%5E%7Bi%7D%7D,%20%5Cpartial_%7Bx%5E%7Bj%7D%7D)%20=%20g(%5Calpha_%7Bi%7D%5E%7Bk%7D%20v_%7Bk%7D,%20%5Calpha_%7Bj%7D%5E%7B%5Cell%7D%20v_%7B%5Cell%7D)%20=%20%5Calpha_%7Bi%7D%5E%7Bk%7D%20%5Calpha_%7Bj%7D%5E%7B%5Cell%7D%20g(v_%7Bk%7D,%20v_%7B%5Cell%7D)%20=%20%5Calpha_%7Bi%7D%5E%7Bk%7D%20%5Calpha_%7Bj%7D%5E%7B%5Cell%7D%20%5Cdelta_%7Bk%20%5Cell%7D%20=%20%5Calpha_%7Bi%7D%5E%7Bk%7D%20%5Calpha_%7Bj%7D%5E%7Bk%7D%20=%20(AA%5E%7BT%7D)_%7Bij%7D,%0A"></p>
+<p>where <img src="https://latex.codecogs.com/png.latex?A%20=%20(%5Calpha_%7Bi%7D%5E%7Bj%7D)">. Thus, it follows that</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cdet(g)%20=%20%5Cdet(AA%5E%7BT%7D)%20=%20%5Cdet(A)%5E%7B2%7D,"></p>
+<p>and so we have that the volume form of <img src="https://latex.codecogs.com/png.latex?U"> should be given by</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Coperatorname%7BVol%7D(U)%20=%20%5Cint_%7BU%7D%20%5Csqrt%7B%7C%5Cdet(g)%7C%7D%20%5C,%20dx%5E%7B1%7D%20%5Cwedge%20dx%5E%7B2%7D%20%5Cwedge%20%5Ccdots%20%5Cwedge%20dx%5E%7Bn%7D.%0A"></p>
+<p>This derivation is heuristic, but it provides the intuition for why the Riemannian volume form takes the form it does.</p>
+<p><strong><em>Exercise.</em></strong> Verify that the volume form is a well-defined <img src="https://latex.codecogs.com/png.latex?n">-form on <img src="https://latex.codecogs.com/png.latex?M">; that is, it does not depend on the choice of the positively oriented coordinate chart.</p>
+</section>
+</section>
+<section id="l2-spaces-on-riemannian-manifolds" class="level2">
+<h2 class="anchored" data-anchor-id="l2-spaces-on-riemannian-manifolds"><img src="https://latex.codecogs.com/png.latex?L%5E%7B2%7D"> Spaces on Riemannian Manifolds</h2>
+<p>With the Riemannian volume form defined, we can now define the desired <img src="https://latex.codecogs.com/png.latex?L%5E%7B2%7D"> spaces. The first definition for functions is natural, as it generalizes the Euclidean <img src="https://latex.codecogs.com/png.latex?L%5E%7B2%7D"> space by replacing the standard volume form with the Riemannian volume form. The second definition for <img src="https://latex.codecogs.com/png.latex?k">-forms uses the inner product on <img src="https://latex.codecogs.com/png.latex?k">-forms induced by the metric tensor <img src="https://latex.codecogs.com/png.latex?g">.</p>
+<p>The rest of this section is devoted to recalling the definition of <img src="https://latex.codecogs.com/png.latex?k">-forms, and understanding the induced inner product from the metric tensor. By abuse of notation, we will denote the inner product on <img src="https://latex.codecogs.com/png.latex?k">-forms induced by <img src="https://latex.codecogs.com/png.latex?g"> also by <img src="https://latex.codecogs.com/png.latex?g(%5Ccdot,%20%5Ccdot)">.</p>
+<section id="review-of-k-forms" class="level3">
+<h3 class="anchored" data-anchor-id="review-of-k-forms">Review of <img src="https://latex.codecogs.com/png.latex?k">-Forms</h3>
+</section>
+<section id="metric-tensor-on-1-forms" class="level3">
+<h3 class="anchored" data-anchor-id="metric-tensor-on-1-forms">Metric Tensor on <img src="https://latex.codecogs.com/png.latex?1">-Forms</h3>
+</section>
+<section id="metric-tensor-on-2-forms" class="level3">
+<h3 class="anchored" data-anchor-id="metric-tensor-on-2-forms">Metric Tensor on <img src="https://latex.codecogs.com/png.latex?2">-Forms</h3>
+</section>
+<section id="general-k-form-intuition" class="level3">
+<h3 class="anchored" data-anchor-id="general-k-form-intuition">General <img src="https://latex.codecogs.com/png.latex?k">-Form Intuition</h3>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>fundamentals</category>
+  <category>riemannian-geometry</category>
+  <category>laplacian</category>
+  <guid>https://mcphersonianoliver.github.io/blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html</guid>
+  <pubDate>Wed, 07 Jan 2026 05:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>
