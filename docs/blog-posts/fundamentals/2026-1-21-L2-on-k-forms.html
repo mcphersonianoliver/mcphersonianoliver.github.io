@@ -304,6 +304,8 @@ window.Quarto = {
 <p>Under this formula, the volume of <span class="math inline">\((M,g)\)</span> is given by</p>
 <p><span class="math display">\[\operatorname{Vol}(M) = \int_{M} dV_{g}(x).\]</span></p>
 </div>
+<section id="heuristic-derivation" class="level3">
+<h3 class="anchored" data-anchor-id="heuristic-derivation">(Heuristic) Derivation</h3>
 <p>To see where this formula comes from, we consider recovering the volume of a set <span class="math inline">\(U \subset M\)</span> by summing up volumes of infinitessimal boxes within the tangent spaces <span class="math inline">\(T_{x}M\)</span> for <span class="math inline">\(x \in U\)</span>. This recovers the familiar idea for the Euclidean setting, where the volume of a set <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> is given by summing up volumes of infinitessimal boxes aligned with the standard basis vectors.</p>
 <p>We have the following picture in mind:</p>
 <div class="quarto-figure quarto-figure-center">
@@ -312,9 +314,7 @@ window.Quarto = {
 <figcaption>Volume Form from Infinitessimal Boxes Illustration</figcaption>
 </figure>
 </div>
-<section id="heuristic-derivation" class="level3">
-<h3 class="anchored" data-anchor-id="heuristic-derivation">(Heuristic) Derivation</h3>
-<p>Consider a positively oriented coordinate neighborhood <span class="math inline">\(U \subset M\)</span> around <span class="math inline">\(x\)</span> with coordinates <span class="math inline">\((x^{1}, x^{2}, \ldots, x^{n})\)</span>. Then pick a large number of points <span class="math inline">\(\{p_{j}\}_{j=1}^{N}\)</span> in <span class="math inline">\(U\)</span>. For each point <span class="math inline">\(p_{j}\)</span>, define the infinitessimal box <span class="math inline">\(B_{j} \subset T_{p_{j}}M\)</span> with sides <span class="math inline">\((\Delta x^{1})\partial_{x^{1}}, (\Delta x^{2}) \partial_{x^{2}}, \ldots, (\Delta x^{n}) \partial_{x^{n}}\)</span> where <span class="math inline">\(\Delta x^{i}\)</span> are small increments on the <span class="math inline">\(i\)</span>-th local coordinate direction <span class="math inline">\(\partial_{x^{i}} = \frac{\partial}{\partial x^{i}}\)</span>. For each tangent space <span class="math inline">\(T_{p_{j}}M\)</span>, let <span class="math inline">\(v_1, v_2, \ldots, v_n\)</span> be the positively oriented orthonormal basis. Then, under Einstein summation notation, we can write</p>
+<p>More concretely, consider a positively oriented coordinate neighborhood <span class="math inline">\(U \subset M\)</span> around <span class="math inline">\(x\)</span> with coordinates <span class="math inline">\((x^{1}, x^{2}, \ldots, x^{n})\)</span>. Then pick a large number of points <span class="math inline">\(\{p_{j}\}_{j=1}^{N}\)</span> in <span class="math inline">\(U\)</span>. For each point <span class="math inline">\(p_{j}\)</span>, define the infinitessimal box <span class="math inline">\(B_{j} \subset T_{p_{j}}M\)</span> with sides <span class="math inline">\((\Delta x^{1})\partial_{x^{1}}, (\Delta x^{2}) \partial_{x^{2}}, \ldots, (\Delta x^{n}) \partial_{x^{n}}\)</span> where <span class="math inline">\(\Delta x^{i}\)</span> are small increments on the <span class="math inline">\(i\)</span>-th local coordinate direction <span class="math inline">\(\partial_{x^{i}} = \frac{\partial}{\partial x^{i}}\)</span>. For each tangent space <span class="math inline">\(T_{p_{j}}M\)</span>, let <span class="math inline">\(v_1, v_2, \ldots, v_n\)</span> be the positively oriented orthonormal basis. Then, under Einstein summation notation, we can write</p>
 <p><span class="math display">\[\partial_{x^{i}} = \alpha_{i}^{k} v_{k},\]</span></p>
 <p>for some matrix <span class="math inline">\(\alpha^{k}_{i}\)</span>. Note that by convention, this means <span class="math inline">\(\alpha_{i}^{k} v_{k} \equiv \sum_{k=1}^{n} \alpha_{i}^{k} v_{k}\)</span>.</p>
 <p>We expect the volume to be</p>

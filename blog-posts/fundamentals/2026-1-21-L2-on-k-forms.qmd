@@ -59,14 +59,14 @@ Under this formula, the volume of $(M,g)$ is given by
 $$\operatorname{Vol}(M) = \int_{M} dV_{g}(x).$$
 </div>
 
+### (Heuristic) Derivation
 To see where this formula comes from, we consider recovering the volume of a set $U \subset M$ by summing up volumes of infinitessimal boxes within the tangent spaces $T_{x}M$ for $x \in U$. This recovers the familiar idea for the Euclidean setting, where the volume of a set $U \subset \mathbb{R}^{n}$ is given by summing up volumes of infinitessimal boxes aligned with the standard basis vectors. 
 
 We have the following picture in mind:
 
 ![Volume Form from Infinitessimal Boxes Illustration](../../files/images/riem-volume-form.webp)
 
-### (Heuristic) Derivation
-Consider a positively oriented coordinate neighborhood $U \subset M$ around $x$ with coordinates $(x^{1}, x^{2}, \ldots, x^{n})$. Then pick a large number of points $\{p_{j}\}_{j=1}^{N}$ in $U$. For each point $p_{j}$, define the infinitessimal box $B_{j} \subset T_{p_{j}}M$ with sides $(\Delta x^{1})\partial_{x^{1}}, (\Delta x^{2}) \partial_{x^{2}}, \ldots, (\Delta x^{n}) \partial_{x^{n}}$ where $\Delta x^{i}$ are small increments on the $i$-th local coordinate direction $\partial_{x^{i}} = \frac{\partial}{\partial x^{i}}$. For each tangent space $T_{p_{j}}M$, let $v_1, v_2, \ldots, v_n$ be the positively oriented orthonormal basis. Then, under Einstein summation notation, we can write
+More concretely, consider a positively oriented coordinate neighborhood $U \subset M$ around $x$ with coordinates $(x^{1}, x^{2}, \ldots, x^{n})$. Then pick a large number of points $\{p_{j}\}_{j=1}^{N}$ in $U$. For each point $p_{j}$, define the infinitessimal box $B_{j} \subset T_{p_{j}}M$ with sides $(\Delta x^{1})\partial_{x^{1}}, (\Delta x^{2}) \partial_{x^{2}}, \ldots, (\Delta x^{n}) \partial_{x^{n}}$ where $\Delta x^{i}$ are small increments on the $i$-th local coordinate direction $\partial_{x^{i}} = \frac{\partial}{\partial x^{i}}$. For each tangent space $T_{p_{j}}M$, let $v_1, v_2, \ldots, v_n$ be the positively oriented orthonormal basis. Then, under Einstein summation notation, we can write
 
 $$\partial_{x^{i}} = \alpha_{i}^{k} v_{k},$$
 
