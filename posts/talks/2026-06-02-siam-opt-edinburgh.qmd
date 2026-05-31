@@ -1,0 +1,7 @@
+---
+title: "Talk at SIAM Conference on Optimization"
+date: "2026-06-02"
+categories: [talks, conferences]
+description: "Presenting at the SIAM Conference on Optimization at the University of Edinburgh."
+---
+Presenting *Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods* at the SIAM Conference on Optimization (OP26) at the University of Edinburgh.

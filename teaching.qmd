@@ -9,14 +9,17 @@ Recipient of the **Whiting School of Engineering Teaching Assistant Award (2024)
 :::
 
 ## Instructor of Record
-
-- **Geometric Toolbox for Data Science** (EN.500.111) <br> <span class="text-muted" style="font-size: 0.9em;">Johns Hopkins University | Fall 2024. Designed and taught a survey course in Geometric Methods for High Dimensional Statistics.</span>
+<!-- 
+- **Geometric Toolbox for Data Science** (EN.500.111) <br> <span class="text-muted" style="font-size: 0.9em;">Johns Hopkins University | Fall 2024. Designed and taught a survey course in Geometric Methods for High Dimensional Statistics.</span> -->
 
 - **Master’s Program Probability Review** <br> <span class="text-muted" style="font-size: 0.9em;">Johns Hopkins University | Summer 2023, Summer 2024. Designed and led a review series on probability fundamentals for incoming Master’s students.</span>
 
 ## Teaching Assistantships
 
 ### Johns Hopkins University
+- **Causal Inference** (EN.553.747) <br> <span class="text-muted" style="font-size: 0.9em;">Spring 2026 | For Professor Alden Green | Graduate-level course on the theory and methods of causal inference.</span>
+
+- **Probability Theory II** (EN.553.733) <br> <span class="text-muted" style="font-size: 0.9em;">Spring 2026 | For Professor Tim Kunisky | Second course of graduate-level course on measure-theoretic probability, focusing on stochstical processes building up to introductory stochastic analysis. </span>
 
 - **Mathematics of Data Science** (EN.553.747) <br> <span class="text-muted" style="font-size: 0.9em;">Fall 2025 | For Professor Mateo Díaz | Ph.D level course on high-dimensional statistics, optimization, and geometry.</span>
 

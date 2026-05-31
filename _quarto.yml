@@ -36,8 +36,8 @@ website:
       - text: Teaching # Comment the Teaching part out to remove the Teaching page
         href: teaching.qmd
 
-      - text: Blog
-        href: blog.qmd
+      # - text: Blog
+      #   href: blog.qmd
       # - text: Outreach
       #   menu:        
       #   - text: Presentations

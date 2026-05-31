@@ -1,7 +1,54 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html"
+    ]
+  },
+  {
+    "listing": "/people.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/talks/2026-11-16-siam-mds.html",
+      "/posts/talks/2026-11-01-informs-san-francisco.html",
+      "/posts/talks/2026-08-18-mopta-lehigh.html",
+      "/posts/talks/2026-06-02-siam-opt-edinburgh.html",
+      "/posts/news/2025-09-01-efpl-summer-school.html",
+      "/posts/news/2025-08-01-princeton-ml-theory.html",
+      "/posts/talks/2025-07-15-iccopt-talk.html",
+      "/posts/news/2025-07-01-iccopt-session-chair.html",
+      "/posts/talks/2025-04-15-minds-talk.html",
+      "/posts/talks/2025-04-01-uw-madison-seminar.html",
+      "/posts/news/2025-04-01-siam-applied-math.html",
+      "/posts/news/2025-03-01-columbia-ot-workshop.html",
+      "/posts/talks/2025-03-01-jhu-ams-seminar.html",
+      "/posts/news/2024-12-01-los-andes-optimization.html",
+      "/posts/talks/2024-10-01-jhu-ams-seminar.html",
+      "/posts/awards/2024-09-01-duncand-grant.html",
+      "/posts/news/2024-08-01-princeton-graduate-school.html",
+      "/posts/news/2024-06-01-slmath-summer-school.html",
+      "/posts/news/2024-05-15-icerm-interacting-particles.html",
+      "/posts/awards/2024-04-01-wse-ta-award.html",
+      "/posts/talks/2024-01-01-jhu-ams-seminar.html",
+      "/posts/awards/2023-09-01-isaacs-fellowship.html",
+      "/posts/news/2023-06-01-icerm-computational-analysis.html",
+      "/posts/news/2023-05-01-icerm-optimal-transport.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": []
+  },
+  {
     "listing": "/posts.html",
     "items": [
+      "/posts/talks/2026-11-16-siam-mds.html",
+      "/posts/talks/2026-11-01-informs-san-francisco.html",
+      "/posts/talks/2026-08-18-mopta-lehigh.html",
+      "/posts/talks/2026-06-02-siam-opt-edinburgh.html",
       "/posts/news/2025-09-01-efpl-summer-school.html",
       "/posts/news/2025-08-01-princeton-ml-theory.html",
       "/posts/talks/2025-07-15-iccopt-talk.html",
@@ -22,46 +69,6 @@
       "/posts/awards/2023-09-01-isaacs-fellowship.html",
       "/posts/news/2023-06-01-icerm-computational-analysis.html",
       "/posts/news/2023-05-01-icerm-optimal-transport.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": []
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/posts/news/2025-09-01-efpl-summer-school.html",
-      "/posts/news/2025-08-01-princeton-ml-theory.html",
-      "/posts/talks/2025-07-15-iccopt-talk.html",
-      "/posts/news/2025-07-01-iccopt-session-chair.html",
-      "/posts/talks/2025-04-15-minds-talk.html",
-      "/posts/talks/2025-04-01-uw-madison-seminar.html",
-      "/posts/news/2025-04-01-siam-applied-math.html",
-      "/posts/news/2025-03-01-columbia-ot-workshop.html",
-      "/posts/talks/2025-03-01-jhu-ams-seminar.html",
-      "/posts/news/2024-12-01-los-andes-optimization.html",
-      "/posts/talks/2024-10-01-jhu-ams-seminar.html",
-      "/posts/awards/2024-09-01-duncand-grant.html",
-      "/posts/news/2024-08-01-princeton-graduate-school.html",
-      "/posts/news/2024-06-01-slmath-summer-school.html",
-      "/posts/news/2024-05-15-icerm-interacting-particles.html",
-      "/posts/awards/2024-04-01-wse-ta-award.html",
-      "/posts/talks/2024-01-01-jhu-ams-seminar.html",
-      "/posts/awards/2023-09-01-isaacs-fellowship.html",
-      "/posts/news/2023-06-01-icerm-computational-analysis.html",
-      "/posts/news/2023-05-01-icerm-optimal-transport.html",
-      "/blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html"
-    ]
-  },
-  {
-    "listing": "/people.html",
-    "items": []
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
-      "/blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html"
     ]
   }
 ]

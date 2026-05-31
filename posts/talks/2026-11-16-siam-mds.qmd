@@ -1,0 +1,7 @@
+---
+title: "Organizing Session at SIAM Conference on Mathematics of Data Science"
+date: "2026-11-16"
+categories: [talks, conferences, organizing]
+description: "Co-organizing the session 'Geometry, Dynamics, and Inference' and presenting at SIAM MDS."
+---
+Presenting *Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces* and co-organizing the session *Geometry, Dynamics, and Inference* with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) and [George Kevrekidis](https://scholar.google.com/citations?hl=en&user=rynRUuQAAAAJ&view_op=list_works&sortby=pubdate) at the SIAM Conference on Mathematics of Data Science (MDS26), November 16–20, 2026.

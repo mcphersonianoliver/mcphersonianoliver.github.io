@@ -99,6 +99,35 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../custom.css">
@@ -159,10 +188,6 @@ https://badge.dimensions.ai/
     <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -185,8 +210,20 @@ https://badge.dimensions.ai/
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#neural-dynamic-portfolio-control-with-provable-learning-guarantees" id="toc-neural-dynamic-portfolio-control-with-provable-learning-guarantees" class="nav-link active" data-scroll-target="#neural-dynamic-portfolio-control-with-provable-learning-guarantees">Neural Dynamic Portfolio Control with Provable Learning Guarantees</a>
+  <ul class="collapse">
+  <li><a href="#main-contribution" id="toc-main-contribution" class="nav-link" data-scroll-target="#main-contribution">Main contribution</a></li>
+  <li><a href="#intuitive-question" id="toc-intuitive-question" class="nav-link" data-scroll-target="#intuitive-question">1. Intuitive question</a></li>
+  <li><a href="#formal-question" id="toc-formal-question" class="nav-link" data-scroll-target="#formal-question">2. Formal question</a></li>
+  <li><a href="#key-proof-ideas" id="toc-key-proof-ideas" class="nav-link" data-scroll-target="#key-proof-ideas">3. Key proof ideas</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -212,7 +249,7 @@ https://badge.dimensions.ai/
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Submitted</div>
     <div class="quarto-title-meta-contents">
       <p class="date">January 7, 2026</p>
     </div>
@@ -226,9 +263,162 @@ https://badge.dimensions.ai/
 </header>
 
 
-<p>In construction.</p>
+<section id="neural-dynamic-portfolio-control-with-provable-learning-guarantees" class="level2">
+<h2 class="anchored" data-anchor-id="neural-dynamic-portfolio-control-with-provable-learning-guarantees">Neural Dynamic Portfolio Control with Provable Learning Guarantees</h2>
+<p><strong>Ian McPherson, Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514">SSRN link</a></p>
+<section id="main-contribution" class="level3">
+<h3 class="anchored" data-anchor-id="main-contribution">Main contribution</h3>
+<p>This paper develops a provable learning framework for finite-horizon dynamic portfolio optimization using neural-network policies trained directly from return trajectories. The central idea is to parameterize portfolio decisions as <strong>path-dependent monetary allocations</strong>, rather than as portfolio weights depending on a prespecified Markov state. This choice makes terminal wealth affine in the policy and hence makes the negative expected utility a convex functional of the policy. The resulting convex functional geometry is then combined with a mean-field analysis of wide two-layer neural networks to obtain global convergence, generalization, and regularization guarantees for the learned portfolio policy.</p>
+</section>
+<section id="intuitive-question" class="level3">
+<h3 class="anchored" data-anchor-id="intuitive-question">1. Intuitive question</h3>
+<p>Can we train a neural-network portfolio policy directly from realized return histories, without specifying a parametric return model or a Markovian state representation, while still obtaining rigorous performance guarantees?</p>
+<p>Classical dynamic portfolio optimization is theoretically elegant but computationally difficult in high dimension. Model-based deep stochastic control methods reduce this burden, but they typically require a specified return dynamics model. Reinforcement-learning approaches can learn from trajectories, but often require a Markovian state representation that may be difficult to justify in financial data. This paper asks whether one can avoid both commitments while retaining theoretical control over the learned policy.</p>
+</section>
+<section id="formal-question" class="level3">
+<h3 class="anchored" data-anchor-id="formal-question">2. Formal question</h3>
+<p>Consider a finite-horizon discrete-time portfolio problem with wealth dynamics</p>
+<p><span class="math display">\[
+X_{t+1} = (1+r_t)X_t + \pi_t(H_t)^\top \Delta R_t,
+\]</span></p>
+<p>where <span class="math inline">\(H_t = (R_0,\ldots,R_{t-1})\)</span> denotes the realized return history and <span class="math inline">\(\Delta R_t = R_t-r_t\mathbf{1}\)</span> is the vector of excess returns. The investor seeks to maximize terminal expected utility,</p>
+<p><span class="math display">\[
+\max_{\pi} \; \mathbb{E}_{H_T \sim \mathcal{D}}
+\left[
+U(X_T(H_T;\pi))
+\right],
+\]</span></p>
+<p>over path-dependent policies <span class="math inline">\(\pi=(\pi_0,\ldots,\pi_{T-1})\)</span>, where each <span class="math inline">\(\pi_t(H_t)\in\mathbb{R}^J\)</span> is a monetary allocation across risky assets.</p>
+<p>The paper asks whether a neural-network policy <span class="math inline">\(\pi^\theta\)</span>, trained from finitely many return trajectories using noisy gradient descent with weight decay, can be guaranteed to achieve small out-of-sample performance gap</p>
+<p><span class="math display">\[
+\mathbb{E}_{\mathcal{D}^{\otimes N},\mathrm{alg}}
+\left[
+f(\theta^K)
+\right]
+-
+f^\star,
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+f(\pi)
+=
+-\mathbb{E}_{H_T\sim\mathcal{D}}
+\left[
+U(X_T(H_T;\pi))
+\right],
+\qquad
+f^\star = \min_{\pi\in\Pi} f(\pi),
+\]</span></p>
+<p>and <span class="math inline">\(\Pi\)</span> is the policy class induced by mean-field two-layer neural networks.</p>
+</section>
+<section id="key-proof-ideas" class="level3">
+<h3 class="anchored" data-anchor-id="key-proof-ideas">3. Key proof ideas</h3>
+<p>The first key observation is that monetary allocation produces a useful convexity structure. Iterating the self-financing recursion gives</p>
+<p><span class="math display">\[
+X_T(H_T;\pi)
+=
+a_0X_0
++
+\sum_{t=0}^{T-1}
+a_{t+1}\pi_t(H_t)^\top \Delta R_t.
+\]</span></p>
+<p>Thus, for each fixed return trajectory <span class="math inline">\(H_T\)</span>, terminal wealth is affine in the policy <span class="math inline">\(\pi\)</span>. Since <span class="math inline">\(U\)</span> is concave, the loss</p>
+<p><span class="math display">\[
+f(\pi)
+=
+-\mathbb{E}[U(X_T(H_T;\pi))]
+\]</span></p>
+<p>is a convex functional of <span class="math inline">\(\pi\)</span>. This convexity is not a generic feature of portfolio control; it relies on parameterizing decisions as dollar allocations rather than wealth fractions. In a weight-based formulation, terminal wealth depends multiplicatively on the policy, and this policy-level convexity is generally lost.</p>
+<p>The second key idea is to lift finite-width neural-network training to a mean-field optimization problem over probability measures. Each period policy is represented by a two-layer network</p>
+<p><span class="math display">\[
+\pi_t(H_t;\theta_t)
+=
+\frac{1}{M}
+\sum_{m=1}^M
+\varphi_t(H_t;\theta_t^m).
+\]</span></p>
+<p>As <span class="math inline">\(M\to\infty\)</span>, the empirical distribution of neuron parameters converges to a measure <span class="math inline">\(\mu_t\)</span>, giving the mean-field policy</p>
+<p><span class="math display">\[
+\pi_t^{\mu_t}(H_t)
+=
+\mathbb{E}_{\theta\sim\mu_t}
+[
+\varphi_t(H_t;\theta)
+].
+\]</span></p>
+<p>The optimization problem is thereby lifted from nonconvex finite-dimensional parameter space to an infinite-dimensional problem over measures <span class="math inline">\(\mu=(\mu_0,\ldots,\mu_{T-1})\)</span>. Because the policy depends linearly on the measure and <span class="math inline">\(f\)</span> is convex in the policy, the lifted objective is convex in <span class="math inline">\(\mu\)</span>.</p>
+<p>The third key idea is that noisy gradient descent with weight decay corresponds, in the mean-field limit, to an entropy- and norm-regularized optimization problem. The practical update has the form</p>
+<p><span class="math display">\[
+\theta^{k+1}
+=
+(1-\eta\tau)\theta^k
+-
+\eta M\nabla \widehat f(\theta^k)
++
+\sqrt{2\eta\lambda}\xi^k,
+\]</span></p>
+<p>where <span class="math inline">\(\tau\)</span> is the weight-decay parameter and <span class="math inline">\(\lambda\)</span> is the noise scale. In the mean-field description, these terms induce the regularized empirical objective</p>
+<p><span class="math display">\[
+\min_{\mu}
+\;
+\widehat f(\pi^\mu)
++
+\frac{\tau}{2}
+\mathbb{E}_{\theta\sim\mu}
+\|\theta\|^2
++
+\lambda \mathrm{Ent}(\mu).
+\]</span></p>
+<p>The entropy term makes the lifted problem strictly convex and gives a unique regularized optimizer. This allows the authors to use Langevin and mean-field arguments to prove global convergence of the learning dynamics, despite the original finite-width neural-network parameterization being nonconvex.</p>
+<p>The fourth key idea is the error decomposition. The final out-of-sample performance gap is split into three terms:</p>
+<p><span class="math display">\[
+\mathbb{E}[f(\theta^K)] - f^\star
+=
+\underbrace{
+\mathbb{E}[f(\theta^K)-f(\pi^{\widehat\mu^\star})]
+}_{\text{algorithmic error}}
++
+\underbrace{
+\mathbb{E}[f(\pi^{\widehat\mu^\star})-\widehat f(\pi^{\widehat\mu^\star})]
+}_{\text{generalization gap}}
++
+\underbrace{
+\mathbb{E}[\widehat f(\pi^{\widehat\mu^\star})]-f^\star
+}_{\text{regularization bias}}.
+\]</span></p>
+<p>The algorithmic error is controlled using mean-field Langevin dynamics, Wasserstein/KL comparisons, and a logarithmic Sobolev inequality. The resulting convergence contains a geometric term</p>
+<p><span class="math display">\[
+e^{-\lambda \alpha \eta K}\Delta_0,
+\]</span></p>
+<p>where the rate parameter <span class="math inline">\(\alpha\)</span> is independent of the planning horizon <span class="math inline">\(T\)</span>. This horizon independence comes from the temporal decomposability of the architecture: different rebalancing times use disjoint network parameters, allowing tensorization of the functional inequality across periods.</p>
+<p>The generalization gap is controlled through the regularization-induced complexity of the learned policy class. The KL form of the entropy regularization constrains the learned mean-field measure relative to a Gaussian reference measure, and this allows a Rademacher-complexity argument to yield a finite-sample bound of order</p>
+<p><span class="math display">\[
+O\left(
+\sqrt{
+\frac{\lambda T}{\tau N}
+}
+\right).
+\]</span></p>
+<p>Finally, the regularization bias is bounded by smoothing an unregularized optimizer with a small Gaussian convolution and balancing approximation error against the KL penalty. This produces a bias term of order roughly <span class="math inline">\(O(\lambda)\)</span>, up to horizon and logarithmic factors.</p>
+<p>Combining these estimates gives the main learning guarantee:</p>
+<p><span class="math display">\[
+\mathbb{E}[f(\theta^K)]-f^\star
+\leq
+e^{-\lambda\alpha\eta K}\Delta_0
++
+\text{finite-width error}
++
+\text{discretization error}
++
+\text{generalization error}
++
+\text{regularization bias}.
+\]</span></p>
+<p>The result makes explicit how the learned policy’s performance depends on the number of training iterations <span class="math inline">\(K\)</span>, width <span class="math inline">\(M\)</span>, sample size <span class="math inline">\(N\)</span>, horizon <span class="math inline">\(T\)</span>, step size <span class="math inline">\(\eta\)</span>, noise level <span class="math inline">\(\lambda\)</span>, and weight decay <span class="math inline">\(\tau\)</span>. The main conceptual point is that the architecture is not only expressive; it is chosen so that the learning dynamics become analyzable.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

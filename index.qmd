@@ -33,9 +33,9 @@ about:
 #    - text: "{{< ai clarivate >}} Web of Science"
 #      href: https://www.webofscience.com  
 #      target: _blank
-#    - text: "{{< ai google-scholar >}} Google Scholar"
-#      href: https://scholar.google.com
-#      target: _blank
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=IJvlA7sAAAAJ&hl=en
+      target: _blank
 #    - text: "{{< ai researchgate >}} Research Gate"
 #      href: https://www.researchgate.net
 #      target: _blank
@@ -54,21 +54,6 @@ listing:   # Comment the listing section and delete corresponding lines in the i
     fields: [date, title, subtitle]
     max-description-length: 75
     sort: 
-      - "date desc"
-      - "title asc"
-
-  - id: recent-blogs
-    contents:
-      - blog-posts
-    exclude:
-      title: ""
-    type: grid
-    max-items: 3
-    page-size: 3
-    # include images if you want to show images in the recent blog posts section
-    fields: [date, title, subtitle]
-    max-description-length: 75
-    sort:
       - "date desc"
       - "title asc"
 
@@ -92,26 +77,51 @@ To this end, I explore the interplay of **optimization, geometry, and statistics
 ## Research Pipeline
 Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see [Publications and Presentations](/publications.qmd). 
 
-- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (Submitted) 
+- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (*Revise and Resubmit* at Management Science) 
 <br>with Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? 
 <a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a>  
 </div>  
 
 
-- **Nonsmooth Riemannian Optimization with Inexact Information** (In-Preparation) <br>
+- **Nonsmooth Riemannian Optimization with Inexact Information** (Submitted) <br>
 with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? 
 <a href="/papers/2026/riemannian-bundle-method.qmd" class="float-end">See more... »</a>
 </div> 
 
 
-- **Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space** (In-Preparation) <br> with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
-<div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? 
-<a href="/papers/2026/wasserstein-barycenter.qmd" class="float-end">See more... »</a>
+- **Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces** (In-Preparation) <br> with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
+<div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees? 
+<!-- <a href="/papers/2026/wasserstein-barycenter.qmd" class="float-end">See more... »</a> -->
 </div> 
 
+## Upcoming Talks
+Below are some upcoming talks. If you will be at any of these, please say hi! For a full list of publications, preprints, and posters, see [Publications and Presentations](/publications.qmd). 
 
+- **SIAM Conference on Optimization (OP26)** — June 2, 2026 · University of Edinburgh <br>
+<div class="text-muted" style="font-size: 0.9em;"> Talk:  *Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods*
+<a href="/posts/talks/2026-06-02-siam-opt-edinburgh.qmd" class="float-end">See more... »</a>
+</div>
+
+- **MOPTA 2026** — August 18, 2026 · Lehigh University <br>
+<div class="text-muted" style="font-size: 0.9em;"> Talk: *Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods*
+<a href="/posts/talks/2026-08-18-mopta-lehigh.qmd" class="float-end">See more... »</a>
+</div>
+
+- **INFORMS Annual Meeting** — November 1–4, 2026 · San Francisco <br>
+<div class="text-muted" style="font-size: 0.9em;"> Talk: *Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces* 
+<br>
+Co-organizing session *Optimization in Data Science* with [Mateo Díaz](https://mateodd25.github.io/)
+<a href="/posts/talks/2026-11-01-informs-san-francisco.qmd" class="float-end">See more... »</a>
+</div>
+
+- **SIAM Conference on Mathematics of Data Science (MDS26)** — November 16–20, 2026 <br>
+<div class="text-muted" style="font-size: 0.9em;"> Talk: *Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces*
+<br>
+Co-organizing session *Geometry, Dynamics, and Inference* with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) and [George Kevrekidis](https://scholar.google.com/citations?hl=en&user=rynRUuQAAAAJ&view_op=list_works&sortby=pubdate)
+<a href="/posts/talks/2026-11-16-siam-mds.qmd" class="float-end">See more... »</a>
+</div>
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
 ## Recent News
@@ -124,9 +134,3 @@ Check out news about the latest &nbsp;[Papers](posts.qmd#category=papers)&nbsp;,
 <p align="right">[More News »](/posts.qmd)</p>
 
 
-## Recent Blog Posts
-
-:::{#recent-blogs}
-:::
-
-<p align="right">[More Posts »](/blog.qmd)</p>

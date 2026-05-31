@@ -5,30 +5,32 @@ author: "Ian McPherson"
 date: "2026-01-07"
 categories: [fundamentals, riemannian-geometry, laplacian]
 css: /custom.css
+bibliography: ../references/references.bib
+link-citations: true
 draft: false
 ---
 ::: {.abstract-container}
 [ABSTRACT]{.abstract-header}
-In order to define the Laplacian on Riemannian manifold $(M,g)$, one needs to define the space it acts on. This post defines the Riemannian volume form, and the $L^2$ space of functions (and more general $k$-forms) on Riemannian manifolds. This will allow for the development of the Laplacian operator in this more general setting in later posts.
+In order to define the Laplacian on Riemannian manifold $(M,g)$, one needs to define the space it acts on (or at least a dense subset). This post defines the Riemannian volume form, and the $L^2$ space of functions (and more general $k$-forms) on Riemannian manifolds. This will allow for the development of the Laplacian operator in this more general setting in later posts.
 :::
 
 **Setting.** Let $(M, g)$ be a Riemannian manifold of dimension $n$ with metric tensor $g$. The metric induces an inner product on the tangent space $T_{x}M$ at each point $x \in M$, denoted by $g(v,w)$ for vectors $v,w \in T_{x}M$. 
 
 In the Euclidean case, the Laplacian operator $\Delta$ is defined on function $f \in L^{2}(\mathbb{R}^{n})$ by the operation 
 
-$$\Delta  = -\operatorname{div} \circ \nabla.$$ 
+$$\Delta f  = - \sum_{i=1}^{n} \frac{\partial^{2} f}{\partial x_{i}^{2}} .$$ 
 
 To generalize this to Riemannian manifolds, we first need to define the corresponding $L^{2}$ space for functions and more generally for $k$-forms.
 
 <div class = "definition-box">
 **Definition 1.** Let $(M, g)$ be a Riemannian manifold of dimension $n$. The $L^{2}$ space of functions on $M$ is defined as the completion of $C_{c}^{\infty}(M)$ (the space of smooth functions with compact support) with respect to the inner product
 
-$$\langle f, g \rangle = \int_{M} f(x) g(x) \, dV_{g}(x),$$
+$$\langle f_{1}, f_{2} \rangle = \int_{M} f_{1}(x) f_{2}(x) \, dV_{g}(x),$$
 
 where $dV_{g}$ is the Riemannian volume form induced by the metric $g$.
 </div>
 
-Functions are $0$-forms. Through the musical isomorphism, we can extend this definition to $k$-forms.
+Functions are $0$-forms. We can more generally consider $k$-forms on $\mathcal{M}$. By the use of the musical isomorphism, we can recover an $L^{2}$ structure on this space induced by the metric tensor $g$.
 
 <div class = "definition-box">
 **Definition 2.** Let $(M, g)$ be a Riemannian manifold of dimension $n$. The $L^{2}$ space of $k$-forms on $M$ is defined as the completion of $C_{c}^{\infty}(M, \Lambda^{k}T^{*}M)$ (the space of smooth $k$-forms with compact support) with respect to the inner product
@@ -43,6 +45,8 @@ where $g(\omega, \eta)$ is the inner product on the space of $k$-forms (with abu
 
 More generally, for $k$-forms, the pointwise inner product $g(\omega, \eta)$ measures how much the two $k$-forms overlap at each point, and integrating this against the Riemannian volume form aggregates this overlap over the entire manifold. The generalizes the same underlying idea: the angle between globally defined objects (functions or $k$-forms) is measured by aggregating their pointwise overlap across the manifold.
 </div>
+
+The discussion that follows draws heavily from [@rosenberg1997; @tu2011].
 
 ## Volume Forms 
 The Riemannian volume measure is defined by the following.
@@ -106,12 +110,59 @@ This derivation is heuristic, but it provides the intuition for why the Riemanni
 ## $L^{2}$ Spaces on Riemannian Manifolds
 With the Riemannian volume form defined, we can now define the desired $L^{2}$ spaces. The first definition for functions is natural, as it generalizes the Euclidean $L^{2}$ space by replacing the standard volume form with the Riemannian volume form. The second definition for $k$-forms uses the inner product on $k$-forms induced by the metric tensor $g$. 
 
-The rest of this section is devoted to recalling the definition of $k$-forms, and understanding the induced inner product from the metric tensor. By abuse of notation, we will denote the inner product on $k$-forms induced by $g$ also by $g(\cdot, \cdot)$.
+The rest of this section is devoted to recalling the definition of $k$-forms, and performing some computations to understanding the induced inner product from the metric tensor on the space of $1$-forms and $2$-forms. By abuse of notation, we will denote the inner product on $k$-forms induced by $g$ also by $g(\cdot, \cdot)$. Generally speaking, the inner product on $k$-forms can be defined by extending the inner product on $1$-forms using the properties of the wedge product.
 
 ### Review of $k$-Forms
+Let $V$ be a vector space and denote $V^{k} = V \times \cdots \times V$ ($k$ times). A $k$-linear function $f \colon V^{k} \to \mathbb{R}$ is called alternating if for any permutation $\sigma$ on $\{1, 2, \ldots, k\}$, we have that
+
+$$f(v_{\sigma(1)}, \ldots, v_{\sigma(k)}) = \operatorname{sgn}(\sigma) f(v_{1}, \ldots, v_{k}).$$
+
+Then, the following definition specializes the set of alternating $k$-linear functions to when $V = T_{p}M$ for some point $p \in M$.
+
+<div class = "definition-box">
+**Definition 4.** Let $M$ be a smooth manifold and let $p \in M$. A $k$-form at $p$ is an alternating $k$-linear function $\omega \colon (T_{p}M)^{k} \to \mathbb{R}$. The set of all $k$-forms at $p$ is denoted by $\Lambda^{k}T_{p}^{*}M$.
+</div>
+
+
+There is a lot of nice properties that can be proven about $k$-forms, see for instance [@tu2011]. One important property is that if $\{e_{1}, e_{2}, \ldots, e_{n}\}$ is a basis for an $n$-dimensional vector space $V$, then the set of $k$-forms $\{e_{i_{1}}^{*} \wedge \cdots \wedge e_{i_{k}}^{*} \mid 1 \leq i_{1} < i_{2} < \cdots < i_{k} \leq n\}$ forms a basis for $\Lambda^{k}V^{*}$, where $e_{i}^{*}$ is the dual basis element to $e_{i}$. We will use this for later computations as this enables us to draw heavily from linear algebraic intuition.
+
+The point of the $k$-form is they allow us to integrate over $k$-dimensional surfaces in $M$ in a **coordinate-free** way. We note that the Riemannian volume form defined earlier is an example of an $n$-form on $M$, and the exercise earlier asked to verify that it is well-defined (i.e., coordinate-free).
+
+Lastly, we mention that beyond allowing for integration over $k$-dimensional surfaces, the use of $k$-forms is crucial in defining operators such as the exterior derivative and the Hodge star operator, which are essential in differential geometry and the study of Riemannian manifolds. We will use these operators in a later post to define the Laplacian on a Riemannian manifold in a coordinate-free way.
 
 ### Metric Tensor on $1$-Forms
+
+To warm-up to the idea of defining an inner product on $k$-forms induced by the metric tensor $g$, we first consider the case of $1$-forms. Notice that $\Lambda^{1}T_{p}M = T_{p}^{*}M$, the dual space of $T_{p}M$, and because of this association it should be clear how one would define the inner product on $1$-forms (hint: consider the natural isomorphism between $T_{p}M$ and $T_{p}^{*}M$ induced by $g$).
+
+Let $\omega, \eta \in \Lambda^{1}T_{p}^{*}M$ be two $1$-forms at a point $p \in M$. Denote the isomorphism $\alpha \colon T_{p}M \to T_{p}^{*}M$ induced by $g$ be defined by $\alpha_{g}(v) = g(v, \cdot)$. Then, we can define the inner product on $1$-forms by
+
+$$\langle \omega, \eta \rangle = g(\alpha^{-1}(\omega), \alpha^{-1}(\eta)).$$
+
+The idea behind this definition is that we can simply pull back the $1$-forms to vectors using the isomorphism induced by $g$, and then use the inner product on the tangent space itself. However, we can also recover an explicit formula for this inner product in local coordinates.
+
+Let $(x^{1}, x^{2}, \ldots, x^{n})$ be local coordinates around $p$ and denote the corresponding basis of $T_{p}M$ by $\{\partial_{x^{1}}, \partial_{x^{2}}, \ldots, \partial_{x^{n}}\}$ and the dual basis of $T_{p}^{*}M$ by $\{dx^{1}, dx^{2}, \ldots, dx^{n}\}$. Then, we can write
+
+$$\omega = \omega_{i} dx^{i}, \quad \eta = \eta_{j} dx^{j},$$
+
+for some coefficients $\omega_{i}, \eta_{j} \in \mathbb{R}$. By definition of the isomorphism $\alpha$, we have that
+
+$$\alpha^{-1}(dx^{i}) = g^{ij} \partial_{x^{j}},$$
+
+where $g^{ij}$ are the components of the inverse matrix of $g_{ij}$. Thus, we have that
+
+$$\begin{aligned}
+\langle \omega, \eta \rangle & = g(\alpha^{-1}
+(\omega), \alpha^{-1}(\eta)) \\
+& = g(\omega_{i} \alpha^{-1}(dx^{i}), \eta
+_{j} \alpha^{-1}(dx^{j})) \\
+& = g(\omega_{i} g^{ik} \partial_{x^{k}},
+    \eta_{j} g^{j \ell} \partial_{x^{\ell}}) \\
+& = \omega_{i} \eta_{j} g^{ik} g^{j \ell} g(\partial_{x^{k}}, \partial_{x^{\ell}}) \\
+& = \omega_{i} \eta_{j} g^{ik} g^{j \ell} g_{k \ell} \\
+& = \omega_{i} \eta_{j} g^{ij}.
+\end{aligned}$$
 
 ### Metric Tensor on $2$-Forms
 
 ### General $k$-Form Intuition
+asdf 

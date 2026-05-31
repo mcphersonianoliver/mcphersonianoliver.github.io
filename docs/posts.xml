@@ -15,7 +15,81 @@
 <link>https://mcphersonianoliver.github.io/posts.html</link>
 </image>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Mon, 01 Sep 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 16 Nov 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Organizing Session at SIAM Conference on Mathematics of Data Science</title>
+  <link>https://mcphersonianoliver.github.io/posts/talks/2026-11-16-siam-mds.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Co-organizing the session <em>Geometry, Dynamics, and Inference</em> with <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> and <a href="https://sites.google.com/view/gkevrekidis/">George Kevrekidis</a> and presenting at the SIAM Conference on Mathematics of Data Science (MDS26), November 16–20, 2026.</p>
+
+
+
+ ]]></description>
+  <category>talks</category>
+  <category>conferences</category>
+  <category>organizing</category>
+  <guid>https://mcphersonianoliver.github.io/posts/talks/2026-11-16-siam-mds.html</guid>
+  <pubDate>Mon, 16 Nov 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Organizing Session at INFORMS Annual Meeting</title>
+  <link>https://mcphersonianoliver.github.io/posts/talks/2026-11-01-informs-san-francisco.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Co-organizing the session <em>Optimization in Data Science</em> with <a href="https://mateodd25.github.io/">Mateo Díaz</a> and presenting at the INFORMS Annual Meeting in San Francisco (November 1–4, 2026).</p>
+
+
+
+ ]]></description>
+  <category>talks</category>
+  <category>conferences</category>
+  <category>organizing</category>
+  <guid>https://mcphersonianoliver.github.io/posts/talks/2026-11-01-informs-san-francisco.html</guid>
+  <pubDate>Sun, 01 Nov 2026 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Talk at MOPTA 2026</title>
+  <link>https://mcphersonianoliver.github.io/posts/talks/2026-08-18-mopta-lehigh.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Presenting <em>Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods</em> at Modeling and Optimization: Theory and Applications (MOPTA) 2026 at Lehigh University.</p>
+
+
+
+ ]]></description>
+  <category>talks</category>
+  <category>conferences</category>
+  <guid>https://mcphersonianoliver.github.io/posts/talks/2026-08-18-mopta-lehigh.html</guid>
+  <pubDate>Tue, 18 Aug 2026 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Talk at SIAM Conference on Optimization</title>
+  <link>https://mcphersonianoliver.github.io/posts/talks/2026-06-02-siam-opt-edinburgh.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Presenting <em>Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods</em> at the SIAM Conference on Optimization (OP26) at the University of Edinburgh.</p>
+
+
+
+ ]]></description>
+  <category>talks</category>
+  <category>conferences</category>
+  <guid>https://mcphersonianoliver.github.io/posts/talks/2026-06-02-siam-opt-edinburgh.html</guid>
+  <pubDate>Tue, 02 Jun 2026 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Presented Poster at Mathematical Aspects of Data Science Summer School (EFPL)</title>
   <link>https://mcphersonianoliver.github.io/posts/news/2025-09-01-efpl-summer-school.html</link>
@@ -294,74 +368,6 @@
   <category>awards</category>
   <guid>https://mcphersonianoliver.github.io/posts/awards/2024-04-01-wse-ta-award.html</guid>
   <pubDate>Mon, 01 Apr 2024 04:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Talk at JHU Applied Mathematics and Statistics Student Seminar</title>
-  <link>https://mcphersonianoliver.github.io/posts/talks/2024-01-01-jhu-ams-seminar.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Gave an introduction to the tools of Riemannian optimization and their application to computing Wasserstein barycenters at the JHU Applied Mathematics and Statistics Student Seminar.</p>
-
-
-
- ]]></description>
-  <category>talks</category>
-  <guid>https://mcphersonianoliver.github.io/posts/talks/2024-01-01-jhu-ams-seminar.html</guid>
-  <pubDate>Mon, 01 Jan 2024 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Rufus P. Isaacs Graduate Fellowship</title>
-  <link>https://mcphersonianoliver.github.io/posts/awards/2023-09-01-isaacs-fellowship.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Awarded the Rufus P. Isaacs Graduate Fellowship for the Fall 2023 and Spring 2024 semesters at Johns Hopkins University.</p>
-
-
-
- ]]></description>
-  <category>awards</category>
-  <guid>https://mcphersonianoliver.github.io/posts/awards/2023-09-01-isaacs-fellowship.html</guid>
-  <pubDate>Fri, 01 Sep 2023 04:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>ICERM Workshop: Modern Applied and Computational Analysis</title>
-  <link>https://mcphersonianoliver.github.io/posts/news/2023-06-01-icerm-computational-analysis.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Funded to attend the <em>Modern Applied and Computational Analysis</em> workshop at ICERM (Brown University).</p>
-
-
-
- ]]></description>
-  <category>workshops</category>
-  <guid>https://mcphersonianoliver.github.io/posts/news/2023-06-01-icerm-computational-analysis.html</guid>
-  <pubDate>Thu, 01 Jun 2023 04:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>ICERM Workshop: Optimal Transport</title>
-  <link>https://mcphersonianoliver.github.io/posts/news/2023-05-01-icerm-optimal-transport.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>I was a funded participant for the <em>Optimal Transport</em> workshop at ICERM, Brown University.</p>
-
-
-
- ]]></description>
-  <category>workshops</category>
-  <guid>https://mcphersonianoliver.github.io/posts/news/2023-05-01-icerm-optimal-transport.html</guid>
-  <pubDate>Mon, 01 May 2023 04:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

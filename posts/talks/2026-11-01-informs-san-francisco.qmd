@@ -1,0 +1,7 @@
+---
+title: "Organizing Session at INFORMS Annual Meeting"
+date: "2026-11-01"
+categories: [talks, conferences, organizing]
+description: "Co-organizing the session 'Optimization in Data Science' and presenting at INFORMS Annual Meeting in San Francisco."
+---
+Presenting *Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces* and co-organizing the session *Optimization in Data Science* with [Mateo Díaz](https://mateodd25.github.io/) at the INFORMS Annual Meeting in San Francisco (November 1–4, 2026).

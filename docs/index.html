@@ -100,34 +100,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-blogs .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-blogs'] = new List('listing-recent-blogs', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
@@ -247,10 +219,6 @@ window.Quarto = {
     <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -303,6 +271,9 @@ window.Quarto = {
   <a href="https://orcid.org/0009-0004-7176-5622" class="about-link" rel="" target="_blank">
      <span class="about-link-text"><i class="ai  ai-orcid"></i> ORCID</span>
   </a>
+  <a href="https://scholar.google.com/citations?user=IJvlA7sAAAAJ&amp;hl=en" class="about-link" rel="" target="_blank">
+     <span class="about-link-text"><i class="ai  ai-google-scholar"></i> Google Scholar</span>
+  </a>
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
@@ -332,17 +303,39 @@ window.Quarto = {
 <h2 data-anchor-id="research-pipeline">Research Pipeline</h2>
 <p>Below are some of my ongoing and recent research projects. For a full list of publications, preprints, and posters, see <a href="./publications.html">Publications and Presentations</a>.</p>
 <ul>
-<li><strong>Neural Dynamic Portfolio Control with Provable Learning Guarantees</strong> (Submitted) <br>with Yizhe Huang, <a href="https://rgao32.github.io/index.html">Rui Gao</a>, <a href="https://shuangli01.github.io/index.html">Shuang Li</a>, <a href="https://luhao-zhang.github.io/">Luhao Zhang</a> <br>
+<li><strong>Neural Dynamic Portfolio Control with Provable Learning Guarantees</strong> (<em>Revise and Resubmit</em> at Management Science) <br>with Yizhe Huang, <a href="https://rgao32.github.io/index.html">Rui Gao</a>, <a href="https://shuangli01.github.io/index.html">Shuang Li</a>, <a href="https://luhao-zhang.github.io/">Luhao Zhang</a> <br>
 <div class="text-muted" style="font-size: 0.9em;">
 <p>Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? <a href="./papers/2025/neural-portfolio-control.html" class="float-end">See more… »</a></p>
 </div></li>
-<li><strong>Nonsmooth Riemannian Optimization with Inexact Information</strong> (In-Preparation) <br> with <a href="https://mateodd25.github.io/">Mateo Díaz</a> and <a href="https://www.ams.jhu.edu/~grimmer/">Benjamin Grimmer</a> <br>
+<li><strong>Nonsmooth Riemannian Optimization with Inexact Information</strong> (Submitted) <br> with <a href="https://mateodd25.github.io/">Mateo Díaz</a> and <a href="https://www.ams.jhu.edu/~grimmer/">Benjamin Grimmer</a> <br>
 <div class="text-muted" style="font-size: 0.9em;">
 <p>Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? <a href="./papers/2026/riemannian-bundle-method.html" class="float-end">See more… »</a></p>
 </div></li>
-<li><strong>Wasserstein Barycenters on Unknown Submanifolds of Wasserstein Space</strong> (In-Preparation) <br> with <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> <br>
+<li><strong>Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces</strong> (In-Preparation) <br> with <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> <br>
 <div class="text-muted" style="font-size: 0.9em;">
-<p>Given only a local sampler of a non-convex submanifold of Wasserstein space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy? <a href="./papers/2026/wasserstein-barycenter.html" class="float-end">See more… »</a></p>
+<p>Given only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees? <!-- <a href="/papers/2026/wasserstein-barycenter.qmd" class="float-end">See more... »</a> --></p>
+</div></li>
+</ul>
+</section>
+<section id="upcoming-talks" class="level2">
+<h2 data-anchor-id="upcoming-talks">Upcoming Talks</h2>
+<p>Below are some upcoming talks. If you will be at any of these, please say hi! For a full list of publications, preprints, and posters, see <a href="./publications.html">Publications and Presentations</a>.</p>
+<ul>
+<li><strong>SIAM Conference on Optimization (OP26)</strong> — June 2, 2026 · University of Edinburgh <br>
+<div class="text-muted" style="font-size: 0.9em;">
+<p>Talk: <em>Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods</em> <a href="./posts/talks/2026-06-02-siam-opt-edinburgh.html" class="float-end">See more… »</a></p>
+</div></li>
+<li><strong>MOPTA 2026</strong> — August 18, 2026 · Lehigh University <br>
+<div class="text-muted" style="font-size: 0.9em;">
+<p>Talk: <em>Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods</em> <a href="./posts/talks/2026-08-18-mopta-lehigh.html" class="float-end">See more… »</a></p>
+</div></li>
+<li><strong>INFORMS Annual Meeting</strong> — November 1–4, 2026 · San Francisco <br>
+<div class="text-muted" style="font-size: 0.9em;">
+<p>Talk: <em>Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces</em> <br> Co-organizing session <em>Optimization in Data Science</em> with <a href="https://mateodd25.github.io/">Mateo Díaz</a> <a href="./posts/talks/2026-11-01-informs-san-francisco.html" class="float-end">See more… »</a></p>
+</div></li>
+<li><strong>SIAM Conference on Mathematics of Data Science (MDS26)</strong> — November 16–20, 2026 <br>
+<div class="text-muted" style="font-size: 0.9em;">
+<p>Talk: <em>Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces</em> <br> Co-organizing session <em>Geometry, Dynamics, and Inference</em> with <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> and <a href="https://scholar.google.com/citations?hl=en&amp;user=rynRUuQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">George Kevrekidis</a> <a href="./posts/talks/2026-11-16-siam-mds.html" class="float-end">See more… »</a></p>
 </div></li>
 </ul>
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
@@ -352,46 +345,46 @@ window.Quarto = {
 <p>Check out news about the latest &nbsp;<a href="./posts.html#category=papers">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=talks">Talks</a>&nbsp;, &nbsp;<a href="./posts.html#category=awards">Awards</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
 <div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="d29ya3Nob3BzJTJDcG9zdGVycw==" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1767902855548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
-<a href="./posts/news/2025-09-01-efpl-summer-school.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="dGFsa3MlMkNjb25mZXJlbmNlcyUyQ29yZ2FuaXppbmc=" data-listing-date-sort="1794805200000" data-listing-file-modified-sort="1779999187421" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
+<a href="./posts/talks/2026-11-16-siam-mds.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Presented Poster at Mathematical Aspects of Data Science Summer School (EFPL)
+Organizing Session at SIAM Conference on Mathematics of Data Science
 </h5>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
-Sep 1, 2025
+Nov 16, 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d29ya3Nob3BzJTJDcG9zdGVycw==" data-listing-date-sort="1754020800000" data-listing-file-modified-sort="1767902856621" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
-<a href="./posts/news/2025-08-01-princeton-ml-theory.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="dGFsa3MlMkNjb25mZXJlbmNlcyUyQ29yZ2FuaXppbmc=" data-listing-date-sort="1793505600000" data-listing-file-modified-sort="1779999184908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<a href="./posts/talks/2026-11-01-informs-san-francisco.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Presented Poster at Princeton Machine Learning Theory Summer School
+Organizing Session at INFORMS Annual Meeting
 </h5>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
-Aug 1, 2025
+Nov 1, 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="dGFsa3MlMkNjb25mZXJlbmNlcw==" data-listing-date-sort="1752552000000" data-listing-file-modified-sort="1767903210103" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<a href="./posts/talks/2025-07-15-iccopt-talk.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="dGFsa3MlMkNjb25mZXJlbmNlcw==" data-listing-date-sort="1787025600000" data-listing-file-modified-sort="1779998038799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<a href="./posts/talks/2026-08-18-mopta-lehigh.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Convergence Rates for Riemannian Proximal Bundle Methods
+Talk at MOPTA 2026
 </h5>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
-Jul 15, 2025
+Aug 18, 2026
 </div>
 </div>
 </div>
@@ -402,32 +395,6 @@ Jul 15, 2025
 </div>
 <p align="right">
 <a href="./posts.html">More News »</a>
-</p>
-</section>
-<section id="recent-blog-posts" class="level2">
-<h2 data-anchor-id="recent-blog-posts">Recent Blog Posts</h2>
-<div id="listing-recent-blogs" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZnVuZGFtZW50YWxzJTJDcmllbWFubmlhbi1nZW9tZXRyeSUyQ2xhcGxhY2lhbg==" data-listing-date-sort="1767762000000" data-listing-file-modified-sort="1769010780447" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1005">
-<a href="./blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Defining the <span class="math inline">\(L^2\)</span> Space of <span class="math inline">\(k\)</span>-Forms on Riemannian Manifolds
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jan 7, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p align="right">
-<a href="./blog.html">More Posts »</a>
 </p>
 
 

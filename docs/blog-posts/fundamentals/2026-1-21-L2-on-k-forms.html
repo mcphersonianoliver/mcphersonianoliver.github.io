@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -188,10 +208,6 @@ window.Quarto = {
     <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -273,18 +289,18 @@ window.Quarto = {
 
 
 <div class="abstract-container">
-<p><span class="abstract-header">ABSTRACT</span> In order to define the Laplacian on Riemannian manifold <span class="math inline">\((M,g)\)</span>, one needs to define the space it acts on. This post defines the Riemannian volume form, and the <span class="math inline">\(L^2\)</span> space of functions (and more general <span class="math inline">\(k\)</span>-forms) on Riemannian manifolds. This will allow for the development of the Laplacian operator in this more general setting in later posts.</p>
+<p><span class="abstract-header">ABSTRACT</span> In order to define the Laplacian on Riemannian manifold <span class="math inline">\((M,g)\)</span>, one needs to define the space it acts on (or at least a dense subset). This post defines the Riemannian volume form, and the <span class="math inline">\(L^2\)</span> space of functions (and more general <span class="math inline">\(k\)</span>-forms) on Riemannian manifolds. This will allow for the development of the Laplacian operator in this more general setting in later posts.</p>
 </div>
 <p><strong>Setting.</strong> Let <span class="math inline">\((M, g)\)</span> be a Riemannian manifold of dimension <span class="math inline">\(n\)</span> with metric tensor <span class="math inline">\(g\)</span>. The metric induces an inner product on the tangent space <span class="math inline">\(T_{x}M\)</span> at each point <span class="math inline">\(x \in M\)</span>, denoted by <span class="math inline">\(g(v,w)\)</span> for vectors <span class="math inline">\(v,w \in T_{x}M\)</span>.</p>
 <p>In the Euclidean case, the Laplacian operator <span class="math inline">\(\Delta\)</span> is defined on function <span class="math inline">\(f \in L^{2}(\mathbb{R}^{n})\)</span> by the operation</p>
-<p><span class="math display">\[\Delta  = -\operatorname{div} \circ \nabla.\]</span></p>
+<p><span class="math display">\[\Delta f  = - \sum_{i=1}^{n} \frac{\partial^{2} f}{\partial x_{i}^{2}} .\]</span></p>
 <p>To generalize this to Riemannian manifolds, we first need to define the corresponding <span class="math inline">\(L^{2}\)</span> space for functions and more generally for <span class="math inline">\(k\)</span>-forms.</p>
 <div class="definition-box">
 <p><strong>Definition 1.</strong> Let <span class="math inline">\((M, g)\)</span> be a Riemannian manifold of dimension <span class="math inline">\(n\)</span>. The <span class="math inline">\(L^{2}\)</span> space of functions on <span class="math inline">\(M\)</span> is defined as the completion of <span class="math inline">\(C_{c}^{\infty}(M)\)</span> (the space of smooth functions with compact support) with respect to the inner product</p>
-<p><span class="math display">\[\langle f, g \rangle = \int_{M} f(x) g(x) \, dV_{g}(x),\]</span></p>
+<p><span class="math display">\[\langle f_{1}, f_{2} \rangle = \int_{M} f_{1}(x) f_{2}(x) \, dV_{g}(x),\]</span></p>
 <p>where <span class="math inline">\(dV_{g}\)</span> is the Riemannian volume form induced by the metric <span class="math inline">\(g\)</span>.</p>
 </div>
-<p>Functions are <span class="math inline">\(0\)</span>-forms. Through the musical isomorphism, we can extend this definition to <span class="math inline">\(k\)</span>-forms.</p>
+<p>Functions are <span class="math inline">\(0\)</span>-forms. We can more generally consider <span class="math inline">\(k\)</span>-forms on <span class="math inline">\(\mathcal{M}\)</span>. By the use of the musical isomorphism, we can recover an <span class="math inline">\(L^{2}\)</span> structure on this space induced by the metric tensor <span class="math inline">\(g\)</span>.</p>
 <div class="definition-box">
 <p><strong>Definition 2.</strong> Let <span class="math inline">\((M, g)\)</span> be a Riemannian manifold of dimension <span class="math inline">\(n\)</span>. The <span class="math inline">\(L^{2}\)</span> space of <span class="math inline">\(k\)</span>-forms on <span class="math inline">\(M\)</span> is defined as the completion of <span class="math inline">\(C_{c}^{\infty}(M, \Lambda^{k}T^{*}M)\)</span> (the space of smooth <span class="math inline">\(k\)</span>-forms with compact support) with respect to the inner product</p>
 <p><span class="math display">\[\langle \omega, \eta \rangle = \int_{M} g(\omega(x), \eta(x)) \, dV_{g}(x),\]</span></p>
@@ -294,6 +310,7 @@ window.Quarto = {
 <p><strong><em>Intuition.</em></strong> The inner product on <span class="math inline">\(0\)</span>-forms globalize the pointwise overlap (their product) of functions by integrating against the Riemannian volume form. This aggregates the pointwise overlap over the entire manifold. This is the same idea as the <span class="math inline">\(L^{2}\)</span> space of functions on Euclidean space where implicitly we use the standard Euclidean volume form.</p>
 <p>More generally, for <span class="math inline">\(k\)</span>-forms, the pointwise inner product <span class="math inline">\(g(\omega, \eta)\)</span> measures how much the two <span class="math inline">\(k\)</span>-forms overlap at each point, and integrating this against the Riemannian volume form aggregates this overlap over the entire manifold. The generalizes the same underlying idea: the angle between globally defined objects (functions or <span class="math inline">\(k\)</span>-forms) is measured by aggregating their pointwise overlap across the manifold.</p>
 </div>
+<p>The discussion that follows draws heavily from <span class="citation" data-cites="rosenberg1997 tu2011">(<a href="#ref-rosenberg1997" role="doc-biblioref">Rosenberg 1997</a>; <a href="#ref-tu2011" role="doc-biblioref">Tu 2011</a>)</span>.</p>
 <section id="volume-forms" class="level2">
 <h2 class="anchored" data-anchor-id="volume-forms">Volume Forms</h2>
 <p>The Riemannian volume measure is defined by the following.</p>
@@ -342,24 +359,62 @@ g_{ij} = g(\partial_{x^{i}}, \partial_{x^{j}}) = g(\alpha_{i}^{k} v_{k}, \alpha_
 <section id="l2-spaces-on-riemannian-manifolds" class="level2">
 <h2 class="anchored" data-anchor-id="l2-spaces-on-riemannian-manifolds"><span class="math inline">\(L^{2}\)</span> Spaces on Riemannian Manifolds</h2>
 <p>With the Riemannian volume form defined, we can now define the desired <span class="math inline">\(L^{2}\)</span> spaces. The first definition for functions is natural, as it generalizes the Euclidean <span class="math inline">\(L^{2}\)</span> space by replacing the standard volume form with the Riemannian volume form. The second definition for <span class="math inline">\(k\)</span>-forms uses the inner product on <span class="math inline">\(k\)</span>-forms induced by the metric tensor <span class="math inline">\(g\)</span>.</p>
-<p>The rest of this section is devoted to recalling the definition of <span class="math inline">\(k\)</span>-forms, and understanding the induced inner product from the metric tensor. By abuse of notation, we will denote the inner product on <span class="math inline">\(k\)</span>-forms induced by <span class="math inline">\(g\)</span> also by <span class="math inline">\(g(\cdot, \cdot)\)</span>.</p>
+<p>The rest of this section is devoted to recalling the definition of <span class="math inline">\(k\)</span>-forms, and performing some computations to understanding the induced inner product from the metric tensor on the space of <span class="math inline">\(1\)</span>-forms and <span class="math inline">\(2\)</span>-forms. By abuse of notation, we will denote the inner product on <span class="math inline">\(k\)</span>-forms induced by <span class="math inline">\(g\)</span> also by <span class="math inline">\(g(\cdot, \cdot)\)</span>. Generally speaking, the inner product on <span class="math inline">\(k\)</span>-forms can be defined by extending the inner product on <span class="math inline">\(1\)</span>-forms using the properties of the wedge product.</p>
 <section id="review-of-k-forms" class="level3">
 <h3 class="anchored" data-anchor-id="review-of-k-forms">Review of <span class="math inline">\(k\)</span>-Forms</h3>
+<p>Let <span class="math inline">\(V\)</span> be a vector space and denote <span class="math inline">\(V^{k} = V \times \cdots \times V\)</span> (<span class="math inline">\(k\)</span> times). A <span class="math inline">\(k\)</span>-linear function <span class="math inline">\(f \colon V^{k} \to \mathbb{R}\)</span> is called alternating if for any permutation <span class="math inline">\(\sigma\)</span> on <span class="math inline">\(\{1, 2, \ldots, k\}\)</span>, we have that</p>
+<p><span class="math display">\[f(v_{\sigma(1)}, \ldots, v_{\sigma(k)}) = \operatorname{sgn}(\sigma) f(v_{1}, \ldots, v_{k}).\]</span></p>
+<p>Then, the following definition specializes the set of alternating <span class="math inline">\(k\)</span>-linear functions to when <span class="math inline">\(V = T_{p}M\)</span> for some point <span class="math inline">\(p \in M\)</span>.</p>
+<div class="definition-box">
+<p><strong>Definition 4.</strong> Let <span class="math inline">\(M\)</span> be a smooth manifold and let <span class="math inline">\(p \in M\)</span>. A <span class="math inline">\(k\)</span>-form at <span class="math inline">\(p\)</span> is an alternating <span class="math inline">\(k\)</span>-linear function <span class="math inline">\(\omega \colon (T_{p}M)^{k} \to \mathbb{R}\)</span>. The set of all <span class="math inline">\(k\)</span>-forms at <span class="math inline">\(p\)</span> is denoted by <span class="math inline">\(\Lambda^{k}T_{p}^{*}M\)</span>.</p>
+</div>
+<p>There is a lot of nice properties that can be proven about <span class="math inline">\(k\)</span>-forms, see for instance <span class="citation" data-cites="tu2011">(<a href="#ref-tu2011" role="doc-biblioref">Tu 2011</a>)</span>. One important property is that if <span class="math inline">\(\{e_{1}, e_{2}, \ldots, e_{n}\}\)</span> is a basis for an <span class="math inline">\(n\)</span>-dimensional vector space <span class="math inline">\(V\)</span>, then the set of <span class="math inline">\(k\)</span>-forms <span class="math inline">\(\{e_{i_{1}}^{*} \wedge \cdots \wedge e_{i_{k}}^{*} \mid 1 \leq i_{1} &lt; i_{2} &lt; \cdots &lt; i_{k} \leq n\}\)</span> forms a basis for <span class="math inline">\(\Lambda^{k}V^{*}\)</span>, where <span class="math inline">\(e_{i}^{*}\)</span> is the dual basis element to <span class="math inline">\(e_{i}\)</span>. We will use this for later computations as this enables us to draw heavily from linear algebraic intuition.</p>
+<p>The point of the <span class="math inline">\(k\)</span>-form is they allow us to integrate over <span class="math inline">\(k\)</span>-dimensional surfaces in <span class="math inline">\(M\)</span> in a <strong>coordinate-free</strong> way. We note that the Riemannian volume form defined earlier is an example of an <span class="math inline">\(n\)</span>-form on <span class="math inline">\(M\)</span>, and the exercise earlier asked to verify that it is well-defined (i.e., coordinate-free).</p>
+<p>Lastly, we mention that beyond allowing for integration over <span class="math inline">\(k\)</span>-dimensional surfaces, the use of <span class="math inline">\(k\)</span>-forms is crucial in defining operators such as the exterior derivative and the Hodge star operator, which are essential in differential geometry and the study of Riemannian manifolds. We will use these operators in a later post to define the Laplacian on a Riemannian manifold in a coordinate-free way.</p>
 </section>
 <section id="metric-tensor-on-1-forms" class="level3">
 <h3 class="anchored" data-anchor-id="metric-tensor-on-1-forms">Metric Tensor on <span class="math inline">\(1\)</span>-Forms</h3>
+<p>To warm-up to the idea of defining an inner product on <span class="math inline">\(k\)</span>-forms induced by the metric tensor <span class="math inline">\(g\)</span>, we first consider the case of <span class="math inline">\(1\)</span>-forms. Notice that <span class="math inline">\(\Lambda^{1}T_{p}M = T_{p}^{*}M\)</span>, the dual space of <span class="math inline">\(T_{p}M\)</span>, and because of this association it should be clear how one would define the inner product on <span class="math inline">\(1\)</span>-forms (hint: consider the natural isomorphism between <span class="math inline">\(T_{p}M\)</span> and <span class="math inline">\(T_{p}^{*}M\)</span> induced by <span class="math inline">\(g\)</span>).</p>
+<p>Let <span class="math inline">\(\omega, \eta \in \Lambda^{1}T_{p}^{*}M\)</span> be two <span class="math inline">\(1\)</span>-forms at a point <span class="math inline">\(p \in M\)</span>. Denote the isomorphism <span class="math inline">\(\alpha \colon T_{p}M \to T_{p}^{*}M\)</span> induced by <span class="math inline">\(g\)</span> be defined by <span class="math inline">\(\alpha_{g}(v) = g(v, \cdot)\)</span>. Then, we can define the inner product on <span class="math inline">\(1\)</span>-forms by</p>
+<p><span class="math display">\[\langle \omega, \eta \rangle = g(\alpha^{-1}(\omega), \alpha^{-1}(\eta)).\]</span></p>
+<p>The idea behind this definition is that we can simply pull back the <span class="math inline">\(1\)</span>-forms to vectors using the isomorphism induced by <span class="math inline">\(g\)</span>, and then use the inner product on the tangent space itself. However, we can also recover an explicit formula for this inner product in local coordinates.</p>
+<p>Let <span class="math inline">\((x^{1}, x^{2}, \ldots, x^{n})\)</span> be local coordinates around <span class="math inline">\(p\)</span> and denote the corresponding basis of <span class="math inline">\(T_{p}M\)</span> by <span class="math inline">\(\{\partial_{x^{1}}, \partial_{x^{2}}, \ldots, \partial_{x^{n}}\}\)</span> and the dual basis of <span class="math inline">\(T_{p}^{*}M\)</span> by <span class="math inline">\(\{dx^{1}, dx^{2}, \ldots, dx^{n}\}\)</span>. Then, we can write</p>
+<p><span class="math display">\[\omega = \omega_{i} dx^{i}, \quad \eta = \eta_{j} dx^{j},\]</span></p>
+<p>for some coefficients <span class="math inline">\(\omega_{i}, \eta_{j} \in \mathbb{R}\)</span>. By definition of the isomorphism <span class="math inline">\(\alpha\)</span>, we have that</p>
+<p><span class="math display">\[\alpha^{-1}(dx^{i}) = g^{ij} \partial_{x^{j}},\]</span></p>
+<p>where <span class="math inline">\(g^{ij}\)</span> are the components of the inverse matrix of <span class="math inline">\(g_{ij}\)</span>. Thus, we have that</p>
+<p><span class="math display">\[\begin{aligned}
+\langle \omega, \eta \rangle &amp; = g(\alpha^{-1}
+(\omega), \alpha^{-1}(\eta)) \\
+&amp; = g(\omega_{i} \alpha^{-1}(dx^{i}), \eta
+_{j} \alpha^{-1}(dx^{j})) \\
+&amp; = g(\omega_{i} g^{ik} \partial_{x^{k}},
+    \eta_{j} g^{j \ell} \partial_{x^{\ell}}) \\
+&amp; = \omega_{i} \eta_{j} g^{ik} g^{j \ell} g(\partial_{x^{k}}, \partial_{x^{\ell}}) \\
+&amp; = \omega_{i} \eta_{j} g^{ik} g^{j \ell} g_{k \ell} \\
+&amp; = \omega_{i} \eta_{j} g^{ij}.
+\end{aligned}\]</span></p>
 </section>
 <section id="metric-tensor-on-2-forms" class="level3">
 <h3 class="anchored" data-anchor-id="metric-tensor-on-2-forms">Metric Tensor on <span class="math inline">\(2\)</span>-Forms</h3>
 </section>
 <section id="general-k-form-intuition" class="level3">
 <h3 class="anchored" data-anchor-id="general-k-form-intuition">General <span class="math inline">\(k\)</span>-Form Intuition</h3>
+<p>asdf</p>
+
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-rosenberg1997" class="csl-entry" role="listitem">
+Rosenberg, Steven. 1997. <em>The Laplacian on a Riemannian Manifold: An Introduction to Analysis on Manifolds</em>. Cambridge University Press. <a href="https://doi.org/10.1017/CBO9780511623905">https://doi.org/10.1017/CBO9780511623905</a>.
+</div>
+<div id="ref-tu2011" class="csl-entry" role="listitem">
+Tu, Loring W. 2011. <em>An Introduction to Manifolds</em>. Second. Universitext. Springer Science &amp; Business Media. <a href="https://doi.org/10.1007/978-1-4419-7400-6">https://doi.org/10.1007/978-1-4419-7400-6</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

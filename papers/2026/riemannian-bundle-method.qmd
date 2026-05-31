@@ -8,4 +8,364 @@ image: "/files/images/placeholder3.JPG"
 css: /custom.css
 # draft: true
 ---
-In construction.
+## Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods
+
+**Mateo Díaz, Benjamin Grimmer, Ian McPherson**
+[arXiv link](https://arxiv.org/abs/2604.27078)
+
+### Main contribution
+
+This paper develops a proximal bundle method for nonsmooth geodesically convex optimization on Hadamard manifolds when the algorithm has access only to **inexact manifold primitives**: subgradients, first-order retractions, and approximate vector transports. The main result is a set of non-asymptotic oracle-complexity guarantees for nonsmooth Riemannian optimization without requiring exact exponential maps or exact parallel transport. For general Lipschitz geodesically convex objectives, the method achieves sublinear convergence; under Hölder growth, it obtains faster rates, including an optimal linear rate under sharp growth.
+
+### 1. Intuitive question
+
+Can we solve nonsmooth convex optimization problems on curved spaces with provable rates, even when the exact geometric operations required by the theory are too expensive to compute?
+
+On Hadamard manifolds, geodesic convexity gives a natural analogue of Euclidean convexity. In principle, algorithms can exploit this geometry using exponential maps and parallel transport. In practice, however, these primitives are often computationally expensive or unavailable in closed form. Riemannian optimization software therefore replaces them with cheaper approximations, such as retractions and vector transports.
+
+The question is whether one can retain rigorous convergence guarantees in the nonsmooth setting while using only these approximate primitives.
+
+### 2. Formal question
+
+Let $\mathcal{M}$ be a Hadamard manifold: complete, simply connected, and with nonpositive sectional curvature. Consider the nonsmooth geodesically convex optimization problem
+
+$$
+\min_{x\in\mathcal{M}} f(x),
+$$
+
+where $f:\mathcal{M}\to\mathbb{R}$ is geodesically convex and $G_f$-Lipschitz.
+
+The classical Hadamard optimization theory typically assumes access to the exponential map
+
+$$
+\exp_x:T_x\mathcal{M}\to \mathcal{M}
+$$
+
+and parallel transport
+
+$$
+P_{y\leftarrow x}:T_x\mathcal{M}\to T_y\mathcal{M}.
+$$
+
+This paper instead assumes access to a first-order retraction
+
+$$
+R_x:T_x\mathcal{M}\to\mathcal{M},
+$$
+
+satisfying
+
+$$
+R_x(0)=x,
+\qquad
+DR_x(0)=\operatorname{id}_{T_x\mathcal{M}},
+$$
+
+and to an approximate transporter
+
+$$
+T_{y\leftarrow x}:T_x\mathcal{M}\to T_y\mathcal{M}.
+$$
+
+The central question is whether one can construct an algorithm using only
+
+$$
+f(x),\qquad g(x)\in\partial f(x),\qquad R_x,\qquad T_{y\leftarrow x},
+$$
+
+and still guarantee that, after finitely many oracle calls, it returns an $\varepsilon$-minimizer
+
+$$
+f(x)-f^\star \leq \varepsilon,
+\qquad
+f^\star=\inf_{y\in\mathcal{M}} f(y).
+$$
+
+### 3. Key proof ideas
+
+The first key idea is to generalize Euclidean proximal bundle methods to the Hadamard setting. In Euclidean space, a proximal bundle method builds a cutting-plane model of a nonsmooth convex function and computes a proximal step of the form
+
+$$
+z_{i+1}
+=
+\arg\min_z
+\left\{
+\widehat f_i(z)
++
+\frac{\rho_i}{2}
+\|z-x_i\|^2
+\right\}.
+$$
+
+On a Hadamard manifold, the corresponding exact proximal step can be written in the tangent space as
+
+$$
+\min_{v\in T_{x_i}\mathcal{M}}
+\left\{
+f(\exp_{x_i}(v))
++
+\frac{\rho_i}{2}
+\|v\|_{x_i}^2
+\right\}.
+$$
+
+The algorithm replaces $\exp_{x_i}$ by a retraction $R_{x_i}$, and replaces exact transported cuts by cuts transported using $T_{x_i\leftarrow z}$. Thus, the candidate direction is computed from a local tangent-space model:
+
+$$
+v_{i+1}
+=
+\arg\min_{v\in T_{x_i}\mathcal{M}}
+\left\{
+\widehat f_i(v)
++
+\frac{\rho_i}{2}
+\|v\|_{x_i}^2
+\right\},
+$$
+
+followed by the retraction step
+
+$$
+z_{i+1}=R_{x_i}(v_{i+1}).
+$$
+
+As in Euclidean bundle methods, the algorithm accepts $z_{i+1}$ as a descent step only if the actual decrease is a fixed fraction of the predicted decrease:
+
+$$
+f(x_i)-f(z_{i+1})
+\geq
+\beta
+\left(
+f(x_i)-\widehat f_i(v_{i+1})
+\right).
+$$
+
+Otherwise, it takes a null step and refines the local model.
+
+The second key idea is that curvature and inexact primitives destroy global affine minorants. In Euclidean convex optimization, a subgradient cut
+
+$$
+f(y)
+\geq
+f(z)+\langle g,y-z\rangle
+$$
+
+is a global lower bound. On a Hadamard manifold, geodesic convexity gives
+
+$$
+f(y)
+\geq
+f(z)+\langle g,\log_z y\rangle_z.
+$$
+
+To use this cut in the tangent space at another point $x$, one would like to transport it and obtain a lower bound involving $v\in T_x\mathcal{M}$. In flat space this recentering is exact, but on a curved manifold it fails for three reasons:
+
+1. parallel-transport identities acquire curvature error;
+2. the algorithm uses $R_x$ instead of $\exp_x$;
+3. the algorithm uses $T_{x\leftarrow z}$ instead of $P_{x\leftarrow z}$.
+
+The paper's core technical device is to show that transported cuts remain valid **locally**, after adding a controlled downward shift. If $z=R_x(v_z)$, $g\in\partial f(z)$, and $z$ lies within radius $\alpha$ of $x$, then for all sufficiently small $v\in T_x\mathcal{M}$,
+
+$$
+f(\exp_x(v))
+\geq
+f(z)
++
+\left\langle
+T_{x\leftarrow z}g,
+v-v_z
+\right\rangle_x
+-
+\kappa(\alpha,g),
+$$
+
+where
+
+$$
+\kappa(\alpha,g)
+=
+\left(
+2\sqrt{-K_{\min}}
++
+C_R
++
+2C_T
+\right)
+\|g\|
+\alpha^2.
+$$
+
+Here $K_{\min}$ is a lower sectional-curvature bound, $C_R$ controls the local retraction error, and $C_T$ controls the transporter error. This term quantifies exactly how much model validity is lost due to curvature and inexact geometry.
+
+The third key idea is to control the locality error through the proximal parameter $\rho_i$. Larger $\rho_i$ forces the candidate direction $v_{i+1}$ to remain shorter, so the model is only trusted in a smaller neighborhood where the shifted minorants are valid. The algorithm therefore chooses $\rho_i$ by backtracking until either the candidate produces sufficient descent or the model-inexactness shift is dominated by the predicted progress:
+
+$$
+\frac{1}{2}\widetilde\Delta_i^{(\rho_i)}
+-
+\frac{\kappa_{i+1}}{1-\beta}
+\geq
+0.
+$$
+
+Here
+
+$$
+\widetilde\Delta_i^{(\rho_i)}
+=
+f(x_i)
+-
+\min_v
+\left\{
+\widehat f_i(v)
++
+\frac{\rho_i}{2}
+\|v\|^2
+\right\}
+$$
+
+is the model proximal gap. This condition ensures that curvature and primitive errors cannot overwhelm the improvement predicted by the bundle model.
+
+The fourth key idea is that the convergence analysis proceeds through proximal gaps, as in Euclidean bundle methods, but with additional geometric bookkeeping. The exact proximal gap is
+
+$$
+\Delta_i
+=
+f(x_i)
+-
+\left(
+f(\exp_{x_i}(\bar v))
++
+\frac{\rho_i}{2}
+\|\bar v\|^2
+\right),
+$$
+
+where
+
+$$
+\bar v
+=
+\arg\min_{v\in T_{x_i}\mathcal{M}}
+\left\{
+f(\exp_{x_i}(v))
++
+\frac{\rho_i}{2}
+\|v\|^2
+\right\}.
+$$
+
+The proof establishes two central facts.
+
+First, every descent step decreases the objective by a constant fraction of the proximal gap:
+
+$$
+f(x_{k+1})
+\leq
+f(x_k)
+-
+\beta\Delta_k.
+$$
+
+Second, the number of null steps at a fixed proximal center is controlled by the inverse proximal gap:
+
+$$
+T_{\mathrm{null}}
+\leq
+\frac{
+32\widehat h(\rho_0)^2G_f^2
+}{
+(1-\beta)^2\rho_{k+1}\Delta_{k+T}
+}.
+$$
+
+The function $\widehat h(\rho_0)$ accounts for the growth in transported subgradient norms caused by using approximate transport.
+
+The fifth key idea is to combine these bundle-method recurrences with a Hadamard proximal-gap lower bound. For $x_i\notin X^\star$, one obtains
+
+$$
+\Delta_i
+\geq
+\begin{cases}
+\displaystyle
+\frac{1}{2\rho_i}
+\left(
+\frac{f(x_i)-f^\star}{d_{\mathcal M}(x_i,x^\star)}
+\right)^2,
+&
+f(x_i)-f^\star
+\leq
+\rho_i d_{\mathcal M}(x_i,x^\star)^2,
+\\[1.25em]
+\displaystyle
+f(x_i)-f^\star
+-
+\frac{\rho_i}{2}
+d_{\mathcal M}(x_i,x^\star)^2,
+&
+f(x_i)-f^\star
+>
+\rho_i d_{\mathcal M}(x_i,x^\star)^2.
+\end{cases}
+$$
+
+This inequality plays the role of the Euclidean proximal progress estimate and converts descent/null-step bounds into oracle complexity bounds.
+
+For general Lipschitz geodesically convex objectives, the resulting oracle complexity is
+
+$$
+O(\widetilde\rho\,\varepsilon^{-3}),
+$$
+
+where $\widetilde\rho$ is the largest proximal parameter required by the backtracking rule. In flat Euclidean geometry, the curvature and primitive-error constants vanish, so $\widetilde\rho=0$ and the method recovers the optimal Euclidean rate
+
+$$
+O(\varepsilon^{-2}).
+$$
+
+In negatively curved settings with inexact primitives, $\widetilde\rho$ may grow as $\varepsilon^{-2}$ in the worst case, yielding the conservative bound
+
+$$
+O(\varepsilon^{-5}).
+$$
+
+The final key idea is that sharper function growth yields faster rates. If $f$ satisfies $p$-th order Hölder growth,
+
+$$
+f(x)-f^\star
+\geq
+\mu\,\operatorname{dist}(x,X^\star)^p,
+$$
+
+then an idealized proximal-parameter schedule gives improved complexity. In the sharp case $p=1$, the method achieves a linear rate:
+
+$$
+O(\log(1/\varepsilon)).
+$$
+
+For
+
+$$
+p\in(1,4/3],
+$$
+
+the method obtains the Euclidean-optimal oracle complexity
+
+$$
+O\left(\varepsilon^{-(2-2/p)}\right).
+$$
+
+For
+
+$$
+p>4/3,
+$$
+
+the proven rate becomes
+
+$$
+O\left(\varepsilon^{-(5-6/p)}\right),
+$$
+
+which improves over the general nonsmooth rate but is likely not tight. The paper identifies the threshold $p=4/3$ as probably arising from the proof technique rather than from a fundamental geometric obstruction.
+
+A notable algorithmic feature is that the method can be implemented with bounded memory: it stores only a small number of affine cuts rather than retaining a full bundle whose size grows with the iteration count. Thus the result is not only a theoretical extension of bundle methods to Hadamard manifolds with inexact primitives, but also a computationally realistic one.

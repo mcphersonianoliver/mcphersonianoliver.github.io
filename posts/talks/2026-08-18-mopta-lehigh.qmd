@@ -1,0 +1,7 @@
+---
+title: "Talk at MOPTA 2026"
+date: "2026-08-18"
+categories: [talks, conferences]
+description: "Presenting at Modeling and Optimization: Theory and Applications (MOPTA) 2026 at Lehigh University."
+---
+Presenting *Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods* at Modeling and Optimization: Theory and Applications (MOPTA) 2026 at Lehigh University.

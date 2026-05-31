@@ -99,6 +99,35 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../custom.css">
@@ -159,10 +188,6 @@ https://badge.dimensions.ai/
     <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -185,8 +210,20 @@ https://badge.dimensions.ai/
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#nonsmooth-riemannian-optimization-with-inexact-manifold-primitives-via-bundle-methods" id="toc-nonsmooth-riemannian-optimization-with-inexact-manifold-primitives-via-bundle-methods" class="nav-link active" data-scroll-target="#nonsmooth-riemannian-optimization-with-inexact-manifold-primitives-via-bundle-methods">Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods</a>
+  <ul class="collapse">
+  <li><a href="#main-contribution" id="toc-main-contribution" class="nav-link" data-scroll-target="#main-contribution">Main contribution</a></li>
+  <li><a href="#intuitive-question" id="toc-intuitive-question" class="nav-link" data-scroll-target="#intuitive-question">1. Intuitive question</a></li>
+  <li><a href="#formal-question" id="toc-formal-question" class="nav-link" data-scroll-target="#formal-question">2. Formal question</a></li>
+  <li><a href="#key-proof-ideas" id="toc-key-proof-ideas" class="nav-link" data-scroll-target="#key-proof-ideas">3. Key proof ideas</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -226,9 +263,294 @@ https://badge.dimensions.ai/
 </header>
 
 
-<p>In construction.</p>
+<section id="nonsmooth-riemannian-optimization-with-inexact-manifold-primitives-via-bundle-methods" class="level2">
+<h2 class="anchored" data-anchor-id="nonsmooth-riemannian-optimization-with-inexact-manifold-primitives-via-bundle-methods">Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods</h2>
+<p><strong>Mateo Díaz, Benjamin Grimmer, Ian McPherson</strong> <a href="https://arxiv.org/abs/2604.27078">arXiv link</a></p>
+<section id="main-contribution" class="level3">
+<h3 class="anchored" data-anchor-id="main-contribution">Main contribution</h3>
+<p>This paper develops a proximal bundle method for nonsmooth geodesically convex optimization on Hadamard manifolds when the algorithm has access only to <strong>inexact manifold primitives</strong>: subgradients, first-order retractions, and approximate vector transports. The main result is a set of non-asymptotic oracle-complexity guarantees for nonsmooth Riemannian optimization without requiring exact exponential maps or exact parallel transport. For general Lipschitz geodesically convex objectives, the method achieves sublinear convergence; under Hölder growth, it obtains faster rates, including an optimal linear rate under sharp growth.</p>
+</section>
+<section id="intuitive-question" class="level3">
+<h3 class="anchored" data-anchor-id="intuitive-question">1. Intuitive question</h3>
+<p>Can we solve nonsmooth convex optimization problems on curved spaces with provable rates, even when the exact geometric operations required by the theory are too expensive to compute?</p>
+<p>On Hadamard manifolds, geodesic convexity gives a natural analogue of Euclidean convexity. In principle, algorithms can exploit this geometry using exponential maps and parallel transport. In practice, however, these primitives are often computationally expensive or unavailable in closed form. Riemannian optimization software therefore replaces them with cheaper approximations, such as retractions and vector transports.</p>
+<p>The question is whether one can retain rigorous convergence guarantees in the nonsmooth setting while using only these approximate primitives.</p>
+</section>
+<section id="formal-question" class="level3">
+<h3 class="anchored" data-anchor-id="formal-question">2. Formal question</h3>
+<p>Let <span class="math inline">\(\mathcal{M}\)</span> be a Hadamard manifold: complete, simply connected, and with nonpositive sectional curvature. Consider the nonsmooth geodesically convex optimization problem</p>
+<p><span class="math display">\[
+\min_{x\in\mathcal{M}} f(x),
+\]</span></p>
+<p>where <span class="math inline">\(f:\mathcal{M}\to\mathbb{R}\)</span> is geodesically convex and <span class="math inline">\(G_f\)</span>-Lipschitz.</p>
+<p>The classical Hadamard optimization theory typically assumes access to the exponential map</p>
+<p><span class="math display">\[
+\exp_x:T_x\mathcal{M}\to \mathcal{M}
+\]</span></p>
+<p>and parallel transport</p>
+<p><span class="math display">\[
+P_{y\leftarrow x}:T_x\mathcal{M}\to T_y\mathcal{M}.
+\]</span></p>
+<p>This paper instead assumes access to a first-order retraction</p>
+<p><span class="math display">\[
+R_x:T_x\mathcal{M}\to\mathcal{M},
+\]</span></p>
+<p>satisfying</p>
+<p><span class="math display">\[
+R_x(0)=x,
+\qquad
+DR_x(0)=\operatorname{id}_{T_x\mathcal{M}},
+\]</span></p>
+<p>and to an approximate transporter</p>
+<p><span class="math display">\[
+T_{y\leftarrow x}:T_x\mathcal{M}\to T_y\mathcal{M}.
+\]</span></p>
+<p>The central question is whether one can construct an algorithm using only</p>
+<p><span class="math display">\[
+f(x),\qquad g(x)\in\partial f(x),\qquad R_x,\qquad T_{y\leftarrow x},
+\]</span></p>
+<p>and still guarantee that, after finitely many oracle calls, it returns an <span class="math inline">\(\varepsilon\)</span>-minimizer</p>
+<p><span class="math display">\[
+f(x)-f^\star \leq \varepsilon,
+\qquad
+f^\star=\inf_{y\in\mathcal{M}} f(y).
+\]</span></p>
+</section>
+<section id="key-proof-ideas" class="level3">
+<h3 class="anchored" data-anchor-id="key-proof-ideas">3. Key proof ideas</h3>
+<p>The first key idea is to generalize Euclidean proximal bundle methods to the Hadamard setting. In Euclidean space, a proximal bundle method builds a cutting-plane model of a nonsmooth convex function and computes a proximal step of the form</p>
+<p><span class="math display">\[
+z_{i+1}
+=
+\arg\min_z
+\left\{
+\widehat f_i(z)
++
+\frac{\rho_i}{2}
+\|z-x_i\|^2
+\right\}.
+\]</span></p>
+<p>On a Hadamard manifold, the corresponding exact proximal step can be written in the tangent space as</p>
+<p><span class="math display">\[
+\min_{v\in T_{x_i}\mathcal{M}}
+\left\{
+f(\exp_{x_i}(v))
++
+\frac{\rho_i}{2}
+\|v\|_{x_i}^2
+\right\}.
+\]</span></p>
+<p>The algorithm replaces <span class="math inline">\(\exp_{x_i}\)</span> by a retraction <span class="math inline">\(R_{x_i}\)</span>, and replaces exact transported cuts by cuts transported using <span class="math inline">\(T_{x_i\leftarrow z}\)</span>. Thus, the candidate direction is computed from a local tangent-space model:</p>
+<p><span class="math display">\[
+v_{i+1}
+=
+\arg\min_{v\in T_{x_i}\mathcal{M}}
+\left\{
+\widehat f_i(v)
++
+\frac{\rho_i}{2}
+\|v\|_{x_i}^2
+\right\},
+\]</span></p>
+<p>followed by the retraction step</p>
+<p><span class="math display">\[
+z_{i+1}=R_{x_i}(v_{i+1}).
+\]</span></p>
+<p>As in Euclidean bundle methods, the algorithm accepts <span class="math inline">\(z_{i+1}\)</span> as a descent step only if the actual decrease is a fixed fraction of the predicted decrease:</p>
+<p><span class="math display">\[
+f(x_i)-f(z_{i+1})
+\geq
+\beta
+\left(
+f(x_i)-\widehat f_i(v_{i+1})
+\right).
+\]</span></p>
+<p>Otherwise, it takes a null step and refines the local model.</p>
+<p>The second key idea is that curvature and inexact primitives destroy global affine minorants. In Euclidean convex optimization, a subgradient cut</p>
+<p><span class="math display">\[
+f(y)
+\geq
+f(z)+\langle g,y-z\rangle
+\]</span></p>
+<p>is a global lower bound. On a Hadamard manifold, geodesic convexity gives</p>
+<p><span class="math display">\[
+f(y)
+\geq
+f(z)+\langle g,\log_z y\rangle_z.
+\]</span></p>
+<p>To use this cut in the tangent space at another point <span class="math inline">\(x\)</span>, one would like to transport it and obtain a lower bound involving <span class="math inline">\(v\in T_x\mathcal{M}\)</span>. In flat space this recentering is exact, but on a curved manifold it fails for three reasons:</p>
+<ol type="1">
+<li>parallel-transport identities acquire curvature error;</li>
+<li>the algorithm uses <span class="math inline">\(R_x\)</span> instead of <span class="math inline">\(\exp_x\)</span>;</li>
+<li>the algorithm uses <span class="math inline">\(T_{x\leftarrow z}\)</span> instead of <span class="math inline">\(P_{x\leftarrow z}\)</span>.</li>
+</ol>
+<p>The paper’s core technical device is to show that transported cuts remain valid <strong>locally</strong>, after adding a controlled downward shift. If <span class="math inline">\(z=R_x(v_z)\)</span>, <span class="math inline">\(g\in\partial f(z)\)</span>, and <span class="math inline">\(z\)</span> lies within radius <span class="math inline">\(\alpha\)</span> of <span class="math inline">\(x\)</span>, then for all sufficiently small <span class="math inline">\(v\in T_x\mathcal{M}\)</span>,</p>
+<p><span class="math display">\[
+f(\exp_x(v))
+\geq
+f(z)
++
+\left\langle
+T_{x\leftarrow z}g,
+v-v_z
+\right\rangle_x
+-
+\kappa(\alpha,g),
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\kappa(\alpha,g)
+=
+\left(
+2\sqrt{-K_{\min}}
++
+C_R
++
+2C_T
+\right)
+\|g\|
+\alpha^2.
+\]</span></p>
+<p>Here <span class="math inline">\(K_{\min}\)</span> is a lower sectional-curvature bound, <span class="math inline">\(C_R\)</span> controls the local retraction error, and <span class="math inline">\(C_T\)</span> controls the transporter error. This term quantifies exactly how much model validity is lost due to curvature and inexact geometry.</p>
+<p>The third key idea is to control the locality error through the proximal parameter <span class="math inline">\(\rho_i\)</span>. Larger <span class="math inline">\(\rho_i\)</span> forces the candidate direction <span class="math inline">\(v_{i+1}\)</span> to remain shorter, so the model is only trusted in a smaller neighborhood where the shifted minorants are valid. The algorithm therefore chooses <span class="math inline">\(\rho_i\)</span> by backtracking until either the candidate produces sufficient descent or the model-inexactness shift is dominated by the predicted progress:</p>
+<p><span class="math display">\[
+\frac{1}{2}\widetilde\Delta_i^{(\rho_i)}
+-
+\frac{\kappa_{i+1}}{1-\beta}
+\geq
+0.
+\]</span></p>
+<p>Here</p>
+<p><span class="math display">\[
+\widetilde\Delta_i^{(\rho_i)}
+=
+f(x_i)
+-
+\min_v
+\left\{
+\widehat f_i(v)
++
+\frac{\rho_i}{2}
+\|v\|^2
+\right\}
+\]</span></p>
+<p>is the model proximal gap. This condition ensures that curvature and primitive errors cannot overwhelm the improvement predicted by the bundle model.</p>
+<p>The fourth key idea is that the convergence analysis proceeds through proximal gaps, as in Euclidean bundle methods, but with additional geometric bookkeeping. The exact proximal gap is</p>
+<p><span class="math display">\[
+\Delta_i
+=
+f(x_i)
+-
+\left(
+f(\exp_{x_i}(\bar v))
++
+\frac{\rho_i}{2}
+\|\bar v\|^2
+\right),
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\bar v
+=
+\arg\min_{v\in T_{x_i}\mathcal{M}}
+\left\{
+f(\exp_{x_i}(v))
++
+\frac{\rho_i}{2}
+\|v\|^2
+\right\}.
+\]</span></p>
+<p>The proof establishes two central facts.</p>
+<p>First, every descent step decreases the objective by a constant fraction of the proximal gap:</p>
+<p><span class="math display">\[
+f(x_{k+1})
+\leq
+f(x_k)
+-
+\beta\Delta_k.
+\]</span></p>
+<p>Second, the number of null steps at a fixed proximal center is controlled by the inverse proximal gap:</p>
+<p><span class="math display">\[
+T_{\mathrm{null}}
+\leq
+\frac{
+32\widehat h(\rho_0)^2G_f^2
+}{
+(1-\beta)^2\rho_{k+1}\Delta_{k+T}
+}.
+\]</span></p>
+<p>The function <span class="math inline">\(\widehat h(\rho_0)\)</span> accounts for the growth in transported subgradient norms caused by using approximate transport.</p>
+<p>The fifth key idea is to combine these bundle-method recurrences with a Hadamard proximal-gap lower bound. For <span class="math inline">\(x_i\notin X^\star\)</span>, one obtains</p>
+<p><span class="math display">\[
+\Delta_i
+\geq
+\begin{cases}
+\displaystyle
+\frac{1}{2\rho_i}
+\left(
+\frac{f(x_i)-f^\star}{d_{\mathcal M}(x_i,x^\star)}
+\right)^2,
+&amp;
+f(x_i)-f^\star
+\leq
+\rho_i d_{\mathcal M}(x_i,x^\star)^2,
+\\[1.25em]
+\displaystyle
+f(x_i)-f^\star
+-
+\frac{\rho_i}{2}
+d_{\mathcal M}(x_i,x^\star)^2,
+&amp;
+f(x_i)-f^\star
+&gt;
+\rho_i d_{\mathcal M}(x_i,x^\star)^2.
+\end{cases}
+\]</span></p>
+<p>This inequality plays the role of the Euclidean proximal progress estimate and converts descent/null-step bounds into oracle complexity bounds.</p>
+<p>For general Lipschitz geodesically convex objectives, the resulting oracle complexity is</p>
+<p><span class="math display">\[
+O(\widetilde\rho\,\varepsilon^{-3}),
+\]</span></p>
+<p>where <span class="math inline">\(\widetilde\rho\)</span> is the largest proximal parameter required by the backtracking rule. In flat Euclidean geometry, the curvature and primitive-error constants vanish, so <span class="math inline">\(\widetilde\rho=0\)</span> and the method recovers the optimal Euclidean rate</p>
+<p><span class="math display">\[
+O(\varepsilon^{-2}).
+\]</span></p>
+<p>In negatively curved settings with inexact primitives, <span class="math inline">\(\widetilde\rho\)</span> may grow as <span class="math inline">\(\varepsilon^{-2}\)</span> in the worst case, yielding the conservative bound</p>
+<p><span class="math display">\[
+O(\varepsilon^{-5}).
+\]</span></p>
+<p>The final key idea is that sharper function growth yields faster rates. If <span class="math inline">\(f\)</span> satisfies <span class="math inline">\(p\)</span>-th order Hölder growth,</p>
+<p><span class="math display">\[
+f(x)-f^\star
+\geq
+\mu\,\operatorname{dist}(x,X^\star)^p,
+\]</span></p>
+<p>then an idealized proximal-parameter schedule gives improved complexity. In the sharp case <span class="math inline">\(p=1\)</span>, the method achieves a linear rate:</p>
+<p><span class="math display">\[
+O(\log(1/\varepsilon)).
+\]</span></p>
+<p>For</p>
+<p><span class="math display">\[
+p\in(1,4/3],
+\]</span></p>
+<p>the method obtains the Euclidean-optimal oracle complexity</p>
+<p><span class="math display">\[
+O\left(\varepsilon^{-(2-2/p)}\right).
+\]</span></p>
+<p>For</p>
+<p><span class="math display">\[
+p&gt;4/3,
+\]</span></p>
+<p>the proven rate becomes</p>
+<p><span class="math display">\[
+O\left(\varepsilon^{-(5-6/p)}\right),
+\]</span></p>
+<p>which improves over the general nonsmooth rate but is likely not tight. The paper identifies the threshold <span class="math inline">\(p=4/3\)</span> as probably arising from the proof technique rather than from a fundamental geometric obstruction.</p>
+<p>A notable algorithmic feature is that the method can be implemented with bounded memory: it stores only a small number of affine cuts rather than retaining a full bundle whose size grows with the iteration count. Thus the result is not only a theoretical extension of bundle methods to Hadamard manifolds with inexact primitives, but also a computationally realistic one.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

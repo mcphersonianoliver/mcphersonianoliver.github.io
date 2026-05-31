@@ -7,5 +7,195 @@ categories: [math, optimization]
 image: "/files/images/placeholder3.JPG"
 css: /custom.css
 # draft: true
+language:
+  title-block-published: "Submitted"
 ---
-In construction.
+## Neural Dynamic Portfolio Control with Provable Learning Guarantees
+
+**Ian McPherson, Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang**
+[SSRN link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514)
+
+### Main contribution
+
+This paper develops a provable learning framework for finite-horizon dynamic portfolio optimization using neural-network policies trained directly from return trajectories. The central idea is to parameterize portfolio decisions as **path-dependent monetary allocations**, rather than as portfolio weights depending on a prespecified Markov state. This choice makes terminal wealth affine in the policy and hence makes the negative expected utility a convex functional of the policy. The resulting convex functional geometry is then combined with a mean-field analysis of wide two-layer neural networks to obtain global convergence, generalization, and regularization guarantees for the learned portfolio policy.
+
+### 1. Intuitive question
+
+Can we train a neural-network portfolio policy directly from realized return histories, without specifying a parametric return model or a Markovian state representation, while still obtaining rigorous performance guarantees?
+
+Classical dynamic portfolio optimization is theoretically elegant but computationally difficult in high dimension. Model-based deep stochastic control methods reduce this burden, but they typically require a specified return dynamics model. Reinforcement-learning approaches can learn from trajectories, but often require a Markovian state representation that may be difficult to justify in financial data. This paper asks whether one can avoid both commitments while retaining theoretical control over the learned policy.
+
+### 2. Formal question
+
+Consider a finite-horizon discrete-time portfolio problem with wealth dynamics
+
+$$
+X_{t+1} = (1+r_t)X_t + \pi_t(H_t)^\top \Delta R_t,
+$$
+
+where $H_t = (R_0,\ldots,R_{t-1})$ denotes the realized return history and $\Delta R_t = R_t-r_t\mathbf{1}$ is the vector of excess returns. The investor seeks to maximize terminal expected utility,
+
+$$
+\max_{\pi} \; \mathbb{E}_{H_T \sim \mathcal{D}}
+\left[
+U(X_T(H_T;\pi))
+\right],
+$$
+
+over path-dependent policies $\pi=(\pi_0,\ldots,\pi_{T-1})$, where each $\pi_t(H_t)\in\mathbb{R}^J$ is a monetary allocation across risky assets.
+
+The paper asks whether a neural-network policy $\pi^\theta$, trained from finitely many return trajectories using noisy gradient descent with weight decay, can be guaranteed to achieve small out-of-sample performance gap
+
+$$
+\mathbb{E}_{\mathcal{D}^{\otimes N},\mathrm{alg}}
+\left[
+f(\theta^K)
+\right]
+-
+f^\star,
+$$
+
+where
+
+$$
+f(\pi)
+=
+-\mathbb{E}_{H_T\sim\mathcal{D}}
+\left[
+U(X_T(H_T;\pi))
+\right],
+\qquad
+f^\star = \min_{\pi\in\Pi} f(\pi),
+$$
+
+and $\Pi$ is the policy class induced by mean-field two-layer neural networks.
+
+### 3. Key proof ideas
+
+The first key observation is that monetary allocation produces a useful convexity structure. Iterating the self-financing recursion gives
+
+$$
+X_T(H_T;\pi)
+=
+a_0X_0
++
+\sum_{t=0}^{T-1}
+a_{t+1}\pi_t(H_t)^\top \Delta R_t.
+$$
+
+Thus, for each fixed return trajectory $H_T$, terminal wealth is affine in the policy $\pi$. Since $U$ is concave, the loss
+
+$$
+f(\pi)
+=
+-\mathbb{E}[U(X_T(H_T;\pi))]
+$$
+
+is a convex functional of $\pi$. This convexity is not a generic feature of portfolio control; it relies on parameterizing decisions as dollar allocations rather than wealth fractions. In a weight-based formulation, terminal wealth depends multiplicatively on the policy, and this policy-level convexity is generally lost.
+
+The second key idea is to lift finite-width neural-network training to a mean-field optimization problem over probability measures. Each period policy is represented by a two-layer network
+
+$$
+\pi_t(H_t;\theta_t)
+=
+\frac{1}{M}
+\sum_{m=1}^M
+\varphi_t(H_t;\theta_t^m).
+$$
+
+As $M\to\infty$, the empirical distribution of neuron parameters converges to a measure $\mu_t$, giving the mean-field policy
+
+$$
+\pi_t^{\mu_t}(H_t)
+=
+\mathbb{E}_{\theta\sim\mu_t}
+[
+\varphi_t(H_t;\theta)
+].
+$$
+
+The optimization problem is thereby lifted from nonconvex finite-dimensional parameter space to an infinite-dimensional problem over measures $\mu=(\mu_0,\ldots,\mu_{T-1})$. Because the policy depends linearly on the measure and $f$ is convex in the policy, the lifted objective is convex in $\mu$.
+
+The third key idea is that noisy gradient descent with weight decay corresponds, in the mean-field limit, to an entropy- and norm-regularized optimization problem. The practical update has the form
+
+$$
+\theta^{k+1}
+=
+(1-\eta\tau)\theta^k
+-
+\eta M\nabla \widehat f(\theta^k)
++
+\sqrt{2\eta\lambda}\xi^k,
+$$
+
+where $\tau$ is the weight-decay parameter and $\lambda$ is the noise scale. In the mean-field description, these terms induce the regularized empirical objective
+
+$$
+\min_{\mu}
+\;
+\widehat f(\pi^\mu)
++
+\frac{\tau}{2}
+\mathbb{E}_{\theta\sim\mu}
+\|\theta\|^2
++
+\lambda \mathrm{Ent}(\mu).
+$$
+
+The entropy term makes the lifted problem strictly convex and gives a unique regularized optimizer. This allows the authors to use Langevin and mean-field arguments to prove global convergence of the learning dynamics, despite the original finite-width neural-network parameterization being nonconvex.
+
+The fourth key idea is the error decomposition. The final out-of-sample performance gap is split into three terms:
+
+$$
+\mathbb{E}[f(\theta^K)] - f^\star
+=
+\underbrace{
+\mathbb{E}[f(\theta^K)-f(\pi^{\widehat\mu^\star})]
+}_{\text{algorithmic error}}
++
+\underbrace{
+\mathbb{E}[f(\pi^{\widehat\mu^\star})-\widehat f(\pi^{\widehat\mu^\star})]
+}_{\text{generalization gap}}
++
+\underbrace{
+\mathbb{E}[\widehat f(\pi^{\widehat\mu^\star})]-f^\star
+}_{\text{regularization bias}}.
+$$
+
+The algorithmic error is controlled using mean-field Langevin dynamics, Wasserstein/KL comparisons, and a logarithmic Sobolev inequality. The resulting convergence contains a geometric term
+
+$$
+e^{-\lambda \alpha \eta K}\Delta_0,
+$$
+
+where the rate parameter $\alpha$ is independent of the planning horizon $T$. This horizon independence comes from the temporal decomposability of the architecture: different rebalancing times use disjoint network parameters, allowing tensorization of the functional inequality across periods.
+
+The generalization gap is controlled through the regularization-induced complexity of the learned policy class. The KL form of the entropy regularization constrains the learned mean-field measure relative to a Gaussian reference measure, and this allows a Rademacher-complexity argument to yield a finite-sample bound of order
+
+$$
+O\left(
+\sqrt{
+\frac{\lambda T}{\tau N}
+}
+\right).
+$$
+
+Finally, the regularization bias is bounded by smoothing an unregularized optimizer with a small Gaussian convolution and balancing approximation error against the KL penalty. This produces a bias term of order roughly $O(\lambda)$, up to horizon and logarithmic factors.
+
+Combining these estimates gives the main learning guarantee:
+
+$$
+\mathbb{E}[f(\theta^K)]-f^\star
+\leq
+e^{-\lambda\alpha\eta K}\Delta_0
++
+\text{finite-width error}
++
+\text{discretization error}
++
+\text{generalization error}
++
+\text{regularization bias}.
+$$
+
+The result makes explicit how the learned policy's performance depends on the number of training iterations $K$, width $M$, sample size $N$, horizon $T$, step size $\eta$, noise level $\lambda$, and weight decay $\tau$. The main conceptual point is that the architecture is not only expressive; it is chosen so that the learning dynamics become analyzable.
