@@ -6,6 +6,7 @@ page-navigation: false
 toc: false
 #sidebar: false
 page-layout: full
+css: custom.css
 
 about:
   id: hero-heading
@@ -40,32 +41,15 @@ about:
 #      href: https://www.researchgate.net
 #      target: _blank
 
-listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
-  - id: recent-posts
-    contents: 
-      - posts
-      - posts/post-links.yml
-    exclude:
-      title: ""
-    type: grid
-    max-items: 3
-    # image-height: 150px
-    page-size: 3 #set same as max-times to remove the page number setting
-    fields: [date, title, subtitle]
-    max-description-length: 75
-    sort: 
-      - "date desc"
-      - "title asc"
-
 ---
 
 :::{#hero-heading}
 
-::: {.callout-note appearance="minimal"}
-**I exploit mathematical structures to design and analyze optimization algorithms, and construct statistical estimators from high-dimensional data.**
-:::
+<div class="research-callout">
+Doughnut enjoyer. I like statistics and optimization with geometry hidden underneath.
+</div>
 
-Welcome to my website! I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of [**Mauro Maggioni**](https://mauromaggioni.duckdns.org/) and [**Mateo Díaz**](https://mateodd25.github.io/) at Johns Hopkins University. 
+Welcome! I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of [**Mauro Maggioni**](https://mauromaggioni.duckdns.org/) and [**Mateo Díaz**](https://mateodd25.github.io/) at Johns Hopkins University. 
 <!-- I completed a MSc in Pure Mathematics at Tufts University, and two BAs in Economics and Biochemistry at Occidental College. -->
 
 ## Research Interests
@@ -74,35 +58,41 @@ I am interested in the theoretical and algorithmic foundations of Data Science, 
 
 To this end, I explore the interplay of **optimization, geometry, and statistics** through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability.
 
-<p align="right">[Research Areas »](/research-areas.qmd)</p>
+<!-- <p align="right">[Research Areas »](/research-areas.qmd)</p> -->
 :::
 
 ## Research Pipeline
-Below are some of my ongoing and recent research projects. 
+Below are some of my ongoing and recent research projects.
 
-- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (*Revise and Resubmit* at Management Science) 
+::: {.pipeline-list}
+
+- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (*Revise and Resubmit* at Management Science) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514" class="venue-badge" target="_blank">SSRN</a>
 <br>with Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
-<div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? 
-<a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a>  
-</div>  
+<div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees?
+<a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a>
+</div>
 
 
-- **Nonsmooth Riemannian Optimization with Inexact Information** (Submitted) <br>
+- **Nonsmooth Riemannian Optimization with Inexact Information** (Submitted) <a href="https://arxiv.org/abs/2604.27078" class="venue-badge" target="_blank">arXiv</a> <br>
 with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
-<div class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? 
+<div class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports?
 <a href="/papers/2026/riemannian-bundle-method.qmd" class="float-end">See more... »</a>
-</div> 
+</div>
 
 
 - **Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces** (In-Preparation) <br> with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
-<div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees? 
+<div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees?
 <!-- <a href="/papers/2026/wasserstein-barycenter.qmd" class="float-end">See more... »</a> -->
-</div> 
+</div>
+
+:::
 
 For a full list of publications, see [Publications](/publications.qmd).
 
 ## Upcoming Talks
 Below are some upcoming talks. If you will be at any of these, please say hi! I promise I'll say hi back!
+
+::: {.pipeline-list}
 
 - **MOPTA 2026** — August 18, 2026 · Lehigh University <br>
 <div class="text-muted" style="font-size: 0.9em;"> Talk: *Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods*
@@ -110,7 +100,7 @@ Below are some upcoming talks. If you will be at any of these, please say hi! I 
 </div>
 
 - **INFORMS Annual Meeting** — November 1–4, 2026 · San Francisco <br>
-<div class="text-muted" style="font-size: 0.9em;"> Talk: *Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces* 
+<div class="text-muted" style="font-size: 0.9em;"> Talk: *Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces*
 <br>
 Co-organizing session *Optimization in Data Science* with [Mateo Díaz](https://mateodd25.github.io/)
 <!-- <a href="/posts/talks/2026-11-01-informs-san-francisco.qmd" class="float-end">See more... »</a> -->
@@ -123,16 +113,18 @@ Co-organizing session *Geometry, Dynamics, and Inference* with [Mauro Maggioni](
 <!-- <a href="/posts/talks/2026-11-16-siam-mds.qmd" class="float-end">See more... »</a> -->
 </div>
 
+:::
+
 For a full list of talks and poster presentations, see [Presentations](/presentations.qmd).
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-## Recent News
+<!-- ## Recent News -->
 
 <!-- Check out news about the latest &nbsp;[Papers](posts.qmd#category=papers)&nbsp;, &nbsp;[Talks](posts.qmd#category=talks)&nbsp;, &nbsp;[Awards](posts.qmd#category=awards)&nbsp;, and &nbsp;[More »](/posts.qmd) -->
 
-:::{#recent-posts}
+<!-- :::{#recent-posts}
 :::
 
 <p align="right">[More News »](/posts.qmd)</p>
-
+ -->
 

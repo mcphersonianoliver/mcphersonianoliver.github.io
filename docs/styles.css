@@ -1,10 +1,31 @@
 /* css styles */
 
+:root {
+  --accent-navy: #273e5d; /* unified site accent */
+  --accent-navy-tint: #e9edf3; /* light tint of accent-navy for backgrounds */
+}
+
+/* Body links: quiet navy instead of default bright blue, underline only on hover.
+   Uses the plain "a" selector so it stays below Bootstrap's own classed
+   selectors (.nav-link, .btn, etc.) and only touches inline content links. */
+a {
+  color: var(--accent-navy);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-navy);
+  border-bottom-color: var(--accent-navy);
+}
+
 /* Container for the abstract */
 .abstract-container {
   margin: 2em 0;
   padding: 0 0 0 1.5em;
-  border-left: 4px solid #273e5d; /* Dark blue bar */
+  border-left: 4px solid var(--accent-navy);
 }
 
 /* The small "ABSTRACT" label */

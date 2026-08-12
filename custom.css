@@ -5,8 +5,8 @@ span.__dimensions_badge_embed__, div.altmetric-embed {
 
 /* Container for Definitions */
 .definition-box {
-    background-color: #e6edf4; /* Light blue background */
-    border-left: 5px solid #0366d6; /* Strong blue accent bar */
+    background-color: var(--accent-navy-tint);
+    border-left: 5px solid var(--accent-navy);
     padding: 15px 10px;
     margin: 20px 0;
     border-radius: 4px;
@@ -16,7 +16,7 @@ span.__dimensions_badge_embed__, div.altmetric-embed {
 
 /* Specific styling for the "Definition X" label */
 .definition-box strong:first-child {
-    color: #2962a3;
+    color: var(--accent-navy);
     font-size: 1.1em;
 }
 
@@ -42,4 +42,65 @@ span.__dimensions_badge_embed__, div.altmetric-embed {
 .definition-box .katex-display, 
 .intuition-box .katex-display {
     margin: 1em 0 !important;
+}
+
+.research-callout {
+    margin: 2rem 0;
+    padding: 0 0 0 1rem;
+
+    background: none;
+    border: none;
+    border-left: 3px solid var(--accent-navy);
+
+    color: #5a5a5a;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+/* Research Pipeline: quiet interactive rows, highlight only on hover */
+.pipeline-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.pipeline-list li {
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    border-bottom: 1px solid #e5e5e5;
+    transition: background-color 0.15s ease;
+}
+
+.pipeline-list li:last-child {
+    border-bottom: none;
+}
+
+.pipeline-list li:hover {
+    background-color: var(--accent-navy-tint);
+}
+
+/* Small outlined venue badge (arXiv, SSRN, etc.) next to a paper title */
+.venue-badge {
+    float: right;
+    margin-left: 0.5rem;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: #666;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.venue-badge:hover {
+    border-color: var(--accent-navy);
+    color: var(--accent-navy);
+    text-decoration: none;
 }

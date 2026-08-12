@@ -319,35 +319,35 @@
     "href": "index.html",
     "title": "Ian McPherson",
     "section": "",
-    "text": "E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      ORCID\n  \n  \n      Google Scholar\n  \n\n  \n  \n\n\n\n\n\n\nI exploit mathematical structures to design and analyze optimization algorithms, and construct statistical estimators from high-dimensional data.\n\n\n\nWelcome to my website! I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University. \n\n\nI am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use fast/scalable algorithms while side-stepping the curse of dimensionality which negatively effects convergence and statistical rates.\nTo this end, I explore the interplay of optimization, geometry, and statistics through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability.\n\nResearch Areas »"
+    "text": "E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      ORCID\n  \n  \n      Google Scholar\n  \n\n  \n  \n\nDoughnut enjoyer. I like statistics and optimization with geometry hidden underneath.\n\nWelcome! I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of Mauro Maggioni and Mateo Díaz at Johns Hopkins University. \n\n\nI am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use fast/scalable algorithms while side-stepping the curse of dimensionality which negatively effects convergence and statistical rates.\nTo this end, I explore the interplay of optimization, geometry, and statistics through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability."
   },
   {
     "objectID": "index.html#research-interests",
     "href": "index.html#research-interests",
     "title": "Ian McPherson",
     "section": "",
-    "text": "I am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use fast/scalable algorithms while side-stepping the curse of dimensionality which negatively effects convergence and statistical rates.\nTo this end, I explore the interplay of optimization, geometry, and statistics through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability.\n\nResearch Areas »"
+    "text": "I am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use fast/scalable algorithms while side-stepping the curse of dimensionality which negatively effects convergence and statistical rates.\nTo this end, I explore the interplay of optimization, geometry, and statistics through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability."
   },
   {
     "objectID": "index.html#research-pipeline",
     "href": "index.html#research-pipeline",
     "title": "Ian McPherson",
     "section": "Research Pipeline",
-    "text": "Research Pipeline\nBelow are some of my ongoing and recent research projects.\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees (Revise and Resubmit at Management Science) with Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information (Submitted)  with Mateo Díaz and Benjamin Grimmer \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »\n\nConstrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces (In-Preparation)  with Mauro Maggioni \n\nGiven only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees? \n\n\nFor a full list of publications, see Publications."
+    "text": "Research Pipeline\nBelow are some of my ongoing and recent research projects.\n\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees (Revise and Resubmit at Management Science) SSRN with Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information (Submitted) arXiv  with Mateo Díaz and Benjamin Grimmer \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »\n\nConstrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces (In-Preparation)  with Mauro Maggioni \n\nGiven only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees? \n\n\n\nFor a full list of publications, see Publications."
   },
   {
     "objectID": "index.html#upcoming-talks",
     "href": "index.html#upcoming-talks",
     "title": "Ian McPherson",
     "section": "Upcoming Talks",
-    "text": "Upcoming Talks\nBelow are some upcoming talks. If you will be at any of these, please say hi! I promise I’ll say hi back!\n\nMOPTA 2026 — August 18, 2026 · Lehigh University \n\nTalk: Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods \n\nINFORMS Annual Meeting — November 1–4, 2026 · San Francisco \n\nTalk: Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces  Co-organizing session Optimization in Data Science with Mateo Díaz \n\nSIAM Conference on Mathematics of Data Science (MDS26) — November 16–20, 2026 \n\nTalk: Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces  Co-organizing session Geometry, Dynamics, and Inference with Mauro Maggioni and George Kevrekidis \n\n\nFor a full list of talks and poster presentations, see Presentations."
+    "text": "Upcoming Talks\nBelow are some upcoming talks. If you will be at any of these, please say hi! I promise I’ll say hi back!\n\n\nMOPTA 2026 — August 18, 2026 · Lehigh University \n\nTalk: Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods \n\nINFORMS Annual Meeting — November 1–4, 2026 · San Francisco \n\nTalk: Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces  Co-organizing session Optimization in Data Science with Mateo Díaz \n\nSIAM Conference on Mathematics of Data Science (MDS26) — November 16–20, 2026 \n\nTalk: Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces  Co-organizing session Geometry, Dynamics, and Inference with Mauro Maggioni and George Kevrekidis \n\n\n\nFor a full list of talks and poster presentations, see Presentations."
   },
   {
     "objectID": "index.html#recent-news",
     "href": "index.html#recent-news",
     "title": "Ian McPherson",
     "section": "Recent News",
-    "text": "Recent News\n\n\n\n\n\n\n\n\nOrganizing Session at SIAM Conference on Mathematics of Data Science\n\n\n\nNov 16, 2026\n\n\n\n\n\n\n\n\n\n\nOrganizing Session at INFORMS Annual Meeting\n\n\n\nNov 1, 2026\n\n\n\n\n\n\n\n\n\n\nTalk at MOPTA 2026\n\n\n\nAug 18, 2026\n\n\n\n\n\n\nNo matching items\n\n\nMore News »"
+    "text": "Recent News"
   },
   {
     "objectID": "people.html",

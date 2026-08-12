@@ -32,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -71,36 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 3,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -131,37 +99,9 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="Ian McPherson">
 <meta property="og:description" content="Personal Website: Ian McPherson">
 <meta property="og:image" content="https://mcphersonianoliver.github.io/files/images/prof-pic.webp">
@@ -255,24 +195,15 @@ window.Quarto = {
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
-<div class="callout callout-style-simple callout-note no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<div class="research-callout">
+<p>Doughnut enjoyer. I like statistics and optimization with geometry hidden underneath.</p>
 </div>
-<div class="callout-body-container">
-<p><strong>I exploit mathematical structures to design and analyze optimization algorithms, and construct statistical estimators from high-dimensional data.</strong></p>
-</div>
-</div>
-</div>
-<p>Welcome to my website! I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of <a href="https://mauromaggioni.duckdns.org/"><strong>Mauro Maggioni</strong></a> and <a href="https://mateodd25.github.io/"><strong>Mateo Díaz</strong></a> at Johns Hopkins University. <!-- I completed a MSc in Pure Mathematics at Tufts University, and two BAs in Economics and Biochemistry at Occidental College. --></p>
+<p>Welcome! I am currently pursuing a PhD in Applied Mathematics and Statistics under the joint supervision of <a href="https://mauromaggioni.duckdns.org/"><strong>Mauro Maggioni</strong></a> and <a href="https://mateodd25.github.io/"><strong>Mateo Díaz</strong></a> at Johns Hopkins University. <!-- I completed a MSc in Pure Mathematics at Tufts University, and two BAs in Economics and Biochemistry at Occidental College. --></p>
 <section id="research-interests" class="level2">
 <h2 data-anchor-id="research-interests">Research Interests</h2>
 <p>I am interested in the theoretical and algorithmic foundations of Data Science, motivated by the impact of exploiting data for advancing scientific discovery. To exploit data, one must use <strong><em>fast/scalable algorithms</em></strong> while <strong><em>side-stepping the curse of dimensionality</em></strong> which negatively effects convergence and statistical rates.</p>
 <p>To this end, I explore the interplay of <strong>optimization, geometry, and statistics</strong> through a variety of different mathematical lenses including Riemannian geometry, optimal transport, and high-dimensional probability.</p>
-<p align="right">
-<a href="./research-areas.html">Research Areas »</a>
-</p>
+<!-- <p align="right">[Research Areas »](/research-areas.qmd)</p> -->
 </section>
 </div></div>
 </div>
@@ -280,12 +211,13 @@ window.Quarto = {
 <section id="research-pipeline" class="level2">
 <h2 data-anchor-id="research-pipeline">Research Pipeline</h2>
 <p>Below are some of my ongoing and recent research projects.</p>
+<div class="pipeline-list">
 <ul>
-<li><strong>Neural Dynamic Portfolio Control with Provable Learning Guarantees</strong> (<em>Revise and Resubmit</em> at Management Science) <br>with Yizhe Huang, <a href="https://rgao32.github.io/index.html">Rui Gao</a>, <a href="https://shuangli01.github.io/index.html">Shuang Li</a>, <a href="https://luhao-zhang.github.io/">Luhao Zhang</a> <br>
+<li><strong>Neural Dynamic Portfolio Control with Provable Learning Guarantees</strong> (<em>Revise and Resubmit</em> at Management Science) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514" class="venue-badge" target="_blank">SSRN</a> <br>with Yizhe Huang, <a href="https://rgao32.github.io/index.html">Rui Gao</a>, <a href="https://shuangli01.github.io/index.html">Shuang Li</a>, <a href="https://luhao-zhang.github.io/">Luhao Zhang</a> <br>
 <div class="text-muted" style="font-size: 0.9em;">
 <p>Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? <a href="./papers/2025/neural-portfolio-control.html" class="float-end">See more… »</a></p>
 </div></li>
-<li><strong>Nonsmooth Riemannian Optimization with Inexact Information</strong> (Submitted) <br> with <a href="https://mateodd25.github.io/">Mateo Díaz</a> and <a href="https://www.ams.jhu.edu/~grimmer/">Benjamin Grimmer</a> <br>
+<li><strong>Nonsmooth Riemannian Optimization with Inexact Information</strong> (Submitted) <a href="https://arxiv.org/abs/2604.27078" class="venue-badge" target="_blank">arXiv</a> <br> with <a href="https://mateodd25.github.io/">Mateo Díaz</a> and <a href="https://www.ams.jhu.edu/~grimmer/">Benjamin Grimmer</a> <br>
 <div class="text-muted" style="font-size: 0.9em;">
 <p>Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? <a href="./papers/2026/riemannian-bundle-method.html" class="float-end">See more… »</a></p>
 </div></li>
@@ -294,11 +226,13 @@ window.Quarto = {
 <p>Given only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees? <!-- <a href="/papers/2026/wasserstein-barycenter.qmd" class="float-end">See more... »</a> --></p>
 </div></li>
 </ul>
+</div>
 <p>For a full list of publications, see <a href="./publications.html">Publications</a>.</p>
 </section>
 <section id="upcoming-talks" class="level2">
 <h2 data-anchor-id="upcoming-talks">Upcoming Talks</h2>
 <p>Below are some upcoming talks. If you will be at any of these, please say hi! I promise I’ll say hi back!</p>
+<div class="pipeline-list">
 <ul>
 <li><strong>MOPTA 2026</strong> — August 18, 2026 · Lehigh University <br>
 <div class="text-muted" style="font-size: 0.9em;">
@@ -313,66 +247,16 @@ window.Quarto = {
 <p>Talk: <em>Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces</em> <br> Co-organizing session <em>Geometry, Dynamics, and Inference</em> with <a href="https://mauromaggioni.duckdns.org/">Mauro Maggioni</a> and <a href="https://scholar.google.com/citations?hl=en&amp;user=rynRUuQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">George Kevrekidis</a> <!-- <a href="/posts/talks/2026-11-16-siam-mds.qmd" class="float-end">See more... »</a> --></p>
 </div></li>
 </ul>
+</div>
 <p>For a full list of talks and poster presentations, see <a href="./presentations.html">Presentations</a>.</p>
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-</section>
-<section id="recent-news" class="level2">
-<h2 data-anchor-id="recent-news">Recent News</h2>
+<!-- ## Recent News -->
 <!-- Check out news about the latest &nbsp;[Papers](posts.qmd#category=papers)&nbsp;, &nbsp;[Talks](posts.qmd#category=talks)&nbsp;, &nbsp;[Awards](posts.qmd#category=awards)&nbsp;, and &nbsp;[More »](/posts.qmd) -->
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="dGFsa3MlMkNjb25mZXJlbmNlcyUyQ29yZ2FuaXppbmc=" data-listing-date-sort="1794805200000" data-listing-file-modified-sort="1779999187421" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
-<a href="./posts/talks/2026-11-16-siam-mds.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Organizing Session at SIAM Conference on Mathematics of Data Science
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 16, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="dGFsa3MlMkNjb25mZXJlbmNlcyUyQ29yZ2FuaXppbmc=" data-listing-date-sort="1793505600000" data-listing-file-modified-sort="1779999184908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<a href="./posts/talks/2026-11-01-informs-san-francisco.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Organizing Session at INFORMS Annual Meeting
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 1, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="dGFsa3MlMkNjb25mZXJlbmNlcw==" data-listing-date-sort="1787025600000" data-listing-file-modified-sort="1779998038799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<a href="./posts/talks/2026-08-18-mopta-lehigh.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Talk at MOPTA 2026
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Aug 18, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p align="right">
-<a href="./posts.html">More News »</a>
-</p>
+<!-- :::{#recent-posts}
+:::
 
+<p align="right">[More News »](/posts.qmd)</p>
+ -->
 
 
 
