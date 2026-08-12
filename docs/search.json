@@ -18,14 +18,21 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Since these works are currently in preparation or under review, please contact me for the latest drafts.\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Revision at Management Science) \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (Submitted) \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »\n\nConstrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces | Mauro Maggioni (In-Preparation) \n\nGiven only a local sampler of a non-convex submanifold of some non-Euclidean space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees? \n\n\n\nFor talks and poster presentations, see Presentations."
+    "text": "Since these works are currently in preparation or under review, please contact me for the latest drafts.\n\nConstrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces | Mauro Maggioni (In-Preparation) \n\nGiven only a local sampler of a non-convex submanifold of some non-Euclidean space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees?"
   },
   {
     "objectID": "publications.html#working-papers-and-manuscripts",
     "href": "publications.html#working-papers-and-manuscripts",
     "title": "Publications",
     "section": "",
-    "text": "Since these works are currently in preparation or under review, please contact me for the latest drafts.\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Revision at Management Science) \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (Submitted) \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »\n\nConstrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces | Mauro Maggioni (In-Preparation) \n\nGiven only a local sampler of a non-convex submanifold of some non-Euclidean space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees? \n\n\n\nFor talks and poster presentations, see Presentations."
+    "text": "Since these works are currently in preparation or under review, please contact me for the latest drafts.\n\nConstrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces | Mauro Maggioni (In-Preparation) \n\nGiven only a local sampler of a non-convex submanifold of some non-Euclidean space, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees?"
+  },
+  {
+    "objectID": "publications.html#submitted-papers",
+    "href": "publications.html#submitted-papers",
+    "title": "Publications",
+    "section": "Submitted Papers",
+    "text": "Submitted Papers\n\nNeural Dynamic Portfolio Control with Provable Learning Guarantees | Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang (Revision at Management Science) \n\nAre there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees? See more… »\n\nNonsmooth Riemannian Optimization with Inexact Information | Mateo Díaz and Benjamin Grimmer (Submitted) \n\nCan nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports? See more… »"
   },
   {
     "objectID": "blog-posts/fundamentals/2026-1-21-L2-on-k-forms.html",
@@ -341,13 +348,6 @@
     "title": "Ian McPherson",
     "section": "Upcoming Talks",
     "text": "Upcoming Talks\nBelow are some upcoming talks. If you will be at any of these, please say hi! I promise I’ll say hi back!\n\n\nMOPTA 2026 — August 18, 2026 · Lehigh University \n\nTalk: Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods \n\nINFORMS Annual Meeting — November 1–4, 2026 · San Francisco \n\nTalk: Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces  Co-organizing session Optimization in Data Science with Mateo Díaz \n\nSIAM Conference on Mathematics of Data Science (MDS26) — November 16–20, 2026 \n\nTalk: Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces  Co-organizing session Geometry, Dynamics, and Inference with Mauro Maggioni and George Kevrekidis \n\n\n\nFor a full list of talks and poster presentations, see Presentations."
-  },
-  {
-    "objectID": "index.html#recent-news",
-    "href": "index.html#recent-news",
-    "title": "Ian McPherson",
-    "section": "Recent News",
-    "text": "Recent News"
   },
   {
     "objectID": "people.html",

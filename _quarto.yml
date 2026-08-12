@@ -53,7 +53,7 @@ website:
       - text: Teaching # Comment the Teaching part out to remove the Teaching page
         href: teaching.qmd
       - text: CV
-        href: files/UpdatedCV-9-10-2026.pdf
+        href: files/McPhersonCV-Aug12.pdf
       # - icon: github
         # href: https://github.com/drganghe/quarto-academic-website-template
         # target: _blank
