@@ -67,7 +67,9 @@ Below are some of my ongoing and recent research projects.
 ::: {.pipeline-list}
 
 - **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (*Revise and Resubmit* at Management Science) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514" class="venue-badge" target="_blank">SSRN</a>
-<br>with Yizhe Huang, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
+<br>with 
+<!-- Yizhe Huang -->
+, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees?
 <a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a>
 </div>
@@ -101,6 +103,13 @@ Below are some upcoming talks. If you will be at any of these, please say hi! I 
 
 - **INFORMS Annual Meeting** — November 1–4, 2026 · San Francisco <br>
 <div class="text-muted" style="font-size: 0.9em;"> Talk: *Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces*
+<br>
+Co-organizing session *Optimization in Data Science* with [Mateo Díaz](https://mateodd25.github.io/)
+<!-- <a href="/posts/talks/2026-11-01-informs-san-francisco.qmd" class="float-end">See more... »</a> -->
+</div>
+
+- **INFORMS Conference on Financial Engineering and Fintech** — November 6-7, 2026 · New Jersey <br>
+<div class="text-muted" style="font-size: 0.9em;"> Talk: *Neural Dynamic Portfolio Control with Provable Learning Guarantees*
 <br>
 Co-organizing session *Optimization in Data Science* with [Mateo Díaz](https://mateodd25.github.io/)
 <!-- <a href="/posts/talks/2026-11-01-informs-san-francisco.qmd" class="float-end">See more... »</a> -->

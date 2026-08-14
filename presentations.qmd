@@ -7,16 +7,20 @@ css: custom.css
 ---
 
 ## Talks
+**Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces**
+
+*   **INFORMS Annual Meeting** *(Session Organizer)* — Session: *Optimization in Data Science* (co-organized with [Mateo Díaz](https://mateodd25.github.io/)), San Francisco | November 2026
+*   **SIAM Conference on Mathematics of Data Science (MDS26)** *(Session Organizer)* — Session: *Geometry, Dynamics, and Inference* (co-organized with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) and [George Kevrekidis](https://scholar.google.com/citations?hl=en&user=rynRUuQAAAAJ&view_op=list_works&sortby=pubdate)) | November 2026
+
+**Neural Dynamic Portfolio Control with Provable Learning Guarantees**
+
+*  **INFORMS Conference on Financial Engineering and Fintech** Stevens Institute of Technology, New Jersey | November 2026
+
 
 **Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods**
 
 *   **SIAM Conference on Optimization (OP26)**, University of Edinburgh | June 2026
 *   **Modeling and Optimization: Theory and Applications (MOPTA)**, Lehigh University | August 2026
-
-**Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces**
-
-*   **INFORMS Annual Meeting** *(Session Organizer)* — Session: *Optimization in Data Science* (co-organized with [Mateo Díaz](https://mateodd25.github.io/)), San Francisco | November 2026
-*   **SIAM Conference on Mathematics of Data Science (MDS26)** *(Session Organizer)* — Session: *Geometry, Dynamics, and Inference* (co-organized with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) and [George Kevrekidis](https://scholar.google.com/citations?hl=en&user=rynRUuQAAAAJ&view_op=list_works&sortby=pubdate)) | November 2026
 
 **Convergence Rates for Riemannian Proximal Bundle Methods**
 
