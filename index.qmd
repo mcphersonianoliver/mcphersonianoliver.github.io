@@ -111,7 +111,6 @@ Co-organizing session *Optimization in Data Science* with [Mateo Díaz](https://
 - **INFORMS Conference on Financial Engineering and Fintech** — November 6-7, 2026 · New Jersey <br>
 <div class="text-muted" style="font-size: 0.9em;"> Talk: *Neural Dynamic Portfolio Control with Provable Learning Guarantees*
 <br>
-Co-organizing session *Optimization in Data Science* with [Mateo Díaz](https://mateodd25.github.io/)
 <!-- <a href="/posts/talks/2026-11-01-informs-san-francisco.qmd" class="float-end">See more... »</a> -->
 </div>
 
