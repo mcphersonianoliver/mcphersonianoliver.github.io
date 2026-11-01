@@ -82,7 +82,9 @@ with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://
 </div>
 
 
-- **Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces** (In-Preparation) <br> with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
+- **Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces** (Submitted)
+<a href="https://arxiv.org/abs/2610.22592" class="venue-badge" target="_blank">arXiv</a> 
+ <br> with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees?
 <!-- <a href="/papers/2026/wasserstein-barycenter.qmd" class="float-end">See more... »</a> -->
 </div>
@@ -95,9 +97,9 @@ For a full list of publications, see [Publications](/publications.qmd).
 Below are some upcoming talks. If you will be at any of these, please say hi! I promise I'll say hi back!
 
 ::: {.pipeline-list}
-
+<!-- 
 - **MOPTA 2026** — August 18, 2026 · Lehigh University <br>
-<div class="text-muted" style="font-size: 0.9em;"> Talk: *Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods*
+<div class="text-muted" style="font-size: 0.9em;"> Talk: *Nonsmooth Riemannian Optimization with Inexact Manifold Primitives via Bundle Methods* -->
 <!-- <a href="/posts/talks/2026-08-18-mopta-lehigh.qmd" class="float-end">See more... »</a> -->
 </div>
 
@@ -121,6 +123,9 @@ Co-organizing session *Geometry, Dynamics, and Inference* with [Mauro Maggioni](
 <!-- <a href="/posts/talks/2026-11-16-siam-mds.qmd" class="float-end">See more... »</a> -->
 </div>
 
+- **Joint Mathematical Meetings (JMM 2027)** — January 15th, 2027 <br>
+<div class="text-muted" style="font-size: 0.9em;"> Talk: *Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces*
+<br>
 :::
 
 For a full list of talks and poster presentations, see [Presentations](/presentations.qmd).
