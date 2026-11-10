@@ -9,8 +9,9 @@ css: custom.css
 ## Talks
 **Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces**
 
-*   **INFORMS Annual Meeting** *(Session Organizer)* — Session: *Optimization in Data Science* (co-organized with [Mateo Díaz](https://mateodd25.github.io/)), San Francisco | November 2026
 *   **SIAM Conference on Mathematics of Data Science (MDS26)** *(Session Organizer)* — Session: *Geometry, Dynamics, and Inference* (co-organized with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) and [George Kevrekidis](https://scholar.google.com/citations?hl=en&user=rynRUuQAAAAJ&view_op=list_works&sortby=pubdate)) | November 2026
+
+*   **INFORMS Annual Meeting** *(Session Organizer)* — Session: *Optimization in Data Science* (co-organized with [Mateo Díaz](https://mateodd25.github.io/)), San Francisco | November 2026
 
 *  **Joint Mathematical Meetings (JMM 2027)**, Chicago, IL | January 2027
 

@@ -65,15 +65,12 @@ To this end, I explore the interplay of **optimization, geometry, and statistics
 Below are some of my ongoing and recent research projects.
 
 ::: {.pipeline-list}
-
-- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (*Revise and Resubmit* at Management Science) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514" class="venue-badge" target="_blank">SSRN</a>
-<br>with 
-<!-- Yizhe Huang -->
-, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
-<div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees?
-<a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a>
+- **Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces** (Submitted)
+<a href="https://arxiv.org/abs/2610.22592" class="venue-badge" target="_blank">arXiv</a> 
+ <br> with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
+<div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees?
+<!-- <a href="/papers/2026/wasserstein-barycenter.qmd" class="float-end">See more... »</a> -->
 </div>
-
 
 - **Nonsmooth Riemannian Optimization with Inexact Information** (Submitted) <a href="https://arxiv.org/abs/2604.27078" class="venue-badge" target="_blank">arXiv</a> <br>
 with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
@@ -81,12 +78,12 @@ with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://
 <a href="/papers/2026/riemannian-bundle-method.qmd" class="float-end">See more... »</a>
 </div>
 
-
-- **Constrained Fréchet Means of Unknown Submanifolds of Non-Euclidean Spaces** (Submitted)
-<a href="https://arxiv.org/abs/2610.22592" class="venue-badge" target="_blank">arXiv</a> 
- <br> with [Mauro Maggioni](https://mauromaggioni.duckdns.org/) <br>
-<div class="text-muted" style="font-size: 0.9em;"> Given only a local sampler of a non-convex submanifold of some non-Euclidean space, i.e., Riemannian or Wasserstein, is there an algorithm to compute the empirical intrinsic mean up to arbitrary accuracy with provable guarantees?
-<!-- <a href="/papers/2026/wasserstein-barycenter.qmd" class="float-end">See more... »</a> -->
+- **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (*Revise and Resubmit* at Management Science) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514" class="venue-badge" target="_blank">SSRN</a>
+<br>with 
+<!-- Yizhe Huang -->
+, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
+<div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees?
+<a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a>
 </div>
 
 :::
