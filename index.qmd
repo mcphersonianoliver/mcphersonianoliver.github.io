@@ -79,8 +79,7 @@ with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://
 </div>
 
 - **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (*Revise and Resubmit* at Management Science) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514" class="venue-badge" target="_blank">SSRN</a>
-<br>with 
-<!-- Yizhe Huang -->
+<br>with
 [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees?
 <!-- <a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a> -->

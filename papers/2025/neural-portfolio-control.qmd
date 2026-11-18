@@ -12,7 +12,7 @@ language:
 ---
 ## Neural Dynamic Portfolio Control with Provable Learning Guarantees
 
-**Ian McPherson, Yizhe Huang, Rui Gao, Shuang Li, Luhao Zhang**
+**Ian McPherson, Rui Gao, Shuang Li, Luhao Zhang**
 [SSRN link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514)
 
 ### Main contribution

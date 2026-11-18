@@ -17,6 +17,8 @@ Recipient of the **Whiting School of Engineering Teaching Assistant Award (2024)
 ## Teaching Assistantships
 
 ### Johns Hopkins University
+- **Probability Theory I** <br> <span class="text-muted" style="font-size: 0.9em;">Fall 2026 | For Yuliang Xu</span>
+
 - **Causal Inference** (EN.553.747) <br> <span class="text-muted" style="font-size: 0.9em;">Spring 2026 | For Professor Alden Green | Graduate-level course on the theory and methods of causal inference.</span>
 
 - **Probability Theory II** (EN.553.733) <br> <span class="text-muted" style="font-size: 0.9em;">Spring 2026 | For Professor Tim Kunisky | Second course of graduate-level course on measure-theoretic probability, focusing on stochstical processes building up to introductory stochastic analysis. </span>
