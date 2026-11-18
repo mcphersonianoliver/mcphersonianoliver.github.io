@@ -75,15 +75,15 @@ Below are some of my ongoing and recent research projects.
 - **Nonsmooth Riemannian Optimization with Inexact Information** (Submitted) <a href="https://arxiv.org/abs/2604.27078" class="venue-badge" target="_blank">arXiv</a> <br>
 with [Mateo Díaz](https://mateodd25.github.io/) and [Benjamin Grimmer](https://www.ams.jhu.edu/~grimmer/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Can nonsmooth convex Riemannian optimization admit nonasymptotic convergence rates using only subgradients, first-order retractions, and vector transports?
-<a href="/papers/2026/riemannian-bundle-method.qmd" class="float-end">See more... »</a>
+<!-- <a href="/papers/2026/riemannian-bundle-method.qmd" class="float-end">See more... »</a> -->
 </div>
 
 - **Neural Dynamic Portfolio Control with Provable Learning Guarantees** (*Revise and Resubmit* at Management Science) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6006514" class="venue-badge" target="_blank">SSRN</a>
 <br>with 
 <!-- Yizhe Huang -->
-, [Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
+[Rui Gao](https://rgao32.github.io/index.html), [Shuang Li](https://shuangli01.github.io/index.html), [Luhao Zhang](https://luhao-zhang.github.io/) <br>
 <div class="text-muted" style="font-size: 0.9em;"> Are there neural approaches to portfolio control that incorporate historical returns with provable end-to-end global guarantees?
-<a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a>
+<!-- <a href="/papers/2025/neural-portfolio-control.qmd" class="float-end">See more... »</a> -->
 </div>
 
 :::
